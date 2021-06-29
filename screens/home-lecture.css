@@ -52,7 +52,7 @@ p.typing-txt {
   animation-iteration-count: infinite;
   font-size: 30px;
   width: 300px;
-
+  margin-top: 60px;
   border-right: 1px solid #ccc;
 }
 

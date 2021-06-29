@@ -61,6 +61,7 @@
   /* d */
   position: relative;
   /* margin-right: 300px; */
+
   right: 600px;
   margin-top: 370px;
   height: 400px;
@@ -99,6 +100,7 @@
 
 .home-box__list {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
