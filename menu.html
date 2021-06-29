@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="favicon" type="image⁄x-icon" src="./head-logo.ico" />
+    <title>Eniac</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <nav class="header-bar">
+      <div class="header-bar__column header-bar__logo">
+        <a href="index.html" class="header-bar__a">
+          <img style="z-index: -99" src="img/logo-high.png" />
+        </a>
+      </div>
+      <div class="header-bar__column header-bar-img">
+        <img
+          style="margin-top: 20px; height: 100px"
+          src="img/center_logo.png"
+        />
+      </div>
+      <div class="header-bar__column header-bar__login">
+        <i class="fas fa-bars fa-lg"></i>
+        <i
+          style="color: black"
+          class="header-bar__text fas fa-search fa-lg"
+        ></i>
+        <span class="header-bar__text header-bar__login-b">Login</span>
+      </div>
+    </nav>
+    <!-- 안보이는창 -->
+    <div data-modal="header-main-menu" class="modal header-modal-menu active">
+      <div class="modal__hide-scroll">
+        <div class="container">
+          <div class="modal__content">
+            <nav class="header__main-menu">
+              <div class="header__main-menu__wrapper">
+                <button class="modal__close">X</button>
+                <ul class="header__main-menu__list">
+                  <li><a href="/" class="cust-btn">Home</a></li>
+                  <li>
+                    <a href="/wotd-award-nominees" class="cust-btn">Nominees</a>
+                  </li>
+                  <li>
+                    <a href="/wotd-award-winners" class="cust-btn">Winners</a>
+                  </li>
+                  <li><a href="/about" class="cust-btn">About</a></li>
+                  <li><a href="/judges" class="cust-btn">Judges</a></li>
+                  <li><a href="/blog" class="cust-btn">Blog</a></li>
+                  <li><a href="/contact" class="cust-btn">Contact</a></li>
+                  <li><a href="/terms" class="cust-btn">Terms / Privacy</a></li>
+                </ul>
+                <ul class="header__main-menu__add-on">
+                  <li>
+                    <a href="/submit" class="cust-btn special-button">SUBMIT</a>
+                  </li>
+                  <li><a href="/jpanel" target="_blank">JLogin</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+      </div>
+    </div>
+    <!-- /.modal -->
+    <div data-modal="header-search" class="modal header-modal-search active">
+      <div class="modal__hide-scroll">
+        <div class="container">
+          <div class="modal__content">
+            <form action="/search" method="get" id="frmSearch">
+              <input
+                type="search"
+                id="search_term"
+                name="search_term"
+                placeholder="Search"
+                autofocus
+              />
+              <a class="modal__close">X</a>
+            </form>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+      </div>
+    </div>
+    <section class="home-wotd">
+      <div class="home-box">
+        <div class="home-box__middle">
+          <figure class="home-box__thumbnail" style="margin-bottom: -155.594px">
+            <img
+              class="home-box__img"
+              src="img/quaritsch-photography-3xQ65cknLPk-unsplash.jpg"
+            />
+          </figure>
+          <div class="home-box__side">
+            <img class="home-box__monogram" src="imgs/cssda-monogram-box.svg" />
+            <p class="typing-txt">Printf("Eniac");</p>
+            <p class="typing"></p>
+
+            <span class="home-box__meta">WangKang University </span>
+          </div>
+        </div>
+        <div class="home-box__bottom__top">
+          <div class="home-box__introduction">
+            <h4 class="home-box__span">
+              원광대학교 중앙동아리 학술분과 소속 ENIAC (에니악) 입니다.
+              <br />
+              - 1990년도에 설립되었고 학생회관 4층 ENIAC 동아리실에 위치하고
+              있습니다.
+            </h4>
+          </div>
+          <div class="home-box__bottom__bottom">
+            <ul class="home-box__list">
+              <li class="home-box__item">
+                <div class="home-box__circle">
+                  <img
+                    class="home-box__circle__icon"
+                    src="img/trophy.png"
+                    style="height: 40px; width: 40px"
+                  />
+                </div>
+              </li>
+              <li>
+                <div class="home-box__circle">
+                  <img
+                    class="home-box__circle__icon"
+                    src="img/trophy.png"
+                    style="height: 40px; width: 40px"
+                  />
+                </div>
+              </li>
+              <li>
+                <div class="home-box__circle">
+                  <img
+                    class="home-box__circle__icon"
+                    src="img/trophy.png"
+                    style="height: 40px; width: 40px"
+                  />
+                </div>
+              </li>
+              <li>
+                <div class="home-box__text">
+                  <span> 에니악화이팅 </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="home-lecture">
+      <h2>
+        <a href="" class="home-lecture__title">#1학년 필수강의</a>
+      </h2>
+      <div class="home-lecture__list project__list">
+        <article class="single-project">
+          <div>
+            <div class="home-lecture__thumnail">
+              <img src="imga/abc" style="width: 355px; height: 205px" />
+            </div>
+            <h3 class="home-lecture__card_title">c언어 조코딩</h3>
+            <div class="home-lecture__about">
+              <span>31기 2학년 윤동규</span>
+            </div>
+          </div>
+        </article>
+        <article class="single-project">
+          <div>
+            <div class="home-lecture__thumnail">
+              <img src="imga/abc" style="width: 355px; height: 205px" />
+            </div>
+            <h3 class="home-lecture__card_title">파이썬 렛츠스터디</h3>
+            <div class="home-lecture__about">
+              <span>31기 2학년 윤동규</span>
+            </div>
+          </div>
+        </article>
+        <article class="single-project">
+          <div>
+            <div class="home-lecture__thumnail">
+              <img src="imga/abc" style="width: 355px; height: 205px" />
+            </div>
+            <h3 class="home-lecture__card_title">groom python 기초강의</h3>
+            <div class="home-lecture__about">
+              <span>31기 2학년 윤동규</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="home-lecture">
+      <h2>
+        <a href="" class="home-lecture__title">#2~3 학년 필수강의</a>
+      </h2>
+      <div class="home-lecture__list project__list">
+        <article class="single-project">
+          <div>
+            <div class="home-lecture__thumnail">
+              <img src="imga/abc" style="width: 355px; height: 205px" />
+            </div>
+            <h3 class="home-lecture__card_title">자바 동빈나</h3>
+            <div class="home-lecture__about">
+              <span>31기 2학년 윤동규</span>
+            </div>
+          </div>
+        </article>
+        <article class="single-project">
+          <div>
+            <div class="home-lecture__thumnail">
+              <img src="imga/abc" style="width: 355px; height: 205px" />
+            </div>
+            <h3 class="home-lecture__card_title">파이썬 렛츠스터디</h3>
+            <div class="home-lecture__about">
+              <span>31기 2학년 윤동규</span>
+            </div>
+          </div>
+        </article>
+        <article class="single-project">
+          <div>
+            <div class="home-lecture__thumnail">
+              <img src="imga/abc" style="width: 355px; height: 205px" />
+            </div>
+            <h3 class="home-lecture__card_title">groom 자바 기초강의</h3>
+            <div class="home-lecture__about">
+              <span>31기 2학년 윤동규</span>
+            </div>
+          </div>
+        </article>
+        <article class="single-project">
+          <div>
+            <div class="home-lecture__thumnail">
+              <img src="imga/abc" style="width: 355px; height: 205px" />
+            </div>
+            <h3 class="home-lecture__card_title">카카오톡 클론코딩</h3>
+            <div class="home-lecture__about">
+              <span>31기 2학년 윤동규</span>
+            </div>
+          </div>
+        </article>
+        <article class="single-project">
+          <div>
+            <div class="home-lecture__thumnail">
+              <img src="imga/abc" style="width: 355px; height: 205px" />
+            </div>
+            <h3 class="home-lecture__card_title">SQL 동빈나</h3>
+            <div class="home-lecture__about">
+              <span>31기 2학년 윤동규</span>
+            </div>
+          </div>
+        </article>
+        <article class="single-project">
+          <div>
+            <div class="home-lecture__thumnail">
+              <img src="imga/abc" style="width: 355px; height: 205px" />
+            </div>
+            <h3 class="home-lecture__card_title">머신러닝 봉수동개발자</h3>
+            <div class="home-lecture__about">
+              <span>31기 2학년 윤동규</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
