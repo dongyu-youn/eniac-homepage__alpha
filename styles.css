@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
 /* 스크린 */
-@import "screens/home-box.css";
-@import "screens/home-lecture.css";
+@import "screens/home/home-box.css";
+@import "screens/home/home-lecture.css";
+@import "screens/study/study.css";
+@import "screens/study/study-tab.css";
+
 /* 컴포넌트 */
-@import "components/base.css";
+@import "components/header-bar.css";
+@import "components/menu.css";
 
 body {
   background-color: #f1efe9;

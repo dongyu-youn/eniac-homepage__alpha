@@ -1,24 +1,35 @@
 .home-box {
   position: relative;
+  width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  padding-left: 40%;
-  margin-right: 360px;
 }
-/* @media (max-width: 1399px) {
-  .home-box {
-    padding-left: 6.3%;
+
+.home-box__wrapper {
+  padding-left: 10.37%;
+}
+
+@keyframes goleft {
+  0% {
+    transform: translateX(-100px);
   }
-} */
+  100% {
+    transform: translateX(-200px);
+  }
+}
 
 .home-box__img {
   width: 742px;
   height: 450px;
+  animation-name: goleft;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0.8;
 }
 /* font-family: "Open Sans",sans-serif; */
 .home-box__middle {
   display: flex;
-  /* padding-right: 4 00px; */
   padding-top: 90px;
   justify-content: center;
 }
@@ -26,12 +37,12 @@
 .home-box__side {
   padding-left: 70px;
   padding-top: 50px;
-  width: 60.418%;
   padding-bottom: 30px;
+  position: relative;
 }
 
 .home-box__thumbnail {
-  width: 66.582%;
+  width: 50%;
   position: relative;
   margin-bottom: -176px;
   z-index: 1;
@@ -49,7 +60,6 @@
   width: 80px;
   height: 40px;
   position: absolute;
-
   right: 0;
   z-index: -1;
   background-color: #d4c6e6;
@@ -57,23 +67,17 @@
 }
 
 .home-box__bottom__top {
-  z-index: 0;
-  /* d */
-  position: relative;
-  /* margin-right: 300px; */
-
-  right: 600px;
-  margin-top: 370px;
-  height: 400px;
-  width: 866px;
+  width: 77.379%;
+  margin-right: 0;
+  margin-left: 100px;
+  margin-left: auto;
   background-color: #e1ded0;
 }
 
 .home-box__introduction {
-  width: 451px;
-  height: 30%;
-  padding-top: 100px;
-  padding-left: 370px;
+  width: 43.188%;
+  height: 20%;
+  padding: 50px 0px 50px 440px;
 }
 
 .home-box__function {
@@ -83,7 +87,8 @@
 }
 
 .home-box__span {
-  display: flex;
+  font-style: italic;
+  letter-spacing: 0.075em;
 }
 
 #home-box__icon {
@@ -93,15 +98,16 @@
 }
 
 .home-box__item {
-  position: relative;
-  text-align: center;
-  flex: 0 0 26%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .home-box__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0px 0px 20px 0px;
 }
 
 .home-box__circle {
@@ -118,6 +124,11 @@
   border: 0.08em solid #282828;
 }
 
+.home-box__circle:hover {
+  background-color: #282828;
+  z-index: 0;
+}
+
 .home-box__text {
   font-size: large;
 }
@@ -125,6 +136,7 @@
 .home-box__circle__icon {
   display: block;
   margin: 0px auto 0px auto;
+  z-index: 2;
 }
 
 .home-box__circle__slice {
@@ -161,4 +173,11 @@
   line-height: 16px;
   letter-spacing: 0.35em;
   padding-top: 20px;
+  padding-left: 60px;
+}
+
+.home-box__judges {
+  padding: 20px 0px 0px 0px;
+  display: flex;
+  flex-wrap: wrap;
 }

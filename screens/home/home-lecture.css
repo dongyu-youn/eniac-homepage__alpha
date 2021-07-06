@@ -51,7 +51,6 @@ p.typing-txt {
   animation-duration: 0.3s;
   animation-iteration-count: infinite;
   font-size: 30px;
-  width: 300px;
   margin-top: 60px;
   border-right: 1px solid #ccc;
 }

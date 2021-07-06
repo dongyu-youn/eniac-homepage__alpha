@@ -8,235 +8,261 @@
     <script src="js/index.js"></script>
     <script src="js/img-slide.js
     "></script>
+    <script src="js/home-box__menu.js"></script>
+    <script src="js/home-box.js"></script>
   </head>
   <body>
-    <nav class="header-bar">
-      <div class="header-bar__column header-bar__logo">
-        <a href="index.html" class="header-bar__a">
-          <img style="z-index: -99" src="img/logo-high.png" />
-        </a>
-      </div>
-      <div class="header-bar__center">
-        <div class="header-bar__fade-slider">
-          <div class="header-bar__fade-slider__slide">
-            <img
-              class="slide1"
-              style="width: 80px; height: 80px"
-              src="img/coding.png"
-            />
-            <img
-              class="slide1"
-              style="width: 80px; height: 80px"
-              src="img/team.png"
-            />
-            <img
-              class="slide1"
-              style="width: 80px; height: 80px"
-              src="img/cap.png"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="header-bar__column header-bar__login">
-        <i class="fas fa-bars fa-lg"></i>
-        <i
-          style="color: black"
-          class="header-bar__text fas fa-search fa-lg"
-        ></i>
-        <span class="header-bar__text header-bar__login-b">
-          <div class="header-box__textbox"></div>
-          Login
-        </span>
-      </div>
-    </nav>
-    <section class="home-wotd">
-      <div class="home-box">
-        <div class="home-box__middle">
-          <figure class="home-box__thumbnail" style="margin-bottom: -155.594px">
-            <img
-              class="home-box__img"
-              src="img/quaritsch-photography-3xQ65cknLPk-unsplash.jpg"
-            />
-          </figure>
-          <div class="home-box__side">
-            <p class="typing-txt">Printf("Hello Eniac");</p>
-            <p class="typing"></p>
-          </div>
-        </div>
-        <div class="home-box__bottom__top">
-          <div class="home-box__introduction">
-            <h4 class="home-box__span">
-              원광대학교 중앙동아리 학술분과 소속 ENIAC (에니악) 입니다.
-              <br />
-              - 1990년도에 설립되었고 학생회관 4층 ENIAC 동아리실에 위치하고
-              있습니다.
-            </h4>
-          </div>
-          <div class="home-box__bottom__bottom">
-            <ul class="home-box__list">
-              <li class="home-box__item">
-                <div class="home-box__circle">
-                  <img
-                    class="home-box__circle__icon"
-                    src="img/trophy.png"
-                    style="height: 40px; width: 40px"
-                  />
-                </div>
-                <div class="home-box__caption">
-                  <div class="home-box__cat">프로젝트</div>
-                </div>
-              </li>
-              <li class="home-box__item">
-                <div class="home-box__circle">
-                  <img
-                    class="home-box__circle__icon"
-                    src="img/trophy.png"
-                    style="height: 40px; width: 40px"
-                  />
-                </div>
-                <div class="home-box__caption">
-                  <div class="home-box__cat">스터디</div>
-                </div>
-              </li>
-              <li class="home-box__item">
-                <div class="home-box__circle">
-                  <img
-                    class="home-box__circle__icon"
-                    src="img/trophy.png"
-                    style="height: 40px; width: 40px"
-                  />
-                </div>
-                <div class="home-box__caption">
-                  <div class="home-box__cat">동아리신청</div>
-                </div>
-              </li>
-              <li>
-                <div class="home-box__text">
-                  <span class="home-box__cat">
-                    회장 권혁준 <br />
-                    학술부장 박승우<br />
-                    기획부장 윤대현 <br />
-                    총무 이시현 <br />
-                  </span>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="home-lecture">
-      <h2>
-        <a href="" class="home-lecture__title">#1학년 필수강의</a>
-      </h2>
-      <div class="home-lecture__list project__list">
-        <article class="single-project">
-          <div>
-            <div class="home-lecture__thumnail">
-              <img src="imga/abc" style="width: 355px; height: 205px" />
-            </div>
-            <h3 class="home-lecture__card_title">c언어 조코딩</h3>
-            <div class="home-lecture__about">
-              <span>31기 2학년 윤동규</span>
-            </div>
-          </div>
-        </article>
-        <article class="single-project">
-          <div>
-            <div class="home-lecture__thumnail">
-              <img src="imga/abc" style="width: 355px; height: 205px" />
-            </div>
-            <h3 class="home-lecture__card_title">파이썬 렛츠스터디</h3>
-            <div class="home-lecture__about">
-              <span>31기 2학년 윤동규</span>
-            </div>
-          </div>
-        </article>
-        <article class="single-project">
-          <div>
-            <div class="home-lecture__thumnail">
-              <img src="imga/abc" style="width: 355px; height: 205px" />
-            </div>
-            <h3 class="home-lecture__card_title">groom python 기초강의</h3>
-            <div class="home-lecture__about">
-              <span>31기 2학년 윤동규</span>
-            </div>
-          </div>
-        </article>
+    <div id="myNav" class="overlay">
+      <a href="" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Studys</a>
+        <a href="#">Enjoy Enaic</a>
       </div>
     </div>
+    <div class="home">
+      <nav class="header-bar">
+        <div class="header-bar__column header-bar__logo">
+          <a href="index.html" class="header-bar__a">
+            <img
+              class="header-bar__image"
+              style="width: 250px; height: 230px; padding: 20px 0px 0px 0px"
+              src="img/logo-db.png"
+            />
+          </a>
+        </div>
+        <div class="header-bar__center">
+          <div class="header-bar__fade-slider">
+            <div class="header-bar__fade-slider__slide">
+              <img
+                class="slide1"
+                style="width: 80px; height: 80px"
+                src="img/coding.png"
+              />
+              <img
+                class="slide1"
+                style="width: 80px; height: 80px"
+                src="img/team.png"
+              />
+              <img
+                class="slide1"
+                style="width: 80px; height: 80px"
+                src="img/cap.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="header-bar__column header-bar__login">
+          <a style="cursor: pointer" onclick="openNav()"
+            ><i class="fas fa-bars fa-lg"></i
+          ></a>
+          <i
+            style="color: black"
+            class="header-bar__text fas fa-search fa-lg"
+          ></i>
+          <a class="header-bar__p">
+            <span class="header-bar__text header-bar__login-b">
+              <!-- <div class="header-box__textbox"></div> -->
+              Login
+            </span>
+          </a>
+        </div>
+      </nav>
+      <section class="home-wotd">
+        <div class="home-box">
+          <div class="home-box__wrapper">
+            <div class="home-box__middle">
+              <figure
+                class="home-box__thumbnail"
+                style="margin-bottom: -155.594px"
+              >
+                <img class="home-box__img" src="img/coding.jpg" />
+              </figure>
+              <div class="home-box__side">
+                <p class="typing-txt">Printf("Hello Eniac");</p>
+                <p class="typing"></p>
+              </div>
+            </div>
+            <div class="home-box__bottom__top">
+              <div class="home-box__introduction">
+                <h4 class="home-box__span">
+                  Eniac은 원광대 중앙동아리 학술분과 소속 중앙동아리입니다<br />
+                  Eniac은 학생회관 4층에 동아리실을 위치하고 있으며 개발자로서의
+                  미래를 설계할수 있는 동아리입니다
+                </h4>
+                <div class="home-box__judges">
+                  <figure class="home-box__single-judes">
+                    <img style="width: 70px" src="img/small-image.jpg" alt="" />
+                  </figure>
+                  <figure>
+                    <img width="70px" src="img/small-img-b.jpg" alt="" />
+                  </figure>
+                  <figure>
+                    <img width="70px" src="img/coding-c.jpg" alt="" />
+                  </figure>
+                  <figure>
+                    <img src="" alt="" />
+                  </figure>
+                </div>
+              </div>
+              <div class="home-box__bottom__bottom">
+                <ul class="home-box__list">
+                  <li class="home-box__item">
+                    <div class="home-box__circle">
+                      <img
+                        class="home-box__circle__icon"
+                        src="img/trophy.png"
+                        style="height: 40px; width: 40px"
+                      />
+                    </div>
+                    <div class="home-box__cat">프로젝트</div>
+                  </li>
+                  <li class="home-box__item">
+                    <div class="home-box__circle">
+                      <img
+                        class="home-box__circle__icon"
+                        src="img/trophy.png"
+                        style="height: 40px; width: 40px"
+                      />
+                    </div>
 
-    <div class="home-lecture">
-      <h2>
-        <a href="" class="home-lecture__title">#2~3 학년 필수강의</a>
-      </h2>
-      <div class="home-lecture__list project__list">
-        <article class="single-project">
-          <div>
-            <div class="home-lecture__thumnail">
-              <img src="imga/abc" style="width: 355px; height: 205px" />
-            </div>
-            <h3 class="home-lecture__card_title">자바 동빈나</h3>
-            <div class="home-lecture__about">
-              <span>31기 2학년 윤동규</span>
-            </div>
-          </div>
-        </article>
-        <article class="single-project">
-          <div>
-            <div class="home-lecture__thumnail">
-              <img src="imga/abc" style="width: 355px; height: 205px" />
-            </div>
-            <h3 class="home-lecture__card_title">파이썬 렛츠스터디</h3>
-            <div class="home-lecture__about">
-              <span>31기 2학년 윤동규</span>
+                    <div class="home-box__cat">스터디</div>
+                  </li>
+                  <li class="home-box__item">
+                    <div class="home-box__circle">
+                      <img
+                        class="home-box__circle__icon"
+                        src="img/trophy.png"
+                        style="height: 40px; width: 40px"
+                      />
+                    </div>
+                    <div class="home-box__cat">동아리신청</div>
+                  </li>
+                  <li>
+                    <div class="home-box__text">
+                      <span class="home-box__cat"> 동아리임원진 </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </article>
-        <article class="single-project">
-          <div>
-            <div class="home-lecture__thumnail">
-              <img src="imga/abc" style="width: 355px; height: 205px" />
+        </div>
+      </section>
+      <div class="home-lecture">
+        <h2>
+          <a href="" class="home-lecture__title">#1학년 필수강의</a>
+        </h2>
+        <div class="home-lecture__list project__list">
+          <article class="single-project">
+            <div>
+              <div class="home-lecture__thumnail">
+                <img src="imga/abc" style="width: 355px; height: 205px" />
+              </div>
+              <h3 class="home-lecture__card_title">c언어 조코딩</h3>
+              <div class="home-lecture__about">
+                <span>31기 2학년 윤동규</span>
+              </div>
             </div>
-            <h3 class="home-lecture__card_title">groom 자바 기초강의</h3>
-            <div class="home-lecture__about">
-              <span>31기 2학년 윤동규</span>
+          </article>
+          <article class="single-project">
+            <div>
+              <div class="home-lecture__thumnail">
+                <img src="imga/abc" style="width: 355px; height: 205px" />
+              </div>
+              <h3 class="home-lecture__card_title">파이썬 렛츠스터디</h3>
+              <div class="home-lecture__about">
+                <span>31기 2학년 윤동규</span>
+              </div>
             </div>
-          </div>
-        </article>
-        <article class="single-project">
-          <div>
-            <div class="home-lecture__thumnail">
-              <img src="imga/abc" style="width: 355px; height: 205px" />
+          </article>
+          <article class="single-project">
+            <div>
+              <div class="home-lecture__thumnail">
+                <img src="imga/abc" style="width: 355px; height: 205px" />
+              </div>
+              <h3 class="home-lecture__card_title">groom python 기초강의</h3>
+              <div class="home-lecture__about">
+                <span>31기 2학년 윤동규</span>
+              </div>
             </div>
-            <h3 class="home-lecture__card_title">카카오톡 클론코딩</h3>
-            <div class="home-lecture__about">
-              <span>31기 2학년 윤동규</span>
+          </article>
+        </div>
+      </div>
+
+      <div class="home-lecture">
+        <h2>
+          <a href="" class="home-lecture__title">#2~3 학년 필수강의</a>
+        </h2>
+        <div class="home-lecture__list project__list">
+          <article class="single-project">
+            <div>
+              <div class="home-lecture__thumnail">
+                <img src="imga/abc" style="width: 355px; height: 205px" />
+              </div>
+              <h3 class="home-lecture__card_title">자바 동빈나</h3>
+              <div class="home-lecture__about">
+                <span>31기 2학년 윤동규</span>
+              </div>
             </div>
-          </div>
-        </article>
-        <article class="single-project">
-          <div>
-            <div class="home-lecture__thumnail">
-              <img src="imga/abc" style="width: 355px; height: 205px" />
+          </article>
+          <article class="single-project">
+            <div>
+              <div class="home-lecture__thumnail">
+                <img src="imga/abc" style="width: 355px; height: 205px" />
+              </div>
+              <h3 class="home-lecture__card_title">파이썬 렛츠스터디</h3>
+              <div class="home-lecture__about">
+                <span>31기 2학년 윤동규</span>
+              </div>
             </div>
-            <h3 class="home-lecture__card_title">SQL 동빈나</h3>
-            <div class="home-lecture__about">
-              <span>31기 2학년 윤동규</span>
+          </article>
+          <article class="single-project">
+            <div>
+              <div class="home-lecture__thumnail">
+                <img src="imga/abc" style="width: 355px; height: 205px" />
+              </div>
+              <h3 class="home-lecture__card_title">groom 자바 기초강의</h3>
+              <div class="home-lecture__about">
+                <span>31기 2학년 윤동규</span>
+              </div>
             </div>
-          </div>
-        </article>
-        <article class="single-project">
-          <div>
-            <div class="home-lecture__thumnail">
-              <img src="imga/abc" style="width: 355px; height: 205px" />
+          </article>
+          <article class="single-project">
+            <div>
+              <div class="home-lecture__thumnail">
+                <img src="imga/abc" style="width: 355px; height: 205px" />
+              </div>
+              <h3 class="home-lecture__card_title">카카오톡 클론코딩</h3>
+              <div class="home-lecture__about">
+                <span>31기 2학년 윤동규</span>
+              </div>
             </div>
-            <h3 class="home-lecture__card_title">머신러닝 봉수동개발자</h3>
-            <div class="home-lecture__about">
-              <span>31기 2학년 윤동규</span>
+          </article>
+          <article class="single-project">
+            <div>
+              <div class="home-lecture__thumnail">
+                <img src="imga/abc" style="width: 355px; height: 205px" />
+              </div>
+              <h3 class="home-lecture__card_title">SQL 동빈나</h3>
+              <div class="home-lecture__about">
+                <span>31기 2학년 윤동규</span>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+          <article class="single-project">
+            <div>
+              <div class="home-lecture__thumnail">
+                <img src="imga/abc" style="width: 355px; height: 205px" />
+              </div>
+              <h3 class="home-lecture__card_title">머신러닝 봉수동개발자</h3>
+              <div class="home-lecture__about">
+                <span>31기 2학년 윤동규</span>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </div>
     <script

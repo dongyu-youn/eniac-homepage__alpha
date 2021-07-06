@@ -48,4 +48,20 @@
   letter-spacing: 0.4em;
   color: #282828;
   z-index: 0;
+  position: relative;
+}
+.header-bar__login-b::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  background: rgba(200, 125, 220, 0.6);
+}
+
+.header-bar__p:hover .header-bar__login-b::after {
+  width: 90%;
+  transition: width 0.3s;
 }
