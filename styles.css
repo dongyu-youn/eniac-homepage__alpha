@@ -1,23 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
+
 /* 스크린 */
+
 @import "screens/home/home-box.css";
 @import "screens/home/home-lecture.css";
-@import "screens/study/study.css";
-@import "screens/study/study-tab.css";
+@import "screens/study.css";
+@import "screens/study-tab.css";
+@import "screens/study.css";
+@import "screens/study-card.css";
 
 /* 컴포넌트 */
+
 @import "components/header-bar.css";
 @import "components/menu.css";
-
 body {
-  background-color: #f1efe9;
-  font-family: "Philosopher", sans-serif;
+    background-color: #f1efe9;
+    font-family: "Philosopher", sans-serif;
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
+
 article,
 aside,
 details,
@@ -29,8 +34,9 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+    display: block;
 }
+
 a,
 abbr,
 acronym,
@@ -112,14 +118,14 @@ u,
 ul,
 var,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 .home-wotd {
-  padding-top: 60px;
-  margin-bottom: 60px;
+    padding-top: 60px;
+    margin-bottom: 60px;
 }

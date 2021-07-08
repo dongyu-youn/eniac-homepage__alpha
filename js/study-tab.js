@@ -1,19 +1,12 @@
-const tabItem = document.querySelector(".tab-container__item");
-const tabContent = document.querySelector(".content-container__content");
+const tabs = document.querySelectorAll("[data-tab-target]");
+const tabcon = document.querySelectorAll("[data-tab-content]");
+tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+        const target = document.querySelector(tab.dataset.tabTarget);
+        tabcon.forEach((tabc_all) => {
+            tabc_all.classList.remove("active");
+        });
 
-tabItem.forEach((item) => {
-  item.addEventListener("click", tabHandler);
+        target.classList.add("active");
+    });
 });
-
-function tabHandler(item) {
-  const tabTarget = item.currentTarget;
-  const target = tabTarget.dataset.tab;
-  tabItem.forEach((title) => {
-    title.classList.remove("active");
-  });
-  tabContent.forEach((target) => {
-    target.classList.remove("target");
-  });
-  document.querySelector("#" + target).classList.add("target");
-  tabTarget.classList.add("active");
-}
