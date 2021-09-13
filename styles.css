@@ -14,6 +14,7 @@
 
 @import "css/components/header-bar.css";
 @import "css/components/menu.css";
+@import "css/question.css";
 body {
     background-color: #f1efe9;
     font-family: "Philosopher", sans-serif;
