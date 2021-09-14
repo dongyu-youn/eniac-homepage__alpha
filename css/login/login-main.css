@@ -1,8 +1,8 @@
 body {
   box-sizing: border-box;
   background-color: #f1efe9;
-  height: 150vh;
-  margin-top: 70px;
+  height: 130vh;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 310px;
+  top: 280px;
 }
 
 .login > input {
