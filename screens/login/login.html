@@ -6,20 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ENIAC-LOGIN</title>
     <link rel="stylesheet" href="../../css/login/login-component.css" />
+    <link rel="stylesheet" href="../../css/login/login-main.css" />
   </head>
   <body>
     <a class="goToHome" href="../../home.html">
       <img class="logo" src="../../img/logo-db.png" />
     </a>
     <form class="login" action="../../home.html">
-      <input class="login__input" type="email" placeholder="EMAIL" required />
       <input
-        class="login__input"
+        class="login__input write"
+        type="email"
+        placeholder="EMAIL"
+        required
+      />
+      <input
+        class="login__input write"
         type="password"
         placeholder="PASSWORD"
         required
       />
-      <input class="login__btn" type="submit" value="LOG IN" />
+      <input class="login__btn btn" type="submit" value="LOG IN" />
       <div class="login__a">
         <a class="login__forgot-password" href="login-find-password.html"
           >Forgot password?</a
