@@ -1,0 +1,45 @@
+@keyframes puff-in-center {
+  0% {
+    transform: scale(2);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 4mm ridge rgba(189, 177, 159, 0.781);
+  padding: 40px 80px;
+  position: absolute;
+  top: 270px;
+  animation: puff-in-center 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
+}
+
+.text__title {
+  color: rgba(0, 0, 0);
+}
+
+.text__content {
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  line-height: 32px;
+}
+
+.continue-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
+  width: 100%;
+}
+
+.continue-btn__btn {
+  width: 30%;
+}
