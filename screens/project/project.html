@@ -1,60 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ENIAC-project</title>
-    <link rel="stylesheet" href="../../css/project.css" />
-    <style>
-        ul {
-            list-style: none;
-        }
-    </style>
-</head>
+    <title>ENIAC-PROJECT</title>
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../../css/project/project-tab.css" />
+  </head>
+  <body>
+    <nav class="header-bar">
+      <div class="header-bar__column header-bar__logo">
+        <a href="../../home.html" class="header-bar__a">
+          <img
+            class="header-bar__image"
+            style="width: 250px; height: 230px; padding: 20px 0px 0px 0px"
+            src="../../img/logo-db.png"
+          />
+        </a>
+      </div>
+      <div class="header-bar__center">
+        <div class="header-bar__fade-slider">
+          <div class="header-bar__fade-slider__slide">
+            <img
+              class="slide1"
+              style="width: 80px; height: 80px"
+              src="../../img/coding.png"
+            />
+            <img
+              class="slide1"
+              style="width: 80px; height: 80px"
+              src="../../img/team.png"
+            />
+            <img
+              class="slide1"
+              style="width: 80px; height: 80px"
+              src="../../img/cap.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header-bar__column header-bar__login">
+        <a style="cursor: pointer" onclick="openNav()"
+          ><i class="fas fa-bars fa-lg"></i
+        ></a>
+        <i
+          style="color: black"
+          class="header-bar__text fas fa-search fa-lg"
+        ></i>
+        <a class="header-bar__p">
+          <span class="header-bar__text header-bar__login-b">
+            <div class="header-box__textbox"></div>
+            Login
+          </span>
+        </a>
+      </div>
+    </nav>
+    <div class="study">
+      <div class="study__inner">
+        <h2 class="study__title">PROJECT</h2>
+      </div>
+      <div class="study-tab">
+        <div class="main">
+          <div class="tabs">
+            <div class="tab" data-tab-target="#tab1">
+              <p>웹</p>
+            </div>
+            <div class="tab" data-tab-target="#tab2">
+              <p>앱</p>
+            </div>
+            <div class="tab" data-tab-target="#tab3">
+              <p>인공지능</p>
+            </div>
+            <div class="tab" data-tab-target="#tab4">
+              <p>게임</p>
+            </div>
+          </div>
+        </div>
 
-<body>
-    <div class="slide_wrapper">
-        <ul class="slides">
-            <li class="pro">
-                <img src="img/1.jpg" />
-                <h2 class="pp">XXX_PROJECT</h2>
-                <h4 class="gg">개발자:ddd, aaa</h4>
-                <a href="">Github Go</a>
-            </li>
-            <li class="pro">
-                <img src="img/1.jpg" />
-                <h2 class="pp">XXX_PROJECT</h2>
-                <h4 class="gg">개발자:ddd, aaa</h4>
-                <a href="">Github Go</a>
-            </li>
-            <li class="pro">
-                <img src="img/1.jpg" />
-                <h2 class="pp">XXX_PROJECT</h2>
-                <h4 class="gg">개발자:ddd, aaa</h4>
-                <a href="">Github Go</a>
-            </li>
-            <li class="pro">
-                <img src="img/1.jpg" />
-                <h2 class="pp">XXX_PROJECT</h2>
-                <h4 class="gg">개발자:ddd, aaa</h4>
-                <a href="">Github Go</a>
-            </li>
-            <li class="pro">
-                <img src="img/1.jpg" />
-                <h2 class="pp">XXX_PROJECT</h2>
-                <h4 class="gg">개발자:ddd, aaa</h4>
-                <a href="">Github Go</a>
-            </li>
-        </ul>
+        <div class="content">
+          <div id="tab1" data-tab-content class="items active">
+            <h2>Tab1</h2>
+          </div>
+          <div id="tab2" data-tab-content class="items">
+            <h2>Tab2</h2>
+          </div>
+          <div id="tab3" data-tab-content class="items">
+            <h2>Tab3</h2>
+          </div>
+          <div id="tab4" data-tab-content class="items">
+            <h2>Tab4</h2>
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="../../js/img-slide.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <span class="prev"><i class="fas fa-angle-left"></i></span>
-    <span class="next"><i class="fas fa-angle-right"></i></span>
-
-    <script src="https://kit.fontawesome.com/524d45db96.js" crossorigin="anonymous"></script>
-    <script src="../../js/project.js"></script>
-</body>
-
+    <script src="../../js/study-tab.js"></script>
+  </body>
 </html>
