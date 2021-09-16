@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENIAC-ask</title>
-    <link rel="stylesheet" href="../css/ask.css">
-    <link rel="stylesheet" href="../css/question.css" />
+    <title>ENIAC-detail</title>
+    <link rel="stylesheet" href="../css/community/comm-create.css">
+    <link rel="stylesheet" href="../css/community/community.css" />
     <link rel="stylesheet" href="../css/components/header-bar.css" />
 </head>
 
@@ -42,7 +42,7 @@
     </nav>
 </header>
 <div class="main__ask">
-    <div class="nav__ask">
+    <div class="nav__ask__detail">
         <ul class="nav-list__ask">
             <li class="nav__btn">
                 <a class="nav__link" href="">코드</a>
@@ -69,9 +69,15 @@
         </div>
 
         <body>
-            <div class="te">t
-                <input type="text" class="te-input" placeholder="제목" />
-                <textarea class="te-ex__jj" placeholder="내용" style=""></textarea>
+            <div class="te">
+                <input type="text" class="te-input" placeholder="김치는 맛있을까?" />
+                <div class="te-text">
+                    <img src="../img/kimchi.jpeg" /> <br>
+                    <span>김치보단 불고기가 진리지 근데 불고기보단 김치가 맛있고 김치보단 불고기가 맛있고
+                        김치전도 맛있고 불고기전은 없고 불고기 피자가 맛있고 피자는 피자빙고고 피자빙고보단
+                        모르겠고 피자보단치킨이지 그럼 치킨나라 피자공주를 먹으면되지
+                    </span>
+                </div>
 
                 <!-- o 일단 필요한 데이터가 제목이랑 카테고리 내용 사진  -->
 
@@ -88,8 +94,8 @@
                     </div>
 
                     <div class="te-comments__k">
-                        <div>
-                            <span><i class="far fa-user-circle"></i></span>
+                        <div class="te-comments__profile">
+                            <span><i class="far fa-user-circle fa-lg"></i></span>
                             <span class="te-comments__kdf name">윤동규</span>
                         </div>
 
@@ -100,8 +106,8 @@
                     </div>
 
                     <div class="te-comments__k">
-                        <div>
-                            <span><i class="far fa-user-circle"></i></span>
+                        <div class="te-comments__profile">
+                            <span><i class="far fa-user-circle fa-lg"></i></span>
                             <span class="te-comments__kdf name">윤동규</span>
                         </div>
 
@@ -112,6 +118,7 @@
                     </div>
 
                 </div>
+
             </div>
             <script src="../js/img-slide.js"></script>
             <script src="../js/home-box__menu.js"></script>
