@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+header.titleWrap {
+  position: fixed;
+  height: 800px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+h1 {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 100px;
+  width: 100%;
+  font-size: 100px;
+  z-index: 1;
+  font-weight: lighter;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.cover {
+  position: fixed;
+  width: 100%;
+  height: 1000px;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.coverImg {
+  position: fixed;
+  width: 100%;
+  height: 1000px;
+  background: url(bg.JPG) center center / cover no-repeat;
+}
+
+section.textWrap {
+  position: relative;
+  width: 100%;
+  margin-top: 800px;
+  padding-top: 100px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.836);
+  z-index: 1;
+}
+
+.innerWrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
+hr {
+  width: 500px;
+  float: left;
+}
+
+.eniacProfile {
+  color: white;
+  font-size: 40px;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.employment {
+  color: white;
+  font-size: 40px;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.awardResultTitle {
+  color: white;
+  font-size: 40px;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.swAwardTitle {
+  color: white;
+  font-size: 40px;
+  font-family: "Black Han Sans", sans-serif;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+.swAwardContent {
+  color: white;
+  font-size: 25px;
+  font-weight: lighter;
+  font-family: "Black Han Sans", sans-serif;
+  padding-top: 30px;
+  padding-left: 100px;
+}
+
+.portFolioTitle {
+  color: white;
+  font-size: 40px;
+  font-family: "Black Han Sans", sans-serif;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+.portFolioContent {
+  color: white;
+  font-size: 25px;
+  font-weight: lighter;
+  font-family: "Black Han Sans", sans-serif;
+  padding-top: 30px;
+  padding-left: 100px;
+}
+
+.educationTitle {
+  color: white;
+  font-size: 40px;
+  font-family: "Black Han Sans", sans-serif;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+.educationContent {
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: "Black Han Sans", sans-serif;
+  padding-top: 30px;
+  padding-left: 100px;
+}
+
+.swAwardButton {
+  color: white;
+  font-size: 15px;
+  background-color: black;
+  border: 0;
+  outline: 0;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.portFolioButton {
+  color: white;
+  font-size: 15px;
+  background-color: black;
+  border: 0;
+  outline: 0;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.educationButton {
+  color: white;
+  font-size: 15px;
+  background-color: black;
+  border: 0;
+  outline: 0;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.developTitle {
+  color: white;
+  font-size: 40px;
+  font-family: "Black Han Sans", sans-serif;
+  padding-top: 30px;
+}
+
+.developContent {
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: "Black Han Sans", sans-serif;
+  padding-top: 30px;
+  padding-left: 100px;
+}
