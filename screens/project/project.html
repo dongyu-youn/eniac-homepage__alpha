@@ -56,41 +56,24 @@
         </a>
       </div>
     </nav>
-    <div class="study">
-      <div class="study__inner">
-        <h2 class="study__title">PROJECT</h2>
-      </div>
-      <div class="study-tab">
-        <div class="main">
-          <div class="tabs">
-            <div class="tab" data-tab-target="#tab1">
-              <p>웹</p>
-            </div>
-            <div class="tab" data-tab-target="#tab2">
-              <p>앱</p>
-            </div>
-            <div class="tab" data-tab-target="#tab3">
-              <p>인공지능</p>
-            </div>
-            <div class="tab" data-tab-target="#tab4">
-              <p>게임</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="content">
-          <div id="tab1" data-tab-content class="items active">
-            <h2>Tab1</h2>
-          </div>
-          <div id="tab2" data-tab-content class="items">
-            <h2>Tab2</h2>
-          </div>
-          <div id="tab3" data-tab-content class="items">
-            <h2>Tab3</h2>
-          </div>
-          <div id="tab4" data-tab-content class="items">
-            <h2>Tab4</h2>
-          </div>
+    <div class="project">
+        <h2 class="project__title">PROJECT</h2>
+        <ul class="project__tab-menu">
+          <li ><a href="#tab1" class="active" >웹</a></li>
+          <li><a href="#tab2">앱</a></li>
+          <li><a href="#tab3">AI</a></li>
+          <li><a href="#tab4">게임</a></li>
+          <li><a href="#tab5">보안</a></li>
+          <li><a href="#tab6">Etc</a></li>
+          <li><a href="#tab7"></a></li>
+        </ul>
+        <div class="project__tab-content">
+          <div id="tab1" class="active">tab1에 들어갈 내용</div>
+          <div id="tab2">tab2에 들어갈 내용</div>
+          <div id="tab3">tab3에 들어갈 내용</div>
+          <div id="tab4">tab4에 들어갈 내용</div>
+          <div id="tab5">tab5에 들어갈 내용</div>
+          <div id="tab6">tab6에 들어갈 내용</div>
         </div>
       </div>
     </div>
@@ -100,6 +83,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="../../js/study-tab.js"></script>
+    <script src="../../js/project-tab.js"></script>
   </body>
 </html>
