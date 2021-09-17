@@ -2,6 +2,10 @@
 @import url("./nav.css");
 @import url("./sub_news.css");
 @import url("./write.css");
+* {
+    text-decoration: none;
+}
+
 body {
     background-color: #f1efe9;
     margin: 0;
