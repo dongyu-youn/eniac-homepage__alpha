@@ -7,6 +7,7 @@
     <title>ENIAC-PROJECT</title>
     <link rel="stylesheet" href="../../styles.css" />
     <link rel="stylesheet" href="../../css/project/project-tab.css" />
+    <link rel="stylesheet" href="../../css/project/project-slide.css" />
   </head>
   <body>
     <nav class="header-bar">
@@ -68,7 +69,28 @@
           <li><a href="#tab7"></a></li>
         </ul>
         <div class="project__tab-content">
-          <div id="tab1">tab1에 들어갈 내용</div>
+          <div id="tab1"> 
+            <div class="slide_wrapper">
+              <ul class="slides">
+                <li><img src="http://placehold.it/200x250" alt="" /></li>
+                <li><img src="http://placehold.it/200x250" alt="" /></li>
+                <li><img src="http://placehold.it/200x250" alt="" /></li>
+                <li><img src="http://placehold.it/200x250" alt="" /></li>
+                <li><img src="http://placehold.it/200x250" alt="" /></li>
+                <li><img src="http://placehold.it/200x250" alt="" /></li>
+                <li><img src="http://placehold.it/200x250" alt="" /></li>
+                <li><img src="http://placehold.it/200x250" alt="" /></li>
+              </ul>
+              <div class="controls">
+                <span class="prev"><i class="fas fa-angle-left"></i></span>
+                <span class="next"><i class="fas fa-angle-right"></i></span>
+              </div>
+            </div>
+            <form class="create-project" action="project-create.html">
+              <input type="submit" value="Create Project"/>
+            </form>
+
+        </div>
           <div id="tab2">tab2에 들어갈 내용</div>
           <div id="tab3">tab3에 들어갈 내용</div>
           <div id="tab4">tab4에 들어갈 내용</div>
@@ -84,5 +106,7 @@
     ></script>
 
     <script src="../../js/project-tab.js"></script>
+    <script src="../../js/project-slide.js"></script>
+    
   </body>
 </html>

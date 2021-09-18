@@ -5,8 +5,7 @@ body {
 .project {
   /* position안하면 nav랑 겹침..(왤까) */
   position: relative;
-  padding: 200px 18% 125px 20%;
-  width: 100%;
+  padding: 200px 0px 125px 25%;
 }
 
 .project__title {
@@ -21,14 +20,14 @@ body {
 
 .project__tab-menu > li {
   display: block;
-  width: 7%;
+  width: 8%;
   padding-bottom: 13px;
   text-align: center;
   font-weight: bold;
 }
 .project__tab-menu > li:last-child {
   /* 걍 탭 크기 예쁘게 맞추려고 했는데 방안이 이것밖에 생각 안남.. */
-  width: 21%;
+  width: 22%;
   margin-top: 22px;
 }
 .project__tab-menu li:last-child a {

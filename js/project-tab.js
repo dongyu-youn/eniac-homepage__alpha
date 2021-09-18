@@ -7,7 +7,6 @@ for (let i = 0; i < tabLink.length; i++) {
 
     const orgTarget = e.target.getAttribute("href"); //클릭된 탭의 속성인 href를 가져옴
     const tabTarget = orgTarget.replace("#", ""); // 그 href에서 #을 없애줌
-    console.log(tabTarget);
 
     for (let j = 0; j < tabLink.length; j++) {
       tabLink[j].classList.remove("active"); //모든 tablink active없애주는데
