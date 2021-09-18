@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+html {
+    overflow-y: scroll;
+}
+
 body {
     background-color: #f1efe9;
     margin: 0;
