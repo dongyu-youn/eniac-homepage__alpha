@@ -18,7 +18,7 @@ body {
 .own {
     position: relative;
     width: 100%;
-    margin-left: 0%;
+    margin-left: 10px;
     align-items: center;
     /* o 세로 중간배열 */
 }
