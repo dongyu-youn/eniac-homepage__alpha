@@ -1,4 +1,4 @@
-let scrollTop = 0;
+    let scrollTop = 0;
     let h1;
     let coverImg;
     let cover;

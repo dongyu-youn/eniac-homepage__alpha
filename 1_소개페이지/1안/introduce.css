@@ -56,11 +56,6 @@ section.textWrap {
   margin: 0 auto;
 }
 
-hr {
-  width: 500px;
-  float: left;
-}
-
 .eniacProfile {
   color: white;
   font-size: 40px;
@@ -81,7 +76,7 @@ hr {
 
 .swAwardTitle {
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   font-family: "Black Han Sans", sans-serif;
   padding-top: 30px;
   padding-left: 20px;
@@ -89,44 +84,44 @@ hr {
 
 .swAwardContent {
   color: white;
-  font-size: 25px;
-  font-weight: lighter;
+  font-size: 20px;
+  font-weight: 100;
   font-family: "Black Han Sans", sans-serif;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-left: 100px;
 }
 
 .portFolioTitle {
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   font-family: "Black Han Sans", sans-serif;
-  padding-top: 30px;
+  padding-top: 70px;
   padding-left: 20px;
 }
 
 .portFolioContent {
   color: white;
-  font-size: 25px;
-  font-weight: lighter;
+  font-size: 20px;
+  font-weight: 100;
   font-family: "Black Han Sans", sans-serif;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-left: 100px;
 }
 
 .educationTitle {
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   font-family: "Black Han Sans", sans-serif;
-  padding-top: 30px;
+  padding-top: 70px;
   padding-left: 20px;
 }
 
 .educationContent {
   color: white;
   font-size: 20px;
-  font-weight: lighter;
+  font-weight: 100;
   font-family: "Black Han Sans", sans-serif;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-left: 100px;
 }
 
@@ -161,7 +156,7 @@ hr {
   color: white;
   font-size: 40px;
   font-family: "Black Han Sans", sans-serif;
-  padding-top: 30px;
+  padding-top: 100px;
 }
 
 .developContent {
@@ -171,4 +166,104 @@ hr {
   font-family: "Black Han Sans", sans-serif;
   padding-top: 30px;
   padding-left: 100px;
+}
+
+.studyActivityTitle {
+  color: white;
+  font-size: 40px;
+  font-family: "Black Han Sans", sans-serif;
+  padding-top: 100px;
+}
+
+.studyActivityFirstTitle {
+  color: white;
+  font-size: 40px;
+  font-family: "Black Han Sans", sans-serif;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+.studyActivityFirstContent {
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: "Black Han Sans", sans-serif;
+  padding-top: 30px;
+  padding-left: 100px;
+}
+
+.studyActivitySecondTitle {
+  color: white;
+  font-size: 40px;
+  font-family: "Black Han Sans", sans-serif;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+.studyActivitySecondContent {
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: "Black Han Sans", sans-serif;
+  padding-top: 30px;
+  padding-left: 100px;
+}
+
+.characteristic__Benefit {
+  color: white;
+  font-size: 40px;
+  font-family: "Black Han Sans", sans-serif;
+  padding-top: 100px;
+}
+
+.characteristic {
+  color: white;
+  font-size: 40px;
+  font-family: "Black Han Sans", sans-serif;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+.room {
+  color: white;
+  font-size: 50px;
+  font-family: "Black Han Sans", sans-serif;
+  padding-top: 70px;
+  padding-left: 20px;
+}
+
+.roomContent {
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: "Black Han Sans", sans-serif;
+  padding-top: 30px;
+  padding-left: 100px;
+}
+
+.information {
+  color: white;
+  font-size: 50px;
+  font-family: "Black Han Sans", sans-serif;
+  padding-top: 50px;
+  padding-left: 20px;
+}
+
+.informationContent {
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: "Black Han Sans", sans-serif;
+  padding-top: 30px;
+  padding-left: 100px;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration-line: none;
+  font-family: "Black Han Sans", sans-serif;
+  color: white;
 }

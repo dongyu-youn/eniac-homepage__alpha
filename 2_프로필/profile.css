@@ -1,4 +1,4 @@
-.studyBox {
+.ProfileBox {
   width: 1200px;
   height: 700px;
   position: absolute;
@@ -8,65 +8,51 @@
   border-radius: 10px;
 }
 
-.studyTitle {
+.ProfileTitle {
   font-family: "Do Hyeon", sans-serif;
   font-size: 50px;
 }
 
-.field {
+.year {
   display: flex;
 }
 
-.fieldWeb {
+.year1st {
   font-family: "Do Hyeon", sans-serif;
   font-size: 25px;
   width: 100px;
   text-align: center;
 }
 
-.fieldApp {
+.year2nd {
   font-family: "Do Hyeon", sans-serif;
   font-size: 25px;
   width: 100px;
   text-align: center;
 }
 
-.fieldAI {
+.year3rd {
   font-family: "Do Hyeon", sans-serif;
   font-size: 25px;
   width: 100px;
   text-align: center;
 }
 
-.fieldGame {
+.year4th {
   font-family: "Do Hyeon", sans-serif;
   font-size: 25px;
   width: 100px;
   text-align: center;
 }
 
-.security {
-  font-family: "Do Hyeon", sans-serif;
-  font-size: 25px;
-  width: 100px;
-  text-align: center;
-}
-
-.algorithm {
-  font-family: "Do Hyeon", sans-serif;
-  font-size: 25px;
-  width: 100px;
-  text-align: center;
-}
-
-.studyField1stset {
+.profileField1stset {
   display: flex;
   width: 1000px;
   height: 200px;
   border-radius: 10px;
 }
 
-.studyField1st {
+.profileField {
   width: 400px;
   height: 200px;
   border: 1px solid black;
@@ -76,20 +62,20 @@
   display: flex;
 }
 
-.study__field__left {
+.profile__field__left {
   display: block;
 }
 
-.study__img {
+.profile__img {
   width: 100px;
   height: 100px;
   margin-top: 20px;
   margin-left: 40px;
-  border-radius: 10px;
+  border-radius: 50%;
   border: 1px solid black;
 }
 
-.study_1st_apply {
+.profile_apply {
   width: 80px;
   height: 40px;
   font-family: "Do Hyeon", sans-serif;
@@ -97,33 +83,19 @@
   margin-top: 10px;
 }
 
-.study_field__right {
+.profile_field__right {
   margin: 30px;
   font-family: "Do Hyeon", sans-serif;
 }
 
-.study_1st_title {
-  font-size: 25px;
+.profile_name {
+  font-size: 30px;
 }
 
-.studyField2ndset {
+.profileField2ndset {
   margin-top: 50px;
   display: flex;
   width: 1000px;
   height: 200px;
   border-radius: 10px;
-}
-
-.studyField2nd {
-  width: 400px;
-  height: 200px;
-  border: 1px solid black;
-  margin-top: 50px;
-  margin-left: 100px;
-  border-radius: 10px;
-  display: flex;
-}
-
-.study_1st_dateSet {
-  margin-top: -20px;
 }

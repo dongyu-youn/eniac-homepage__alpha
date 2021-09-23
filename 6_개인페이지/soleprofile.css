@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+
+input[id="menuicon"] {
+  display: none;
+}
+
+input[id="menuicon"] + label {
+  display: block;
+  margin: 30px;
+  width: 60px;
+  height: 50px;
+  position: fixed;
+  cursor: pointer;
+  right: 0;
+}
+
+input[id="menuicon"] + label span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  border-radius: 30px;
+  background: #000;
+  transition: all 0.35s;
+}
+
+input[id="menuicon"] + label span:nth-child(1) {
+  top: 0;
+}
+
+input[id="menuicon"] + label span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+input[id="menuicon"] + label span:nth-child(3) {
+  bottom: 0;
+}
+
+input[id="menuicon"]:checked + label {
+  z-index: 2;
+}
+
+input[id="menuicon"]:checked + label span {
+  background: #fff;
+}
+
+input[id="menuicon"]:checked + label span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+input[id="menuicon"]:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+
+input[id="menuicon"]:checked + label span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+div[class="sidebar"] {
+  width: 300px;
+  height: 100%;
+  background: #222;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  z-index: 1;
+  transition: all 0.35s;
+}
+
+input[id="menuicon"]:checked + label + div {
+  right: 0;
+}
+
+.profile__img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.profile__textSet {
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.profile__department {
+  margin: 0 auto;
+  color: white;
+  font-size: 20px;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.profile__myname {
+  margin: 0 auto;
+  color: white;
+  font-size: 20px;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.my__activity {
+  margin-top: 60px;
+  margin-left: 10px;
+}
+
+.my_writtenPage__title {
+  color: white;
+  font-size: 20px;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.my_application__title {
+  color: white;
+  font-size: 20px;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+li {
+  color: white;
+  font-size: 20px;
+  font-family: "Black Han Sans", sans-serif;
+}
