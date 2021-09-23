@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENIAC-login__join</title>
+    <link rel="stylesheet" href="../../css/login/component.css" />
+    <link rel="stylesheet" href="../../css/login/login-join.css" />
+  </head>
+  <body>
+    <a href="../../home.html">
+      <img class="logo" src="../../img/logo-db.png" />
+    </a>
+    <form class="join" action="login-join-done.html">
+      <div class="wrap">
+        <div class="wrap__wrap">
+          <input
+            class="join__img"
+            type="file"
+            accept="image/png, image/jpeg, image/jpg, image/svg"
+            value="프로필사진"
+            required
+          />
+        </div>
+        <div class="wrap__wrap">
+          <input
+            class="join__write-short"
+            type="text"
+            placeholder="성명"
+            required
+          />
+          <input
+            class="join__write-short"
+            type="text"
+            placeholder="학년"
+            required
+          />
+          <input
+            class="join__write-short"
+            type="text"
+            placeholder="ENIAC 기수"
+            required
+          />
+        </div>
+      </div>
+      <div class="wrap">
+        <input
+          class="join__write-long"
+          type="text"
+          placeholder="관심분야(ex.Web/App/AI/···)"
+          required
+        />
+        <input
+          class="join__write-long"
+          type="email"
+          placeholder="EMAIL"
+          required
+        />
+        <input
+          class="join__write-long"
+          type="password"
+          placeholder="PASSWORD"
+          required
+          minlength="8"
+        />
+        <input
+          class="join__write-long"
+          type="password"
+          placeholder="CONFIRM PASSWORD"
+          required
+          minlength="8"
+        />
+        <input class="join__btn" type="submit" value="Creat Account" required />
+      </div>
+    </form>
+  </body>
+</html>
