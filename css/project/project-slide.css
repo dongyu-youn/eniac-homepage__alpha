@@ -29,6 +29,10 @@ li {
   margin-right: 30px;
 }
 
+.slides li img:hover {
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+}
+
 .controls {
   text-align: center;
   margin-top: 80px;
