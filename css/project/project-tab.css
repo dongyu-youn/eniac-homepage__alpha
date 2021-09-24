@@ -1,0 +1,50 @@
+body {
+    height: 150vh;
+}
+
+.project {
+    /* position안하면 nav랑 겹침..(왤까) */
+    position: relative;
+    padding: 200px 0px 125px 25%;
+}
+
+.project__title {
+    font-size: 34px;
+    opacity: 0.6;
+}
+
+.project__tab-menu {
+    display: flex;
+    margin-top: 50px;
+}
+
+.project__tab-menu>li {
+    display: block;
+    width: 8%;
+    padding-bottom: 13px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.project__tab-menu li:last-child a {
+    cursor: default;
+}
+
+.project__tab-menu a {
+    display: block;
+    padding-bottom: 13px;
+    width: 100%;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.6);
+}
+
+.project__tab-menu li a.active {
+    /* 선택된 탭 */
+    border-bottom: 3px solid white;
+}
+
+.project__tab-content>div {
+    /* 처음에 내용들 안보이게 */
+    display: none;
+}

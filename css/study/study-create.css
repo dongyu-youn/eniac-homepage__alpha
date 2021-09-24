@@ -1,0 +1,39 @@
+.study-form {
+    padding: 100px 0px 100px 0px;
+}
+
+.study-form__wrapper {
+    width: 800px;
+    position: relative;
+    left: 25px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.study-form__wrapper h1 {
+    font-weight: 800;
+    font-size: 21px;
+    letter-spacing: 0.06em;
+    margin-bottom: 60px;
+}
+
+.study-form [type="text"] {
+    width: 100%;
+    border-bottom: 1px solid #8d8c8c;
+    color: #282828;
+    padding: 20px 0;
+    margin-bottom: 51px;
+    outline: none;
+}
+
+.study-form__wrapper input {
+    border: none;
+}
+
+.study-form__wrapper>* {
+    margin-top: 40px;
+    background: 0 0;
+    letter-spacing: 0.38em;
+}
