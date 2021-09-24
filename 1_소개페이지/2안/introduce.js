@@ -1,0 +1,29 @@
+let scrollTop = 0;
+let h1;
+let coverImg;
+let cover;
+
+window.onload = function(){
+    h1 = document.getElementsByTagName("h1")[0];
+    coverImg = document.getElementsByClassName("coverImg")[0];
+    cover = document.getElementsByClassName("cover")[0];
+    cover.style.opacity = .3;
+}
+
+window.addEventListener("scroll", function(e){
+    scrollTop = document.documentElement.scrollTop;
+    h1.style.transform = "translate(0,"+ -scrollTop/10 +"px)";
+    coverImg.style.transform = "scale("+ (1 + scrollTop/1000) +")";
+    cover.style.opacity = .3 + scrollTop / 1000;
+});
+
+function toggleDiv() {
+    const div = document.getElementById('contentSet');
+    
+    if(div.style.visibility === 'hidden')  {
+      div.style.visibility = 'visible';
+    }else {
+      div.style.visibility = 'hidden';
+    }
+
+} 

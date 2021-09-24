@@ -1,0 +1,49 @@
+.nav {
+    display: flex;
+    margin-top: 100px;
+    left: 0;
+    height: 100%;
+    margin-left: 90px;
+    justify-content: flex-start;
+}
+
+.nav__ask {
+    display: flex;
+    margin-top: 200px;
+    height: 100%;
+    margin-right: 10px;
+    justify-content: flex-end;
+}
+
+.nav__ask__detail {
+    display: flex;
+    margin-top: 200px;
+    height: 100%;
+}
+
+.nav__list {
+    left: 4;
+    height: 100%;
+}
+
+.nav-list__ask {
+    left: 4;
+    height: 100%;
+    justify-content: center;
+}
+
+.nav__btn {
+    padding: 18px 13px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav__btn:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.nav__link {
+    color: black;
+    font-size: 15px;
+}

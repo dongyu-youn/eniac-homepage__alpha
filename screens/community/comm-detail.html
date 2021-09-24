@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 게시판 글쓰기 -->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENIAC-detail</title>
+    <link rel="stylesheet" href="../../css/community/comm-create.css" />
+    <link rel="stylesheet" href="../../css/community/community.css" />
+    <link rel="stylesheet" href="../../css/components/header-bar.css" />
+</head>
+
+<header>
+    <nav class="header-bar">
+        <div class="header-bar__columㅛn header-bar__logo">
+            <a href="index.html" class="header-bar__a">
+                <img class="header-bar__image" style="width: 250px; height: 230px; padding: 20px 0px 0px 0px" src="../../img/logo-db.png" />
+            </a>
+        </div>
+        <div class="header-bar__center">
+            <div class="header-bar__fade-slider">
+                <div class="header-bar__fade-slider__slide">
+                    <img class="slide1" style="width: 80px; height: 80px" src="../../img/coding.png" />
+                    <img class="slide1" style="width: 80px; height: 80px" src="../../img/team.png" />
+                    <img class="slide1" style="width: 80px; height: 80px" src="../../img/cap.png" />
+                </div>
+            </div>
+        </div>
+        <div class="header-bar__column header-bar__login">
+            <a style="cursor: pointer" onclick="openNav()"><i class="fas fa-bars fa-lg"></i
+        ></a>
+            <i style="color: black" class="header-bar__text fas fa-search fa-lg"></i>
+            <a class="header-bar__p">
+                <span class="header-bar__text header-bar__login-b">
+            <!-- <div class="header-box__textbox"></div> -->
+            Login
+          </span>
+            </a>
+        </div>
+    </nav>
+</header>
+<div class="main__ask__create">
+    <div class="nav__ask__detail">
+        <ul class="nav-list__ask">
+            <li class="nav__btn">
+                <a class="nav__link" href="">코드</a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="">동아리활동</a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="">대회/봉사/특강</a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="">새내기 게시판</a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="">자유 게시판</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-bar__ask">
+        <div class="main-bar__ques"></div>
+
+        <body>
+            <div class="te">
+                <input type="text" class="te-input" placeholder="김치는 맛있을까?" />
+                <div class="te-text">
+                    <img src="../../img/kimchi.jpeg" /> <br />
+                    <span>김치보단 불고기가 진리지 근데 불고기보단 김치가 맛있고 김치보단
+              불고기가 맛있고 김치전도 맛있고 불고기전은 없고 불고기 피자가
+              맛있고 피자는 피자빙고고 피자빙고보단 모르겠고 피자보단치킨이지
+              그럼 치킨나라 피자공주를 먹으면되지
+            </span>
+                </div>
+                <div class="te-profile">
+                    <i class="far fa-user-circle fa-lg"></i>
+                    <span>윤동규님의 게시글 더보기 ></span>
+                </div>
+                <!-- o 일단 필요한 데이터가 제목이랑 카테고리 내용 사진  -->
+
+                <div class="te-comments">
+                    <div class="te-header">
+                        <span>댓글-2</span>
+                        <a href="/">최신순</a>
+                        <a href="/">등록순</a>
+                    </div>
+
+                    <div class="te-comments__a">
+                        <textarea class="te-comments__j" placeholder="댓글을 작성해주세요" style="resize: none"></textarea>
+                        <button class="te-comments__but" type="submit">작성</button>
+                    </div>
+
+                    <div class="te-comments__k">
+                        <div class="te-comments__profile">
+                            <span><i class="far fa-user-circle fa-lg"></i></span>
+                            <span class="te-comments__kdf name">윤동규</span>
+                        </div>
+                        <div class="te-comments__profile">
+                            <h5 class="te-comments__kdf comment">이게 정답인듯 합니다.</5h>
+                                <br />
+                                <div class="te-comments__box-b">
+                                    <h6 class="te-comments__kdf date">2021-08-09 21:32</h6>
+                                    <button class="te-comments__kdf go">답글</button>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="te-comments__k">
+                        <div class="te-comments__profile">
+                            <span><i class="far fa-user-circle fa-lg"></i></span>
+                            <span class="te-comments__kdf name">윤동규</span>
+                        </div>
+                        <div class="te-comments__profile">
+                            <h5 class="te-comments__kdf comment">이게 정답인듯 합니다.</5h>
+                                <br />
+                                <div class="te-comments__box-b">
+                                    <h6 class="te-comments__kdf date">2021-08-09 21:32</h6>
+                                    <button class="te-comments__kdf go">답글</button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="../../js/img-slide.js"></script>
+            <script src="../../js/home-box__menu.js"></script>
+            <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+        </body>
+    </div>
+</div>
+
+</html>

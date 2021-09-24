@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+header.titleWrap {
+  position: fixed;
+  height: 800px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+h1 {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 100px;
+  width: 100%;
+  font-size: 100px;
+  z-index: 1;
+  font-weight: lighter;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.cover {
+  position: fixed;
+  width: 100%;
+  height: 1000px;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.coverImg {
+  position: fixed;
+  width: 100%;
+  height: 1000px;
+  background: url(bg.JPG) center center / cover no-repeat;
+}
+
+section.textWrap {
+  position: relative;
+  width: 100%;
+  margin-top: 800px;
+  padding-top: 100px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  background-color: rgba(109, 109, 109, 0.836);
+  z-index: 1;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration-line: none;
+  font-family: "Black Han Sans", sans-serif;
+  color: white;
+}
+
+.fa-angle-double-down {
+  color: white;
+  background-color: black;
+}
+
+.openBtn {
+  width: 100%;
+  cursor: pointer;
+  font-size: 50px;
+  font-family: "Black Han Sans", sans-serif;
+  justify-content: center;
+  text-align: center;
+  margin-top: -100px;
+}
+
+.eniacProfile {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.establishSet {
+  width: 150px;
+  height: 300px;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.establishImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: grid;
+  place-content: center;
+  font-size: 75px;
+}
+
+.establishTitle {
+  text-align: center;
+}
+
+.establishDate {
+  text-align: center;
+}
+
+.personnelSet {
+  width: 150px;
+  height: 300px;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.personnelImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: grid;
+  place-content: center;
+  font-size: 75px;
+}
+
+.personnelTitle {
+  text-align: center;
+}
+
+.personnelNumber {
+  text-align: center;
+}
+
+.benefitSet {
+  width: 150px;
+  height: 300px;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.benefitImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: grid;
+  place-content: center;
+  font-size: 75px;
+}
+
+.benefitTitle {
+  text-align: center;
+}
+
+.benefitContent {
+  text-align: center;
+}
+
+.benefitPlus {
+  text-align: center;
+  cursor: pointer;
+}
+
+.awardTitle {
+  font-family: "Black Han Sans", sans-serif;
+  text-align: center;
+  font-size: 50px;
+}
+
+.awardContentSet {
+  display: flex;
+}
+
+.awardImg {
+  width: 600px;
+  height: 400px;
+  margin-left: 300px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.awardContentText {
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+.awardPlus {
+  cursor: pointer;
+}
+
+.developResultSet {
+  margin-top: 300px;
+}
+
+.developContentSet {
+  display: flex;
+}
+
+.developTitle {
+  font-family: "Black Han Sans", sans-serif;
+  text-align: center;
+  font-size: 50px;
+}
+
+.developImg {
+  width: 600px;
+  height: 400px;
+  margin-left: 300px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.developContentText {
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+.developPlus {
+  cursor: pointer;
+}
+
+.characteristic {
+  justify-content: center;
+  text-align: center;
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 30px;
+}

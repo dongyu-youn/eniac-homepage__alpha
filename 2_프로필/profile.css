@@ -1,0 +1,101 @@
+.ProfileBox {
+  width: 1200px;
+  height: 700px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+.ProfileTitle {
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 50px;
+}
+
+.year {
+  display: flex;
+}
+
+.year1st {
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 25px;
+  width: 100px;
+  text-align: center;
+}
+
+.year2nd {
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 25px;
+  width: 100px;
+  text-align: center;
+}
+
+.year3rd {
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 25px;
+  width: 100px;
+  text-align: center;
+}
+
+.year4th {
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 25px;
+  width: 100px;
+  text-align: center;
+}
+
+.profileField1stset {
+  display: flex;
+  width: 1000px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.profileField {
+  width: 400px;
+  height: 200px;
+  border: 1px solid black;
+  margin-top: 50px;
+  margin-left: 100px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.profile__field__left {
+  display: block;
+}
+
+.profile__img {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 40px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.profile_apply {
+  width: 80px;
+  height: 40px;
+  font-family: "Do Hyeon", sans-serif;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.profile_field__right {
+  margin: 30px;
+  font-family: "Do Hyeon", sans-serif;
+}
+
+.profile_name {
+  font-size: 30px;
+}
+
+.profileField2ndset {
+  margin-top: 50px;
+  display: flex;
+  width: 1000px;
+  height: 200px;
+  border-radius: 10px;
+}

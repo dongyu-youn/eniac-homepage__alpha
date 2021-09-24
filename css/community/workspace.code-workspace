@@ -1,0 +1,16 @@
+{
+    "folders": [
+		{
+			"name": "eniac-homepage__alpha",
+			"path": "../.."
+		},
+		{
+			"name": "css",
+			"path": "../../../eniac/eniac-homepage__alpha/css"
+		}
+	],
+    "settings": {
+        "liveServer.settings.port": 5502,
+        "liveServer.settings.multiRootWorkspaceName": "eniac-homepage__alpha"
+    }
+}
