@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ENIAC-PROJECT-CREATE</title>
+    <link rel="stylesheet" href="../../css/project/dropdown.css" />
     <link rel="stylesheet" href="../../styles.css" />
     <link rel="stylesheet" href="../../css/project/project-create.css" />
     <script src="../../js/img-slide.js"></script>
@@ -59,7 +60,7 @@
     </nav>
     <main>
       <h1>CREATE PROJECT</h1>
-      <form class="project">
+      <form class="project" action="project.html">
         <div class="wrap">
           <div class="wrap__wrap">
             <input
@@ -91,6 +92,42 @@
             />
           </div>
         </div>
+        <div class="dropdown">
+          <button type="button" class="dropdown-toggle">프로젝트 주제</button>
+
+          <ul class="dropdown-menu">
+            <li class="dropdown-item">
+              <button type="button" value="1" class="dropdown-option">
+                웹
+              </button>
+            </li>
+            <li class="dropdown-item">
+              <button type="button" value="2" class="dropdown-option">
+                앱
+              </button>
+            </li>
+            <li class="dropdown-item">
+              <button type="button" value="3" class="dropdown-option">
+                AI
+              </button>
+            </li>
+            <li class="dropdown-item">
+              <button type="button" value="4" class="dropdown-option">
+                게임
+              </button>
+            </li>
+            <li class="dropdown-item">
+              <button type="button" value="5" class="dropdown-option">
+                보안
+              </button>
+            </li>
+            <li class="dropdown-item">
+              <button type="button" value="6" class="dropdown-option">
+                Etc
+              </button>
+            </li>
+          </ul>
+        </div>
         <div class="wrap">
           <div class="dropdown"></div>
           <textarea
@@ -109,5 +146,6 @@
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="../../js/dropdown.js"></script>
   </body>
 </html>
