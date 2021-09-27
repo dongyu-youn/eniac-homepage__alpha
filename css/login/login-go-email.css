@@ -3,6 +3,17 @@
   top: 290px;
 }
 
+@media screen and (min-width: 600px) {
+  .send-sentence {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .send-sentence {
+    width: 75%;
+  }
+}
+
 .send-sentence__content {
   border: thick double rgba(0, 0, 0, 0.3);
   background-color: white;

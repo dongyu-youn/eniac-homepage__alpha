@@ -17,7 +17,6 @@
   justify-content: center;
   align-items: center;
   border: 4mm ridge rgba(189, 177, 159, 0.781);
-  padding: 40px 80px;
   position: absolute;
   top: 270px;
   animation: puff-in-center 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
@@ -40,6 +39,19 @@
   width: 100%;
 }
 
-.continue-btn__btn {
-  width: 30%;
+@media screen and (min-width: 600px) {
+  .text {
+    padding: 40px 80px;
+  }
+  .continue-btn__btn {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .text {
+    padding: 6% 12%;
+  }
+  .continue-btn__btn {
+    width: 87%;
+  }
 }
