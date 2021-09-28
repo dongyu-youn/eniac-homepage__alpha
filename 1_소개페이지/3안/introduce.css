@@ -1,10 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+
+/*기본 셋팅*/
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+header {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Black Han Sans", sans-serif;
+}
+
+.main_Title {
+    font-size: 200px;
+    color: white;
+    text-shadow: 6px 2px 2px black;
+}
+
+.header_Title {
+    display: none;
+}
+
+
+/*토글*/
+
 #toc-content {
-  display: none;
+    display: none;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    margin: -10px;
 }
+
 #toc-toggle {
-  cursor: pointer;
-  color: #2962ff;
+    cursor: pointer;
+    color: white;
 }
+
 #toc-toggle:hover {
-  text-decoration: underline;
+    text-decoration: underline;
+}
+
+#toc-toggle {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+
+/*내용*/
+
+.eniacProfile {
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-around;
+}
+
+.establishSet {
+    width: 150px;
+    height: 300px;
+    font-family: "Black Han Sans", sans-serif;
+}
+
+.establishImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: grid;
+    place-content: center;
+    font-size: 75px;
+}
+
+.establishTitle {
+    text-align: center;
+}
+
+.establishDate {
+    text-align: center;
+}
+
+.personnelSet {
+    width: 150px;
+    height: 300px;
+    font-family: "Black Han Sans", sans-serif;
+}
+
+.personnelImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: grid;
+    place-content: center;
+    font-size: 75px;
+}
+
+.personnelTitle {
+    text-align: center;
+}
+
+.personnelNumber {
+    text-align: center;
+}
+
+.benefitSet {
+    width: 150px;
+    height: 300px;
+    font-family: "Black Han Sans", sans-serif;
+}
+
+.benefitImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: grid;
+    place-content: center;
+    font-size: 75px;
+}
+
+.benefitTitle {
+    text-align: center;
+}
+
+.benefitContent {
+    text-align: center;
+}
+
+.benefitPlus {
+    text-align: center;
+    cursor: pointer;
+}
+
+.characteristic {
+    justify-content: center;
+    text-align: center;
+    font-family: "Black Han Sans", sans-serif;
+    font-size: 30px;
 }
