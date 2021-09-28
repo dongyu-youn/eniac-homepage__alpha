@@ -8,8 +8,8 @@
   box-shadow: 0 0 15px 20px #f1efe9;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  height: 70px;
-  padding: 5px 20px 10px 0;
+  height: 65px;
+  padding: 5px 0 5px 0;
   margin-top: 10px;
 }
 
