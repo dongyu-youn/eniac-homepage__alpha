@@ -1,4 +1,4 @@
-.sub_news,
+/* .sub_news,
 .sub_news th,
 .sub_news td {
     border: 0;
@@ -32,7 +32,7 @@
 .sub_news th {
     padding: 5px 0 6px;
     border-top: solid 1px #999;
-    border-bottom: solid 1px #b2b2b2;
+    border-bottom: solid 1px #f1efe9;
     color: #333;
     font-weight: bold;
     line-height: 20px;
@@ -41,7 +41,7 @@
 
 .sub_news td {
     padding: 8px 0 9px;
-    border-bottom: solid 1px #d2d2d2;
+    border-bottom: solid 1px #f1efe9;
     text-align: center;
     line-height: 18px;
 }
@@ -76,4 +76,74 @@
 
 .sub_news tr.reply .title a {
     background: url(첨부파일/ic_reply.png) 0 1px no-repeat;
+}
+
+@media screen and (max-width: 1200px) {
+    .sub_news__horizTable__mdScroll {
+        border-right-width: 0;
+        border-bottom-width: 0;
+    }
+    .sub_news__horizTable__mdScroll th,
+    .sub_news__horizTable__mdScroll td {
+        white-space: nowrap;
+    }
+}
+
+.bl_crossTable {
+    /* border: 1px solid #ddd; */
+}
+
+.bl_crossTable table {
+    width: 70%;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.bl_crossTable th {
+    padding: 15px;
+    border-right: 1px solid #d7dbdd;
+    border-bottom: 1px solid #d7dbdd;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.bl_crossTable td {
+    padding: 15px;
+    border-right: 1px solid #d7dbdd;
+    border-bottom: 1px solid #d7dbdd;
+    vertical-align: middle;
+}
+
+.bl_crossTable th:last-child,
+.bl_crossTable td:last-child {
+    border-right-width: 0;
+}
+
+.bl_crossTable tbody tr:last-child th,
+.bl_crossTable tbody tr:last-child td {
+    border-bottom-width: 0;
+}
+
+@media screen and (max-width: 1400px) {
+    .bl_crossTable {
+        border-right-width: 0;
+        overflow-x: auto;
+    }
+    .bl_crossTable table {
+        width: auto;
+        min-width: 100%;
+    }
+    .bl_crossTable th,
+    .bl_crossTable td {
+        white-space: nowrap;
+    }
+    .bl_crossTable th:last-child,
+    .bl_crossTable td:last-child {
+        border-right-width: 1px;
+    }
+    .bl_crossTable_mdSticky {
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+    }
 }
