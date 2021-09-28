@@ -2,6 +2,7 @@
 @import url("./nav.css");
 @import url("./sub_news.css");
 @import url("./write.css");
+@import url("./community-mobile.css");
 * {
     text-decoration: none;
 }
@@ -15,7 +16,7 @@ body {
     margin: 0;
 }
 
-.own {
+.own__ques {
     position: relative;
     width: 100%;
     margin-left: 10px;

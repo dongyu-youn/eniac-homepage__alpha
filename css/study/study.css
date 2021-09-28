@@ -1,7 +1,11 @@
 .study {
-    position: relative;
-    padding: 160px 0px 125px 0px;
-    width: 100%;
+    width: 1200px;
+    height: 700px;
+    position: absolute;
+    left: 22%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
 }
 
 .study__inner {
