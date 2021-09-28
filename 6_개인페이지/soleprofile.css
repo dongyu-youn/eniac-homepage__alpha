@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
 
-input[id="menuicon"] {
+#menuicon {
   display: none;
 }
 
-input[id="menuicon"] + label {
+#menuicon + label {
   display: block;
   margin: 30px;
   width: 60px;
@@ -20,7 +20,7 @@ input[id="menuicon"] + label span {
   width: 100%;
   height: 5px;
   border-radius: 30px;
-  background: #000;
+  background: gray;
   transition: all 0.35s;
 }
 
@@ -42,27 +42,28 @@ input[id="menuicon"]:checked + label {
 }
 
 input[id="menuicon"]:checked + label span {
-  background: #fff;
+  background: gray;
 }
 
-input[id="menuicon"]:checked + label span:nth-child(1) {
+#menuicon:checked + label span:nth-child(1) {
   top: 50%;
   transform: translateY(-50%) rotate(45deg);
 }
 
-input[id="menuicon"]:checked + label span:nth-child(2) {
+#menuicon:checked + label span:nth-child(2) {
   opacity: 0;
 }
 
-input[id="menuicon"]:checked + label span:nth-child(3) {
+#menuicon:checked + label span:nth-child(3) {
   bottom: 50%;
   transform: translateY(50%) rotate(-45deg);
 }
 
-div[class="sidebar"] {
+.sidebar {
   width: 300px;
   height: 100%;
-  background: #222;
+  background: white;
+  border: 1px solid gray;
   position: fixed;
   top: 0;
   right: -300px;
@@ -70,14 +71,14 @@ div[class="sidebar"] {
   transition: all 0.35s;
 }
 
-input[id="menuicon"]:checked + label + div {
+#menuicon:checked + label + div {
   right: 0;
 }
 
 .profile__img {
   width: 150px;
   height: 150px;
-  border: 1px solid white;
+  border: 1px solid gray;
   border-radius: 50%;
   margin: 0 auto;
   margin-top: 100px;
@@ -90,14 +91,14 @@ input[id="menuicon"]:checked + label + div {
 
 .profile__department {
   margin: 0 auto;
-  color: white;
+  color: gray;
   font-size: 20px;
   font-family: "Black Han Sans", sans-serif;
 }
 
 .profile__myname {
   margin: 0 auto;
-  color: white;
+  color: gray;
   font-size: 20px;
   font-family: "Black Han Sans", sans-serif;
 }
@@ -108,19 +109,60 @@ input[id="menuicon"]:checked + label + div {
 }
 
 .my_writtenPage__title {
-  color: white;
+  color: gray;
   font-size: 20px;
   font-family: "Black Han Sans", sans-serif;
 }
 
 .my_application__title {
-  color: white;
+  color: gray;
   font-size: 20px;
   font-family: "Black Han Sans", sans-serif;
 }
 
 li {
-  color: white;
+  color: gray;
   font-size: 20px;
   font-family: "Black Han Sans", sans-serif;
+}
+
+.my__writtenPage {
+}
+
+.my_writtenPage__Set {
+  display: flex;
+  justify-content: space-between;
+}
+
+.my_writtenPage__Content {
+  width: 80px;
+  height: 80px;
+  border: 1px solid gray;
+}
+
+.writtenPage_Plus {
+  width: 80px;
+  height: 80px;
+  border: 1px solid gray;
+  text-align: center;
+  line-height: 80px;
+}
+
+.my_application__Set {
+  display: flex;
+  justify-content: space-between;
+}
+
+.my_application__Content {
+  width: 80px;
+  height: 80px;
+  border: 1px solid gray;
+}
+
+.application_Plus {
+  width: 80px;
+  height: 80px;
+  border: 1px solid gray;
+  text-align: center;
+  line-height: 80px;
 }
