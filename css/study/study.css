@@ -3,14 +3,11 @@
     height: 700px;
     position: absolute;
     left: 22%;
-    top: 55%;
-    transform: translate(-50%, -50%);
+    top: 13%;
     border-radius: 10px;
 }
 
-.study__inner {
-    margin-left: 400px;
-}
+.study__inner {}
 
 .study__title {
     position: relative;
