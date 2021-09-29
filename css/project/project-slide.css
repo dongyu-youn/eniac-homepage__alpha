@@ -43,7 +43,6 @@ li {
   position: absolute;
 }
 .controls span {
-  z-index: 999;
   cursor: pointer;
   font-size: 70px;
 }
