@@ -50,20 +50,20 @@
         </nav>
     </header>
     <main>
-        <h1>CREATE PROJECT</h1>
+        <h1>에니악 신청서</h1>
         <form class="project" action="project.html">
             <div class="wrap">
                 <div class="wrap__wrap">
-                    <input class="project__img" type="file" accept="image/png, image/jpeg, image/jpg, image/svg" value="이미지 첨부" required />
+                    <input class="project__img" type="file" accept="image/png, image/jpeg, image/jpg, image/svg" value="이미지 첨부" required placeholder="사진" />
                 </div>
                 <div class="wrap__wrap">
-                    <input class="project__text" type="text" placeholder="프로젝트 이름" required />
-                    <input class="project__text" type="text" placeholder="학과/기수/이름" required />
+                    <input class="project__text" type="text" placeholder="이름" required />
+                    <input class="project__text" type="text" placeholder="학과/나이" required />
                     <input class="project__text" type="text" placeholder="GITHUB URL" required />
                 </div>
             </div>
             <div class="dropdown">
-                <button type="button" class="dropdown-toggle">프로젝트 주제</button>
+                <button type="button" class="dropdown-toggle">희망분야</button>
 
                 <ul class="dropdown-menu">
                     <li class="dropdown-item">
@@ -100,7 +100,7 @@
             </div>
             <div class="wrap">
                 <div class="dropdown"></div>
-                <textarea class="project__explain" type="text" placeholder="프로젝트 설명"></textarea>
+                <textarea class="project__explain" type="text" placeholder="자기소개"></textarea>
                 <div class="creat-btn">
                     <input type="submit" value="Create" />
                 </div>
