@@ -1,3 +1,5 @@
+/*메뉴 옆에서 나오는 거*/
+
 const home = document.querySelector(".home");
 
 function openNav() {

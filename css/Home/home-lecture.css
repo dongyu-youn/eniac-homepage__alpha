@@ -1,71 +1,123 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+} /*전체 선택자 , 앞 뒤 자식 요소*/
+
 .home-lecture {
-    padding-left: 120px;
-    width: 1020px;
-    margin: 0 auto;
+  display: block;
+}
+.home-lecture__in {
+  /*padding-left: 120px;*/
+  padding: 0 30px;
+  width: 1020px;
+  margin: 0 auto;
 }
 
 .home-lecture__title {
-    display: flex;
-    position: relative;
-    font-weight: 800px;
-    letter-spacing: 0.4em;
-    margin-bottom: 30px;
-    color: #282828;
-    padding: 5px 24px 5px 12px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  display: flex;
+  position: relative;
+  letter-spacing: 0.3em;
+  margin-bottom: 30px;
+  color: black;
+  padding: 5px 24px 5px 12px;
 }
-
 .home-lecture__list {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
-    align-content: space-between;
-    box-sizing: border-box;
-}
-
-.home-lecture__thumnail {
-    display: flex;
-    margin-bottom: 27px;
-    position: relative;
-}
-
-.home-lecture h2 {
-    margin-bottom: 2 0.6em;
-}
-
-.home-lecture__about {
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 0.075em;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
 }
 
 .single-project {
-    width: 33.33%;
-    margin-bottom: 102px;
+  display: block;
+  width: calc(33.33% - 60px);
+  margin-bottom: 102px;
+}
+.single-project > div {
+  display: block;
+  margin: 0 auto;
+  width: 360px;
+  max-width: 100%;
+}
+.home-lecture__thumnail {
+  /*display: flex;*/
+  display: block;
+  margin-bottom: 27px;
+  position: relative;
+}
+.home-lecture h2 {
+  margin-bottom: 2 0.6em;
+}
+.home-lecture__about {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.075em;
 }
 
 p.typing-txt {
-    display: none;
+  display: none;
 }
 
 .typing {
-    display: flex;
-    animation-name: cursor;
-    animation-duration: 0.3s;
-    animation-iteration-count: infinite;
-    font-size: 30px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    border-right: 1px solid #ccc;
+  display: flex;
+  animation-name: cursor;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-right: 1px solid #ccc;
 }
 
 @keyframes cursor {
-    0% {
-        border-right: 1px solid #fff;
-    }
-    50% {
-        border-right: 1px solid #000;
-    }
-    100% {
-        border-right: 1px solid #fff;
-    }
+  0% {
+    border-right: 1px solid #fff;
+  }
+  50% {
+    border-right: 1px solid #000;
+  }
+  100% {
+    border-right: 1px solid #fff;
+  }
+}
+
+@media (max-width: 1250px) {
+  .home-lecture .home-lecture__in {
+    width: 100%;
+  }
+  .home-lecture__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  .single-project {
+    display: block;
+    width: 50%;
+    margin-bottom: 102px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 770px) {
+  .home-lecture .home-lecture__in {
+    width: 100%;
+  }
+  .home-lecture__list {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    margin-left: 0;
+    padding: 0;
+  }
+  .single-project {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
 }
