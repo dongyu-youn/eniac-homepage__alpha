@@ -1,77 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
-#menuicon {
+#toc-content {
     display: none;
-}
-
-#menuicon+label {
-    display: none;
-    margin: 30px;
-    width: 60px;
-    height: 50px;
-    position: fixed;
-    cursor: pointer;
-    right: 0;
-}
-
-input[id="menuicon"]+label span {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 5px;
-    border-radius: 30px;
-    background: gray;
-    transition: all 0.35s;
-}
-
-input[id="menuicon"]+label span:nth-child(1) {
-    top: 0;
-}
-
-input[id="menuicon"]+label span:nth-child(2) {
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-input[id="menuicon"]+label span:nth-child(3) {
-    bottom: 0;
-}
-
-input[id="menuicon"]:checked+label {
-    z-index: 2;
-}
-
-input[id="menuicon"]:checked+label span {
-    background: gray;
-}
-
-#menuicon:checked+label span:nth-child(1) {
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg);
-}
-
-#menuicon:checked+label span:nth-child(2) {
-    opacity: 0;
-}
-
-#menuicon:checked+label span:nth-child(3) {
-    bottom: 50%;
-    transform: translateY(50%) rotate(-45deg);
-}
-
-.sidebar {
-    width: 300px;
+    background-color: white;
     height: 100%;
-    background: white;
+    width: 400px;
+    margin: -10px;
     border: 1px solid gray;
     position: fixed;
-    top: 0;
-    right: -300px;
-    z-index: 1;
-    transition: all 0.35s;
+    z-index: 100;
 }
 
-#menuicon:checked+label+div {
-    right: 0;
+#toc-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: black;
+    z-index: 200;
 }
 
 .profile__img {
@@ -119,13 +65,6 @@ input[id="menuicon"]:checked+label span {
     font-family: "Black Han Sans", sans-serif;
 }
 
-
-/* li {
-    color: gray;
-    font-size: 20px;
-    font-family: "Black Han Sans", sans-serif;
-} */
-
 .my__writtenPage {}
 
 .my_writtenPage__Set {
@@ -164,16 +103,4 @@ input[id="menuicon"]:checked+label span {
     border: 1px solid gray;
     text-align: center;
     line-height: 80px;
-}
-
-@media screen and (max-width: 700px) {
-    #menuicon+label {
-        display: block;
-        margin: 30px;
-        width: 60px;
-        height: 50px;
-        position: fixed;
-        cursor: pointer;
-        right: 0;
-    }
 }

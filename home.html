@@ -12,10 +12,10 @@
     <title>Eniac</title>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/img-slide.js
-    "></script>
+    <script src="js/img-slide.js"></script>
     <script src="js/home-box__menu.js"></script>
     <script src="js/home-box.js"></script>
+    <script src="js/solepage.js"></script>
 </head>
 
 <body>
@@ -82,43 +82,40 @@
               class="header-bar__text far fa-user-circle fa-lg"
             ></i
           ></a> -->
-                <input type="checkbox" id="menuicon" />
-                <label for="menuicon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-                <i style="color: black" class="header-bar__text far fa-user-circle fa-lg"></i>
-                <div class="sidebar">
-                    <div class="profile__Set">
-                        <div class="profile__img"></div>
-                        <div class="profile__textSet">
-                            <div class="profile__department">
-                                학과:컴퓨터소프트웨어공학과
-                            </div>
-                            <div class="profile__myname">이름:차지태</div>
-                        </div>
-                    </div>
-                    <div class="my__activity">
-                        <div class="my__writtenPage">
-                            <div class="my_writtenPage__title">작성한 글</div>
-                            <div class="my_writtenPage__Set">
-                                <div class="my_writtenPage__Content"></div>
-                                <div class="my_writtenPage__Content"></div>
-                                <div class="writtenPage_Plus">+</div>
-                            </div>
-                        </div>
-                        <div class="my__application">
-                            <div class="my_application__title">스터디 신청 목록</div>
-                            <div class="my_application__Set">
-                                <div class="my_application__Content"></div>
-                                <div class="my_application__Content"></div>
-                                <div class="application_Plus">+</div>
-                            </div>
-                        </div>
-                        <div class=""></div>
+            <div id="toc-toggle" onclick="openCloseToc()">
+                <i class="header-bar__text far fa-user-circle fa-lg"></i>
+            </div>
+        
+            <div id="toc-content">
+            
+                <div class="profile__Set">
+                    <div class="profile__img"></div>
+                    <div class="profile__textSet">
+                        <div class="profile__department">학과:컴퓨터소프트웨어공학과</div>
+                        <div class="profile__myname">이름:차지태</div>
                     </div>
                 </div>
+            
+                <div class="my__activity">
+                    <div class="my__writtenPage">
+                        <div class="my_writtenPage__title">작성한 글</div>
+                        <div class="my_writtenPage__Set">
+                            <div class="my_writtenPage__Content"></div>
+                            <div class="my_writtenPage__Content"></div>
+                            <div class="writtenPage_Plus">+</div>
+                        </div>
+                    </div>
+                    <div class="my__application">
+                        <div class="my_application__title">스터디 신청 목록</div>
+                        <div class="my_application__Set">
+                            <div class="my_application__Content"></div>
+                            <div class="my_application__Content"></div>
+                            <div class="application_Plus">+</div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
                 <a class="header-bar__p">
                     <span class="header-bar__text header-bar__login-b">
               <!-- <div class="header-box__textbox"></div> -->
