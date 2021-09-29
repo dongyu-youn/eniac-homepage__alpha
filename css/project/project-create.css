@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+main {
+  position: relative;
+  padding: 250px 0px 125px 27.2%;
+  width: 72.7%;
+}
+
+h1 {
+  font-size: 30px;
+  opacity: 0.6;
+  margin-bottom: 60px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap:first-child {
+  display: flex;
+}
+.wrap:first-child > .wrap__wrap:last-child {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  width: 100%;
+}
+.project__img {
+  width: 270px;
+  height: 270px;
+  border: 1.7px solid rgba(0, 0, 0, 0.2);
+}
+.project__text {
+  height: 65px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1.3px solid rgba(0, 0, 0, 0.4);
+  background-color: inherit;
+  opacity: 0.5;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.wrap:last-child > textarea {
+  margin-top: 0px;
+  width: 100%;
+  height: 300px;
+  padding: 30px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 23px;
+}
+
+.creat-btn {
+  display: flex;
+  justify-content: right;
+}
+input[type="submit"] {
+  height: 40px;
+  width: 100px;
+  margin: 70px 0px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}

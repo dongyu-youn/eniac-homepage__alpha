@@ -2,13 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="favicon" type="image⁄x-icon" src="./head-logo.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="stylesheet" href="./css/profile/profile.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200;300&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200;300&display=swap" rel="stylesheet">
     <title>Eniac</title>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
     <script src="js/index.js"></script>
@@ -19,40 +17,41 @@
 </head>
 
 <body>
-    <div id="myNav" class="overlay">
-        <!--메뉴-->
+    <div id="myNav" class="overlay"> <!--메뉴-->
         <a href="" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
             <a href="#">About</a>
             <a href="#">Projects</a>
-            <a href="#">Studies</a>
-            <a href="#">Enjoy Eniac</a>
+            <a href="#">Studys</a>
+            <a href="#">Enjoy Enaic</a>
         </div>
     </div>
 
-    <div id="meNav" class="overlay">
-        <!--검색창-->
+    <div id="meNav" class="overlay">  <!--검색창-->
         <a href="" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content__search">
-            <input type="text" placeholder="SEARCH" />
+            <input type="text" placeholder="SEARCH">
             <button></button>
         </div>
         <div class="overlay-content__hashtag">
             <a href="#">#원광대</a>
             <a href="#">#코딩러라면</a>
-            <a href="#">#에니악은</a>
+            <a href="#">#에니악은</a> 
             <a href="#">#필수</a>
-        </div>
+        </div>   
         <div class="overlay-content__hashtag">
             <a href="#">#아직도</a>
             <a href="#">#가입_안했니?</a>
             <a href="#">#괜찮아</a>
             <a href="#">#안늦었어^^</a>
         </div>
+          
+            
+        </div>
     </div>
 
-    <div class="home">
-        <!--메인 헤더-->
+
+    <div class="home">  <!--메인 헤더-->
         <nav class="header-bar">
             <div class="header-bar__column header-bar__logo">
                 <a href="index.html" class="header-bar__a">
@@ -71,53 +70,7 @@
             <div class="header-bar__column header-bar__login">
                 <a style="cursor: pointer" onclick="openNav()"><i class="fas fa-bars fa-lg"></i
           ></a>
-                <a style="cursor: pointer" onclick="opentwoNav()"><i
-              style="color: black"
-              class="header-bar__text fas fa-search fa-lg"
-            ></i
-          ></a>
-                <!-- <a style="cursor: pointer"><i
-              style="color: black"
-              class="header-bar__text far fa-user-circle fa-lg"
-            ></i
-          ></a> -->
-                <input type="checkbox" id="menuicon" />
-                <label for="menuicon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-                <i style="color: black" class="header-bar__text far fa-user-circle fa-lg"></i>
-                <div class="sidebar">
-                    <div class="profile__Set">
-                        <div class="profile__img"></div>
-                        <div class="profile__textSet">
-                            <div class="profile__department">
-                                학과:컴퓨터소프트웨어공학과
-                            </div>
-                            <div class="profile__myname">이름:차지태</div>
-                        </div>
-                    </div>
-                    <div class="my__activity">
-                        <div class="my__writtenPage">
-                            <div class="my_writtenPage__title">작성한 글</div>
-                            <div class="my_writtenPage__Set">
-                                <div class="my_writtenPage__Content"></div>
-                                <div class="my_writtenPage__Content"></div>
-                                <div class="writtenPage_Plus">+</div>
-                            </div>
-                        </div>
-                        <div class="my__application">
-                            <div class="my_application__title">스터디 신청 목록</div>
-                            <div class="my_application__Set">
-                                <div class="my_application__Content"></div>
-                                <div class="my_application__Content"></div>
-                                <div class="application_Plus">+</div>
-                            </div>
-                        </div>
-                        <div class=""></div>
-                    </div>
-                </div>
+                <a style="cursor: pointer" onclick="opentwoNav()"><i style="color: black" class="header-bar__text fas fa-search fa-lg"></i></a> 
                 <a class="header-bar__p">
                     <span class="header-bar__text header-bar__login-b">
               <!-- <div class="header-box__textbox"></div> -->
@@ -126,8 +79,7 @@
                 </a>
             </div>
         </nav>
-        <section class="home-wotd">
-            <!--홈화면-->
+        <section class="home-wotd">  <!--홈화면-->
             <div class="home-box">
                 <div class="home-box__wrapper">
                     <div class="home-box__middle">
@@ -163,10 +115,10 @@
                                 <figure>
                                     <img width="50px" src="img/small-img-b.jpg" alt="" />
                                 </figure>
+
                             </div>
                         </div>
-                        <div class="home-box__bottom__bottom">
-                            <!--소개 아이콘-->
+                        <div class="home-box__bottom__bottom"> <!--소개 아이콘-->
                             <ul class="home-box__list">
                                 <li class="home-box__item">
                                     <div class="home-box__circle">
@@ -198,8 +150,7 @@
                 </div>
             </div>
         </section>
-        <div class="home-lecture">
-            <!--추천 강의 별-->
+        <div class="home-lecture"> <!--추천 강의 별-->
             <h2>
                 <a href="" class="home-lecture__title">#1학년 필수강의</a>
             </h2>

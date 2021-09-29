@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 게시판 글쓰기 -->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENIAC-create</title>
+    <link rel="stylesheet" href="../../css/community/comm-create.css" />
+    <link rel="stylesheet" href="../../css/community/community.css" />
+    <link rel="stylesheet" href="../../css/components/header-bar.css" />
+</head>
+
+<header>
+    <nav class="header-bar">
+        <div class="header-bar__column header-bar__logo">
+            <a href="index.html" class="header-bar__a">
+                <img class="header-bar__image" style="width: 250px; height: 230px; padding: 20px 0px 0px 0px" src="../../img/logo-db.png" />
+            </a>
+        </div>
+        <div class="header-bar__center">
+            <div class="header-bar__fade-slider">
+                <div class="header-bar__fade-slider__slide">
+                    <img class="slide1" style="width: 80px; height: 80px" src="../../img/coding.png" />
+                    <img class="slide1" style="width: 80px; height: 80px" src="../../img/team.png" />
+                    <img class="slide1" style="width: 80px; height: 80px" src="../../img/cap.png" />
+                </div>
+            </div>
+        </div>
+        <div class="header-bar__column header-bar__login">
+            <a style="cursor: pointer" onclick="openNav()"><i class="fas fa-bars fa-lg"></i
+        ></a>
+            <i style="color: black" class="header-bar__text fas fa-search fa-lg"></i>
+            <a class="header-bar__p">
+                <span class="header-bar__text header-bar__login-b">
+            <!-- <div class="header-box__textbox"></div> -->
+            Login
+          </span>
+            </a>
+        </div>
+    </nav>
+</header>
+<div class="main__ask">
+    <div class="nav__ask">
+        <ul class="nav-list__ask">
+            <li class="nav__btn">
+                <a class="nav__link" href="">코드</a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="">동아리활동</a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="">대회/봉사/특강</a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="">새내기 게시판</a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="">자유 게시판</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-bar__ask">
+        <div class="main-bar__ques"></div>
+
+        <body>
+            <div class="te">
+                <input type="text" class="te-input" placeholder="제목" />
+                <textarea class="te-ex__jj" placeholder="내용" style="resize: none"></textarea>
+                <div class="te-bb">
+                    <div class="te-bb__box">
+                        <button class="te-bb__button">
+                <i class="fas fa-camera fa-lg"></i>
+              </button>
+                        <button class="te-bb__button">
+                <i class="fas fa-paperclip"></i>
+              </button>
+                    </div>
+                    <div class="te-bb__box-b">
+                        <button class="te-bb__submit">제출</button>
+                    </div>
+                </div>
+
+                <!-- o 일단 필요한 데이터가 제목이랑 카테고리 내용 사진  -->
+            </div>
+            <script src="../../js/img-slide.js"></script>
+            <script src="../../js/home-box__menu.js"></script>
+            <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+        </body>
+    </div>
+</div>
+
+</html>

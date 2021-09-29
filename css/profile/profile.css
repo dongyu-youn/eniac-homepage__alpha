@@ -119,11 +119,12 @@ input[id="menuicon"]:checked+label span {
     font-family: "Black Han Sans", sans-serif;
 }
 
-li {
+
+/* li {
     color: gray;
     font-size: 20px;
     font-family: "Black Han Sans", sans-serif;
-}
+} */
 
 .my__writtenPage {}
 
