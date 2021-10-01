@@ -8,11 +8,11 @@ for (let i = 0; i < tabLink.length; i++) {
     const orgTarget = e.target.getAttribute("href"); //클릭된 탭의 속성인 href를 가져옴
     const tabTarget = orgTarget.replace("#", ""); // 그 href에서 #을 없애줌
 
-    for (let j = 0; j < tabLink.length; j++) {
+    for (lt j = 0; j < tabLink.length; j++) {
       tabLink[j].classList.remove("active"); //모든 tablink active없애주는데
     }
     e.target.classList.add("active"); //클릭한 tablick는 다시 active시켜줌
-
+e
     for (let x = 0; x < tabContent.length; x++) {
       tabContent[x].style.display = "none"; //모든 탭 내용들을 안보이게 함
     }

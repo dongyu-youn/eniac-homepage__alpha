@@ -1,10 +1,9 @@
 * {
-  box-sizing: border-box;
 }
 main {
   position: relative;
   padding: 250px 0px 125px 27.2%;
-  width: 72.7%;
+  width: 40%;
 }
 
 h1 {
@@ -16,10 +15,12 @@ h1 {
 .project {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .wrap:first-child {
   display: flex;
+  width: 100%;
 }
 .wrap:first-child > .wrap__wrap:last-child {
   display: flex;
@@ -27,12 +28,14 @@ h1 {
   margin-left: 40px;
   width: 100%;
 }
+
 .project__img {
-  width: 270px;
-  height: 270px;
+  width: 100%;
+  height: 100%;
   border: 1.7px solid rgba(0, 0, 0, 0.2);
 }
 .project__text {
+  width: 100%;
   height: 65px;
   margin-bottom: 20px;
   border: none;
@@ -52,7 +55,6 @@ textarea:focus {
   margin-top: 0px;
   width: 100%;
   height: 300px;
-  padding: 30px;
   border: none;
   background-color: rgba(0, 0, 0, 0.05);
   font-size: 14px;
@@ -60,11 +62,11 @@ textarea:focus {
   letter-spacing: 1px;
   line-height: 23px;
 }
-
 .creat-btn {
   display: flex;
   justify-content: right;
 }
+
 input[type="submit"] {
   height: 40px;
   width: 100px;

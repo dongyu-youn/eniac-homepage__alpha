@@ -16,12 +16,19 @@
       <div class="wrap">
         <div class="wrap__wrap">
           <input
-            class="join__img"
+            id="input-file"
             type="file"
-            accept="image/png, image/jpeg, image/jpg, image/svg"
+            name="files1"
+            accept="image/*"
+            onchange="previewImage(this)"
             value="프로필사진"
             required
           />
+          <div id="preview"></div>
+          <div class="img-upload-box"></div>
+          <label class="input-file-box" for="input-file">
+            <span class="img-upload-box__text">프로필 사진</span>
+          </label>
         </div>
         <div class="wrap__wrap">
           <input
@@ -74,5 +81,8 @@
         <input class="join__btn" type="submit" value="Creat Account" required />
       </div>
     </form>
+    <script src="../../js/img-upload.js"></script>
+    <script src="../../js/img-hidden.js"></script>
+    <script></script>
   </body>
 </html>

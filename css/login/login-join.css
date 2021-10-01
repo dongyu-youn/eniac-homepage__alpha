@@ -3,8 +3,30 @@ form {
   top: 280px;
 }
 
-.join__img {
+img:not(.logo) {
   border: 1.7px solid rgba(0, 0, 0, 0.2);
+}
+#input-file {
+  display: none;
+}
+
+.img-upload-box {
+  border: 1.7px solid rgba(0, 0, 0, 0.2);
+}
+.img-upload-box__text {
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.input-file-box {
+  margin-top: 10px;
+}
+.img-upload-box__text:hover {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .wrap:first-child {
@@ -15,11 +37,17 @@ form {
 .wrap:last-child {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 }
-.wrap__wrap:first-child{
+.wrap__wrap:first-child {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  width: 40%;
+  margin-right: 50px;
+  margin-top: 20px;
 }
+
 .wrap__wrap:last-child {
   display: flex;
   flex-direction: column;
@@ -29,23 +57,27 @@ form {
   .join {
     width: 460px;
   }
-  .join__img {
-    width: 200px;
-    height: 200px;
+
+  img:not(.logo),
+  .img-upload-box {
+    width: 180px;
+    height: 180px;
   }
+
   .join__write-short {
-    width: 200px;
+    width: 220px;
   }
 }
 @media screen and (max-width: 600px) {
-  .join{
+  .join {
     width: 80%;
   }
-  .join__img {
-    width: 85%;
-    height: 78%;
+  img,
+  .img-upload-box {
+    width: 150px;
+    height: 150px;
   }
   .join__write-short {
-
-
+    width: 100%;
+  }
 }

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,106 +9,151 @@
     <link rel="stylesheet" href="../../styles.css" />
     <link rel="stylesheet" href="../../css/project/project-create.css" />
     <script src="../../js/img-slide.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="header-bar">
-            <div class="header-bar__column header-bar__logo">
-                <a href="index.html" class="header-bar__a">
-                    <img class="header-bar__image" style="" src="../../img/logo-db.png" />
-                </a>
+      <nav class="header-bar">
+        <div class="header-bar__column header-bar__logo">
+          <a href="index.html" class="header-bar__a">
+            <img
+              class="header-bar__image"
+              style=""
+              src="../../img/logo-db.png"
+            />
+          </a>
+        </div>
+        <div class="header-bar__center">
+          <div class="header-bar__fade-slider">
+            <div class="header-bar__fade-slider__slide">
+              <img
+                class="slide1"
+                style="width: 70px; height: 70px"
+                src="../../img/coding.png"
+              />
+              <img
+                class="slide1"
+                style="width: 70px; height: 70px"
+                src="../../img/team.png"
+              />
+              <img
+                class="slide1"
+                style="width: 70px; height: 70px"
+                src="../../img/cap.png"
+              />
             </div>
-            <div class="header-bar__center">
-                <div class="header-bar__fade-slider">
-                    <div class="header-bar__fade-slider__slide">
-                        <img class="slide1" style="width: 70px; height: 70px" src="../../img/coding.png" />
-                        <img class="slide1" style="width: 70px; height: 70px" src="../../img/team.png" />
-                        <img class="slide1" style="width: 70px; height: 70px" src="../../img/cap.png" />
-                    </div>
-                </div>
-            </div>
-            <div class="header-bar__column header-bar__login">
-                <a style="cursor: pointer" onclick="openNav()"><i class="fas fa-bars fa-lg"></i
+          </div>
+        </div>
+        <div class="header-bar__column header-bar__login">
+          <a style="cursor: pointer" onclick="openNav()"
+            ><i class="fas fa-bars fa-lg"></i
           ></a>
-                <!-- <a style="cursor: pointer" onclick="opentwoNav()"></a><i style="color: black" class="header-bar__text fas fa-search fa-lg"></i
+          <!-- <a style="cursor: pointer" onclick="opentwoNav()"></a><i style="color: black" class="header-bar__text fas fa-search fa-lg"></i
         ></a> -->
-                <a style="cursor: pointer"><i
+          <a style="cursor: pointer"
+            ><i
               style="color: black"
               class="header-bar__text far fa-user-circle fa-lg"
             ></i
           ></a>
 
-                <a class="header-bar__p">
-                    <span class="header-bar__text header-bar__login-b">
+          <a class="header-bar__p">
+            <span class="header-bar__text header-bar__login-b">
               <!-- <div class="header-box__textbox"></div> -->
               Login
             </span>
-                </a>
-            </div>
-        </nav>
+          </a>
+        </div>
+      </nav>
     </header>
     <main>
-        <h1>CREATE PROJECT</h1>
-        <form class="project" action="project.html">
-            <div class="wrap">
-                <div class="wrap__wrap">
-                    <input class="project__img" type="file" accept="image/png, image/jpeg, image/jpg, image/svg" value="이미지 첨부" required />
-                </div>
-                <div class="wrap__wrap">
-                    <input class="project__text" type="text" placeholder="프로젝트 이름" required />
-                    <input class="project__text" type="text" placeholder="학과/기수/이름" required />
-                    <input class="project__text" type="text" placeholder="GITHUB URL" required />
-                </div>
-            </div>
-            <div class="dropdown">
-                <button type="button" class="dropdown-toggle">프로젝트 주제</button>
+      <h1>CREATE PROJECT</h1>
+      <form class="project" action="project.html">
+        <div class="wrap">
+          <div class="wrap__wrap">
+            <input
+              class="project__img"
+              type="file"
+              accept="image/png, image/jpeg, image/jpg, image/svg"
+              value="이미지 첨부"
+              required
+            />
+          </div>
+          <div class="wrap__wrap">
+            <input
+              class="project__text"
+              type="text"
+              placeholder="프로젝트 이름"
+              required
+            />
+            <input
+              class="project__text"
+              type="text"
+              placeholder="학과/기수/이름"
+              required
+            />
+            <input
+              class="project__text"
+              type="text"
+              placeholder="GITHUB URL"
+              required
+            />
+          </div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="dropdown-toggle">프로젝트 주제</button>
 
-                <ul class="dropdown-menu">
-                    <li class="dropdown-item">
-                        <button type="button" value="1" class="dropdown-option">
+          <ul class="dropdown-menu">
+            <li class="dropdown-item">
+              <button type="button" value="1" class="dropdown-option">
                 웹
               </button>
-                    </li>
-                    <li class="dropdown-item">
-                        <button type="button" value="2" class="dropdown-option">
+            </li>
+            <li class="dropdown-item">
+              <button type="button" value="2" class="dropdown-option">
                 앱
               </button>
-                    </li>
-                    <li class="dropdown-item">
-                        <button type="button" value="3" class="dropdown-option">
+            </li>
+            <li class="dropdown-item">
+              <button type="button" value="3" class="dropdown-option">
                 AI
               </button>
-                    </li>
-                    <li class="dropdown-item">
-                        <button type="button" value="4" class="dropdown-option">
+            </li>
+            <li class="dropdown-item">
+              <button type="button" value="4" class="dropdown-option">
                 게임
               </button>
-                    </li>
-                    <li class="dropdown-item">
-                        <button type="button" value="5" class="dropdown-option">
+            </li>
+            <li class="dropdown-item">
+              <button type="button" value="5" class="dropdown-option">
                 보안
               </button>
-                    </li>
-                    <li class="dropdown-item">
-                        <button type="button" value="6" class="dropdown-option">
+            </li>
+            <li class="dropdown-item">
+              <button type="button" value="6" class="dropdown-option">
                 Etc
               </button>
-                    </li>
-                </ul>
-            </div>
-            <div class="wrap">
-                <div class="dropdown"></div>
-                <textarea class="project__explain" type="text" placeholder="프로젝트 설명"></textarea>
-                <div class="creat-btn">
-                    <input type="submit" value="Create" />
-                </div>
-            </div>
-        </form>
+            </li>
+          </ul>
+        </div>
+        <div class="wrap">
+          <div class="dropdown"></div>
+          <textarea
+            class="project__explain"
+            type="text"
+            placeholder="프로젝트 설명"
+          ></textarea>
+          <div class="creat-btn">
+            <input type="submit" value="Create" />
+          </div>
+        </div>
+      </form>
     </main>
 
-    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="../../js/dropdown.js"></script>
-</body>
-
+  </body>
 </html>
