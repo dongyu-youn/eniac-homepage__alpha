@@ -93,6 +93,12 @@ textarea:focus {
   letter-spacing: 1px;
   line-height: 23px;
 }
+
+textarea::placeholder {
+  opacity: 0.8;
+  font-weight: 600;
+  padding: 15px;
+}
 .creat-btn {
   display: flex;
   justify-content: right;
