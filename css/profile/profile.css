@@ -2,13 +2,13 @@
 
 #toc-content {
   display: none;
-  background-color: white;
-  height: 100%;
+  background-color: #f1efe9;
+  height: 92%;
   width: 400px;
   margin: -10px;
-  border: 1px solid gray;
+  border: 2px solid gray;
   position: fixed;
-  z-index: 100;
+  bottom: 0;
 }
 
 #toc-toggle {
@@ -18,13 +18,12 @@
   font-size: 25px;
   cursor: pointer;
   color: black;
-  z-index: 200;
 }
 
 .profile__img {
   width: 150px;
   height: 150px;
-  border: 1px solid gray;
+  border: 2px solid rgb(99, 99, 99);
   border-radius: 50%;
   margin: 0 auto;
   margin-top: 100px;
@@ -37,14 +36,14 @@
 
 .profile__department {
   margin: 0 auto;
-  color: gray;
+  color: rgb(99, 99, 99);
   font-size: 20px;
   font-family: "Black Han Sans", sans-serif;
 }
 
 .profile__myname {
   margin: 0 auto;
-  color: gray;
+  color: rgb(99, 99, 99);
   font-size: 20px;
   font-family: "Black Han Sans", sans-serif;
 }
@@ -55,18 +54,24 @@
 }
 
 .my_writtenPage__title {
-  color: gray;
+  color: rgb(99, 99, 99);
   font-size: 20px;
   font-family: "Black Han Sans", sans-serif;
 }
 
 .my_application__title {
-  color: gray;
+  color: rgb(99, 99, 99);
   font-size: 20px;
   font-family: "Black Han Sans", sans-serif;
+  margin-top: 20px;
 }
 
-.my__writtenPage {
+.writtenPage_Plus {
+  cursor: pointer;
+}
+
+.application_Plus {
+  cursor: pointer;
 }
 
 .my_writtenPage__Set {
@@ -77,13 +82,13 @@
 .my_writtenPage__Content {
   width: 80px;
   height: 80px;
-  border: 1px solid gray;
+  border: 1px solid rgb(99, 99, 99);
 }
 
 .writtenPage_Plus {
   width: 80px;
   height: 80px;
-  border: 1px solid gray;
+  border: 1px solid rgb(99, 99, 99);
   text-align: center;
   line-height: 80px;
 }
@@ -96,13 +101,13 @@
 .my_application__Content {
   width: 80px;
   height: 80px;
-  border: 1px solid gray;
+  border: 1px solid rgb(99, 99, 99);
 }
 
 .application_Plus {
   width: 80px;
   height: 80px;
-  border: 1px solid gray;
+  border: 1px solid rgb(99, 99, 99);
   text-align: center;
   line-height: 80px;
 }
