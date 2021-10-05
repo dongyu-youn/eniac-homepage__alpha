@@ -72,7 +72,7 @@ input[type="email"] {
     width: 220px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) and (min-width: 450px) {
   .join {
     width: 80%;
   }
@@ -83,5 +83,38 @@ input[type="email"] {
   }
   .join__write-short {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .wrap:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrap__wrap:first-child {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    width: 100%;
+  }
+  .wrap__wrap:last-child {
+    width: 100%;
+  }
+  .join {
+    width: 80%;
+  }
+  #preview > img,
+  .img-upload-box {
+    width: 200px;
+    height: 200px;
+  }
+  .join__write-short {
+    width: 100%;
+  }
+  input[type="email"] {
+    margin-top: 40px;
   }
 }
