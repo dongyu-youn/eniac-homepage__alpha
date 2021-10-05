@@ -131,7 +131,29 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (min-width: 330px) {
+  .project {
+    padding-top: 120px;
+  }
+  .project__title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  .project__tab {
+    margin-left: -8%;
+  }
+  .project__tab-content {
+    margin-left: -10%;
+  }
+  .project__tab-menu > li:last-child {
+    width: 0%;
+  }
+  .project__tab-menu li {
+    width: 13%;
+  }
+}
+@media screen and (max-width: 330px) {
   .project {
     padding-top: 120px;
   }
