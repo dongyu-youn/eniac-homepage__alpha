@@ -32,7 +32,7 @@
 
 .single-project {
   display: block;
-  width: calc(33.33% - 60px);
+  width: calc(36% - 60px);
   margin-bottom: 102px;
 }
 .single-project > div {
@@ -46,6 +46,9 @@
   display: block;
   margin-bottom: 27px;
   position: relative;
+}
+.home-lecture__thumnail img {
+  max-width: 100%;
 }
 .home-lecture h2 {
   margin-bottom: 2 0.6em;
@@ -82,15 +85,19 @@ p.typing-txt {
     border-right: 1px solid #fff;
   }
 }
-
-@media (max-width: 1250px) {
+@media (max-width: 1370px) {
+  .home-lecture__list {
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1000px) {
   .home-lecture .home-lecture__in {
     width: 100%;
   }
   .home-lecture__list {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     box-sizing: border-box;
     padding: 0;
   }
