@@ -1,21 +1,25 @@
 body {
   height: 150vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .project {
   /* position안하면 nav랑 겹침..(왤까) */
   position: relative;
-  padding: 200px 0px 125px 23%;
+  padding-top: 200px;
+  margin-left: 15.5%;
+  width: 100%;
 }
 
 .project__title {
-  font-size: 34px;
+  font-size: 44px;
   opacity: 0.6;
 }
 
 .project__tab-menu {
   display: flex;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .project__tab-menu > li {
@@ -41,6 +45,10 @@ body {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
   border-bottom: 3px solid rgba(0, 0, 0, 0.6);
+}
+.tab:hover {
+  color: white;
+  border-bottom: 3px solid white;
 }
 
 .project__tab-menu li a.active {

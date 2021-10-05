@@ -1,7 +1,7 @@
 const slides = document.querySelector(".slides"),
   slide = document.querySelectorAll(".slides li"),
   slideCount = slide.length,
-  slideWidth = 200,
+  slideWidth = 300,
   slideMargin = 30,
   prevBtn = document.querySelector(".prev"),
   nextBtn = document.querySelector(".next");
