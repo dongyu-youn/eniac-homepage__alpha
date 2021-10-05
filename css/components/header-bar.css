@@ -1,6 +1,274 @@
 /* 헤더바는 헴버거바를 갈아끼우자 */
 
 .header-bar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background: #f1efe9;
+  box-shadow: 0 0 15px 20px #f1efe9;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  height: 100px;
+  padding: 5px 20px 10px 0;
+  margin-top: 10px;
+}
+
+.header-bar__column {
+  width: 50%;
+}
+
+.header-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.header-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-bar__a img {
+  width: 400px;
+  height: 400px;
+  padding: 20px 0px 0px 0px;
+}
+
+.header-bar__logo {
+  margin-top: 20px;
+}
+
+.header-bar__logo img {
+  width: 250px;
+  height: 230px;
+  padding: 20px 0px 0px 0px;
+}
+
+.header-bar__img {
+  z-index: -999;
+  margin-top: 20px;
+  width: 250px;
+  height: 230px;
+  padding: 20px 0px 0px 0px;
+}
+
+.header-bar__text {
+  margin-left: 30px;
+}
+
+.header-bar__profile {
+  margin-left: 50px;
+}
+
+.header-bar__login-b {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 0.4em;
+  color: #282828;
+  z-index: 0;
+  position: relative;
+}
+
+.header-bar__login-b::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  background: rgba(200, 125, 220, 0.6);
+}
+
+.header-bar__p:hover .header-bar__login-b::after {
+  width: 90%;
+  transition: width 0.3s;
+}
+
+#wrapper {
+  width: 150px;
+  height: 150px;
+  background: green;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.8);
+  position: absolute;
+}
+
+#line-wrapper {
+  cursor: pointer;
+  width: 56px;
+  height: 35px;
+  position: relative;
+  top: 52.5px;
+  left: 47px;
+}
+
+/* 추가된 부분 */
+
+.init {
+  animation: none !important;
+}
+
+.line {
+  background: #ffffff;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  width: 56px;
+  height: 7px;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.line-top {
+  animation: line-top 0.5s forwards ease-out,
+    line-top-rotate 0.3s 0.5s forwards ease-out;
+}
+
+/* 추가된 부분 */
+
+.top-reverse {
+  animation: line-top-rotate-reverse 0.3s forwards ease-out,
+    line-top-reverse 0.5s 0.3s forwards ease-out;
+}
+
+.line-mid {
+  animation: line-mid 0.5s forwards ease-out;
+}
+
+/* 추가된 부분 */
+
+.mid-reverse {
+  animation: line-mid-invisible 0.3s forwards ease-out,
+    line-mid-reverse 0.5s 0.3s forwards ease-out;
+}
+
+.line-bot {
+  animation: line-bot 0.5s forwards ease-out,
+    line-bot-rotate 0.3s 0.5s forwards ease-out;
+}
+
+/* 추가된 부분 */
+
+.bot-reverse {
+  animation: line-bot-rotate-reverse 0.3s forwards ease-out,
+    line-bot-reverse 0.5s 0.3s forwards ease-out;
+}
+
+@keyframes line-top {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(13px);
+  }
+}
+
+/* 추가된 부분 */
+
+@keyframes line-top-reverse {
+  0% {
+    transform: translateY(13px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes line-top-rotate {
+  0% {
+    transform: translateY(13px) rotateZ(0deg);
+  }
+  100% {
+    transform: translateY(13px) rotateZ(45deg);
+  }
+}
+
+/* 추가된 부분 */
+
+@keyframes line-top-rotate-reverse {
+  0% {
+    transform: translateY(13px) rotateZ(45deg);
+  }
+  100% {
+    transform: translateY(13px) rotateZ(0deg);
+  }
+}
+
+@keyframes line-mid {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+/* 추가된 부분 */
+
+@keyframes line-mid-reverse {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes line-mid-invisible {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes line-bot {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-13px);
+  }
+}
+
+/* 추가된 부분 */
+
+@keyframes line-bot-reverse {
+  0% {
+    transform: translateY(-13px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes line-bot-rotate {
+  0% {
+    transform: translateY(-13px) rotateZ(0deg);
+  }
+  100% {
+    transform: translateY(-13px) rotateZ(135deg);
+  }
+}
+
+/* 추가된 부분 */
+
+@keyframes line-bot-rotate-reverse {
+  0% {
+    transform: translateY(-13px) rotateZ(135deg);
+  }
+  100% {
+    transform: translateY(-13px) rotateZ(0deg);
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .header-bar {
     display: flex;
     align-items: center;
     position: fixed;
@@ -10,307 +278,36 @@
     box-shadow: 0 0 15px 20px #f1efe9;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    height: 100px;
+    height: 30px;
     padding: 5px 20px 10px 0;
     margin-top: 10px;
-}
-
-.header-bar__column {
-    width: 50%;
-}
-
-.header-bar__column:nth-child(2) {
-    display: flex;
-    justify-content: center;
-}
-
-.header-bar__column:last-child {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.header-bar__a img {
-    width: 400px;
-    height: 400px;
-    padding: 20px 0px 0px 0px;
-}
-
-.header-bar__logo {
-    margin-top: 20px;
-}
-
-.header-bar__logo img {
-    width: 250px;
-    height: 230px;
-    padding: 20px 0px 0px 0px;
-}
-
-.header-bar__img {
-    z-index: -999;
-    margin-top: 20px;
-    width: 250px;
-    height: 230px;
-    padding: 20px 0px 0px 0px;
-}
-
-.header-bar__text {
-    margin-left: 30px;
-}
-
-.header-bar__profile {
-    margin-left: 50px;
-}
-
-.header-bar__login-b {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    font-weight: 800;
-    font-size: 15px;
-    letter-spacing: 0.4em;
-    color: #282828;
-    z-index: 0;
-    position: relative;
-}
-
-.header-bar__login-b::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 5px;
-    position: absolute;
-    left: 0;
-    bottom: 0px;
-    background: rgba(200, 125, 220, 0.6);
-}
-
-.header-bar__p:hover .header-bar__login-b::after {
-    width: 90%;
-    transition: width 0.3s;
-}
-
-#wrapper {
-    width: 150px;
-    height: 150px;
-    background: green;
-    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.8);
-    position: absolute;
-}
-
-#line-wrapper {
-    cursor: pointer;
-    width: 56px;
-    height: 35px;
-    position: relative;
-    top: 52.5px;
-    left: 47px;
-}
-
-
-/* 추가된 부분 */
-
-.init {
-    animation: none !important;
-}
-
-.line {
-    background: #ffffff;
-    margin-top: 6px;
-    margin-bottom: 6px;
-    width: 56px;
-    height: 7px;
-    border-radius: 2px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-    position: relative;
-}
-
-.line-top {
-    animation: line-top 0.5s forwards ease-out, line-top-rotate 0.3s 0.5s forwards ease-out;
-}
-
-
-/* 추가된 부분 */
-
-.top-reverse {
-    animation: line-top-rotate-reverse 0.3s forwards ease-out, line-top-reverse 0.5s 0.3s forwards ease-out;
-}
-
-.line-mid {
-    animation: line-mid 0.5s forwards ease-out;
-}
-
-
-/* 추가된 부분 */
-
-.mid-reverse {
-    animation: line-mid-invisible 0.3s forwards ease-out, line-mid-reverse 0.5s 0.3s forwards ease-out;
-}
-
-.line-bot {
-    animation: line-bot 0.5s forwards ease-out, line-bot-rotate 0.3s 0.5s forwards ease-out;
-}
-
-
-/* 추가된 부분 */
-
-.bot-reverse {
-    animation: line-bot-rotate-reverse 0.3s forwards ease-out, line-bot-reverse 0.5s 0.3s forwards ease-out;
-}
-
-@keyframes line-top {
-    0% {
-        transform: translateY(0px);
-    }
-    100% {
-        transform: translateY(13px);
-    }
-}
-
-
-/* 추가된 부분 */
-
-@keyframes line-top-reverse {
-    0% {
-        transform: translateY(13px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-@keyframes line-top-rotate {
-    0% {
-        transform: translateY(13px) rotateZ(0deg);
-    }
-    100% {
-        transform: translateY(13px) rotateZ(45deg);
-    }
-}
-
-
-/* 추가된 부분 */
-
-@keyframes line-top-rotate-reverse {
-    0% {
-        transform: translateY(13px) rotateZ(45deg);
-    }
-    100% {
-        transform: translateY(13px) rotateZ(0deg);
-    }
-}
-
-@keyframes line-mid {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(0);
-    }
-}
-
-
-/* 추가된 부분 */
-
-@keyframes line-mid-reverse {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-@keyframes line-mid-invisible {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(0);
-    }
-}
-
-@keyframes line-bot {
-    0% {
-        transform: translateY(0px);
-    }
-    100% {
-        transform: translateY(-13px);
-    }
-}
-
-
-/* 추가된 부분 */
-
-@keyframes line-bot-reverse {
-    0% {
-        transform: translateY(-13px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-@keyframes line-bot-rotate {
-    0% {
-        transform: translateY(-13px) rotateZ(0deg);
-    }
-    100% {
-        transform: translateY(-13px) rotateZ(135deg);
-    }
-}
-
-
-/* 추가된 부분 */
-
-@keyframes line-bot-rotate-reverse {
-    0% {
-        transform: translateY(-13px) rotateZ(135deg);
-    }
-    100% {
-        transform: translateY(-13px) rotateZ(0deg);
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .header-bar {
-        display: flex;
-        align-items: center;
-        position: fixed;
-        width: 100%;
-        z-index: 10;
-        background: #f1efe9;
-        box-shadow: 0 0 15px 20px #f1efe9;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        height: 30px;
-        padding: 5px 20px 10px 0;
-        margin-top: 10px;
-    }
-    .header-bar__logo {
-        margin-top: 40px;
-    }
-    .header-bar__column:nth-child(2) {
-        display: none;
-    }
-    .header-bar__center {
-        display: none;
-    }
-    /* .header-bar__login a:nth-of-type(n + 2) {
+  }
+  .header-bar__logo {
+    margin-top: 40px;
+  }
+  .header-bar__column:nth-child(2) {
+    display: none;
+  }
+  .header-bar__center {
+    display: none;
+  }
+  /* .header-bar__login a:nth-of-type(n + 2) {
         display: none;
     } */
-    .header-bar__logo img {
-        width: 200px;
-        height: 200px;
-        padding: 50px 0px 0px 0px;
-    }
-    .header-bar__logo {}
-    #menuicon {
-        display: block;
-    }
-    .header-bar__login a {
-        display: none;
-    }
-    .header-bar__login i {
-        display: none;
-    }
+  .header-bar__logo img {
+    width: 200px;
+    height: 200px;
+    padding: 50px 0px 0px 0px;
+  }
+  .header-bar__logo {
+  }
+  #menuicon {
+    display: block;
+  }
+  .header-bar__login a {
+    display: none;
+  }
+  .header-bar__login i {
+    display: none;
+  }
 }

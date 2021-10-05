@@ -92,7 +92,7 @@ p.typing-txt {
 }
 @media (max-width: 1000px) {
   .home-lecture .home-lecture__in {
-    width: 100%;
+    width: none;
   }
   .home-lecture__list {
     display: flex;
@@ -111,7 +111,7 @@ p.typing-txt {
 
 @media (max-width: 770px) {
   .home-lecture .home-lecture__in {
-    width: 100%;
+    width: none;
   }
   .home-lecture__list {
     display: flex;
