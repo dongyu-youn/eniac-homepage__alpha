@@ -189,6 +189,10 @@
     flex-wrap: wrap;
 }
 
+.home-box__judges img {
+    width: 50px;
+}
+
 .home-box__text {
     font-size: large;
     margin-top: -70px;
@@ -196,8 +200,118 @@
     letter-spacing: 0.25em;
 }
 
+.home-box__span__desc {
+    font-family: "IBM Plex Sans KR", sans-serif;
+    letter-spacing: 0.09em;
+    font-size: 12px;
+}
+
 @media (max-width: 1000px) {
     .home-box {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home-box {
+        position: relative;
+        padding: 0 0px;
+        margin: 0 auto;
+        display: flex;
+    }
+    .home-box__thumbnail {
+        width: 75%;
+        position: relative;
+        margin-bottom: -176px;
+        z-index: 1;
+    }
+    .home-box__wrapper {
+        padding-left: 0;
+    }
+    .home-box__img {
+        width: 1000px;
+        height: 600px;
+        opacity: 0.8;
+        margin-left: 0px;
+        /*justify-content: center;
+      margin: 0px auto;*/
+    }
+    .home-box__middle {
+        display: flex;
+        padding-top: 200px;
+        justify-content: center;
+    }
+    .home-box__side {
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        position: relative;
+        display: none;
+    }
+    .home-box__thumbnail img {
+        display: block;
+        box-shadow: 10px 15px 35px -5px rgb(0 0 0 / 60%);
+        transition: box-shadow 0.2s ease-in-out;
+    }
+    @keyframes goleft {
+        0% {
+            transform: none;
+        }
+        100% {
+            transform: none;
+        }
+    }
+    .home-box__bottom__top {
+        width: 130%;
+        height: 550px;
+        margin-top: 250px;
+        background-color: #e1ded0;
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+    }
+    .home-box__introduction {
+        justify-content: center;
+        height: 20%;
+        padding: 50px 20px 50px 90px;
+    }
+    .home-box__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px 0px 10px 0px;
+        margin-right: 80px;
+    }
+    .home-box__circle {
+        display: flex;
+        vertical-align: none;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        margin-left: 52px;
+        background-color: #f1efe9;
+        border-radius: 50%;
+        font-size: 30px;
+        align-items: center;
+        border: 0.06em solid #282828;
+    }
+    .home-box__bottom__bottom {
+        margin-top: 100px;
+    }
+    .home-box__judges img {
+        width: 150px;
+    }
+    .home-box__judges {
+        padding: 20px 0px 0px 0px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .home-box__span {
+        font-family: "IBM Plex Sans KR", sans-serif;
+        letter-spacing: 0.09em;
+        font-size: 28px;
+    }
+    .header-bar__login a:nth-child(2) {
+        display: none;
     }
 }

@@ -15,7 +15,7 @@
     <header>
       <nav class="header-bar">
         <div class="header-bar__column header-bar__logo">
-          <a href="index.html" class="header-bar__a">
+          <a href="../../home.html" class="header-bar__a">
             <img
               class="header-bar__image"
               style=""
@@ -67,36 +67,30 @@
       </nav>
     </header>
     <main>
-      <h1>CREATE PROJECT</h1>
+      <h1>에니악 신청서</h1>
       <form class="project" action="project.html">
         <div class="wrap">
           <div class="wrap__wrap">
             <input
-              id="input-file"
+              class="project__img"
               type="file"
-              name="files1"
-              accept="image/*"
-              onchange="previewImage(this)"
-              value="프로필사진"
+              accept="image/png, image/jpeg, image/jpg, image/svg"
+              value="이미지 첨부"
               required
+              placeholder="사진"
             />
-            <div id="preview"></div>
-            <div class="img-upload-box"></div>
-            <label class="input-file-box" for="input-file">
-              <span class="img-upload-box__text">프로젝트 사진</span>
-            </label>
           </div>
           <div class="wrap__wrap">
             <input
               class="project__text"
               type="text"
-              placeholder="프로젝트 이름"
+              placeholder="이름"
               required
             />
             <input
               class="project__text"
               type="text"
-              placeholder="학과/기수/이름"
+              placeholder="학과/나이"
               required
             />
             <input
@@ -108,7 +102,7 @@
           </div>
         </div>
         <div class="dropdown">
-          <button type="button" class="dropdown-toggle">프로젝트 주제</button>
+          <button type="button" class="dropdown-toggle">희망분야</button>
 
           <ul class="dropdown-menu">
             <li class="dropdown-item">
@@ -148,7 +142,7 @@
           <textarea
             class="project__explain"
             type="text"
-            placeholder="프로젝트 설명"
+            placeholder="자기소개"
           ></textarea>
           <div class="creat-btn">
             <input type="submit" value="Create" />
@@ -162,7 +156,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="../../js/dropdown.js"></script>
-    <script src="../../js/img-hidden.js"></script>
-    <script src="../../js/img-upload.js"></script>
   </body>
 </html>
