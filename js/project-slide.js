@@ -34,20 +34,6 @@ prevBtn.addEventListener("click", function () {
   }
 });
 
-// /* 반응형 슬라이드 */
-// let slideWrapper = document.querySelector(".slide_wrapper");
-// window.addEventListener("resize", function () {
-//   let currentWidth = document.querySelector("body").offsetWidth;
-//   console.dir(slideWrapper.scrollWidth);
-//   if (currentWidth < 1200) {
-//     console.dir(slideWrapper);
-
-//     // let slidesWidth = slides.offsetWidth;
-//     // let slideWidth =
-//     //   (slidesWidth - slideMargin * (slideCount - 1)) / slideCount;
-//   }
-// });
-
 /* 자동슬라이드 */
 let timer = undefined;
 
