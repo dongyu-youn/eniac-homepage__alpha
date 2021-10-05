@@ -13,13 +13,13 @@ body {
 }
 
 .project__title {
-  font-size: 44px;
+  font-size: 38px;
   opacity: 0.6;
+  margin-bottom: 70px;
 }
 
 .project__tab-menu {
   display: flex;
-  margin-top: 100px;
 }
 
 .project__tab-menu > li {
@@ -32,7 +32,7 @@ body {
 .project__tab-menu > li:last-child {
   /* 걍 탭 크기 예쁘게 맞추려고 했는데 방안이 이것밖에 생각 안남.. */
   width: 22%;
-  margin-top: 21.5px;
+  margin-top: 22px;
 }
 .project__tab-menu li:last-child a {
   cursor: default;
@@ -56,7 +56,7 @@ body {
   border-bottom: 3px solid white;
 }
 .project__tab-content {
-  margin-left: -3%;
+  margin-left: -1.2%;
 }
 .project__tab-content > div {
   /* 처음에 내용들 안보이게 */
@@ -70,20 +70,86 @@ body {
   .project__tab-content {
     margin-left: -7%;
   }
+  .project__tab-menu > li:last-child {
+    margin-top: 22px;
+  }
 }
 @media screen and (max-width: 900px) and (min-width: 600px) {
   .project__tab {
     margin-left: 15%;
   }
   .project {
-    margin-left: 0;
+    margin-left: 15%;
   }
   .project__tab-content {
     margin-left: 10%;
   }
+  .project {
+    padding-top: 120px;
+  }
+  .project__title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  .project__tab {
+    margin-left: -8%;
+  }
+  .project__tab-content {
+    margin-left: 5%;
+  }
+  .project__tab-menu > li:last-child {
+    width: 0%;
+  }
+  .project__tab-menu li {
+    width: 13%;
+  }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) and (min-width: 480px) {
   .project__tab-content {
     margin-left: -18%;
+  }
+  .project {
+    padding-top: 120px;
+  }
+  .project__title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  .project__tab {
+    margin-left: -8%;
+  }
+  .project__tab-content {
+    margin-left: -13%;
+  }
+  .project__tab-menu > li:last-child {
+    width: 0%;
+  }
+  .project__tab-menu li {
+    width: 13%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project {
+    padding-top: 120px;
+  }
+  .project__title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  .project__tab {
+    margin-left: -8%;
+  }
+  .project__tab-content {
+    margin-left: -17.5%;
+  }
+  .project__tab-menu > li:last-child {
+    width: 0%;
+  }
+  .project__tab-menu li {
+    width: 13%;
   }
 }

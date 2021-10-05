@@ -29,7 +29,7 @@ const slides1 = document.querySelector("#tab1 .slides"),
   prevBtn6 = document.querySelector("#tab6 .prev"),
   nextBtn6 = document.querySelector("#tab6 .next");
 
-const slideWidth = 300,
+const slideWidth = 270,
   slideMargin = 30;
 
 function playSlide(slides, slideCount, prevBtn, nextBtn) {
