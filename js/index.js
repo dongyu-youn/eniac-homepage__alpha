@@ -1,3 +1,5 @@
+//printf eniac 타이핑되는 모션//
+
 $(window).ready(function() {
     var typingBool = false;
     var typingIdx = 0;
