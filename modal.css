@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+
+.fa-times {
+  color: black;
+  font-size: 50px;
+}
+
+/*혜택 부분*/
+.benefit__modal__bg {
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+.benefit__visible {
+  visibility: visible;
+}
+
+.benefit__hidden {
+  visibility: hidden;
+}
+
+.benefit__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.benefit__button__open {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.benefit__modal__title {
+  font-size: 100px;
+  margin-left: 20px;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.benefit__button__close {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  background-color: #808080;
+}
+
+.benefit__section {
+  display: flex;
+  margin-left: 10px;
+}
+
+.benefit__Img {
+  width: 800px;
+  height: 500px;
+}
+
+.benefit__TextContent {
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+/*동아리 수상 관련 부분*/
+.award__modal__bg {
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+.award__visible {
+  visibility: visible;
+}
+
+.award__hidden {
+  visibility: hidden;
+}
+
+.award__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.award__button__open {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.award__modal__title {
+  font-size: 100px;
+  margin-left: 20px;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.award__button__close {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  background-color: #808080;
+}
+
+.award__section {
+  display: flex;
+  margin-left: 10px;
+}
+
+.award__Img {
+  width: 800px;
+  height: 500px;
+}
+
+.award__TextContent {
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.develop__modal__bg {
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+.develop__visible {
+  visibility: visible;
+}
+
+.develop__hidden {
+  visibility: hidden;
+}
+
+.develop__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.develop__button__open {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.develop__modal__title {
+  font-size: 100px;
+  margin-left: 20px;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.develop__button__close {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  background-color: #808080;
+}
+
+.develop__section {
+  display: flex;
+  margin-left: 10px;
+}
+
+.develop__Img {
+  width: 800px;
+  height: 500px;
+}
+
+.develop__TextContent {
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
