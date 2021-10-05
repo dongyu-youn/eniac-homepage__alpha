@@ -6,7 +6,7 @@
 }
 
 /*혜택 부분*/
-.benefit__modal__bg {
+.study__modal__bg {
   position: absolute;
   height: 90%;
   width: 90%;
@@ -14,33 +14,33 @@
   border-radius: 10px;
 }
 
-.benefit__visible {
+.study__visible {
   visibility: visible;
 }
 
-.benefit__hidden {
+.study__hidden {
   visibility: hidden;
 }
 
-.benefit__header {
+.study__header {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.benefit__button__open {
+.study__button__open {
   border: 0;
   outline: 0;
   cursor: pointer;
 }
 
-.benefit__modal__title {
+.study__modal__title {
   font-size: 100px;
   margin-left: 20px;
   font-family: "Black Han Sans", sans-serif;
 }
 
-.benefit__button__close {
+.study__button__close {
   width: 50px;
   height: 50px;
   cursor: pointer;
@@ -49,17 +49,17 @@
   background-color: #808080;
 }
 
-.benefit__section {
+.study__section {
   display: flex;
   margin-left: 10px;
 }
 
-.benefit__Img {
+.study__Img {
   width: 800px;
   height: 500px;
 }
 
-.benefit__TextContent {
+.study__TextContent {
   font-family: "Black Han Sans", sans-serif;
   font-size: 30px;
   margin-top: 40px;
