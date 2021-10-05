@@ -5,9 +5,47 @@
     <title>Study</title>
     <link rel="stylesheet" href="../../styles.css" />
     <script src="../../js/img-slide.js"></script>
-</head>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+    <script src="../../js/index.js"></script>
+    <script src="../../js/img-slide.js"></script>
+    <script src="../../js/home-box__menu.js"></script>
+    <script src="../../js/home-box.js"></script>
+    <script src="../../js/solepage.js"></script>
+  </head>
 
-<body>
+  <body>
+    <div id="myNav" class="overlay">
+      <!--메뉴-->
+      <a href="" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="../../1_소개페이지/4안/introduce.html">About</a>
+        <a href="../project/project.html">Projects</a>
+        <a href="../studies/study.html">Studies</a>
+        <a href="../community/community.html">Board</a>
+        <a href="../enjoy/enjoy.html">Enjoy Eniac</a>
+      </div>
+    </div>
+
+    <div id="meNav" class="overlay">
+      <!--검색창-->
+      <a href="" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content__search">
+        <input type="text" placeholder="SEARCH" />
+        <button></button>
+      </div>
+      <div class="overlay-content__hashtag">
+        <a href="#">#원광대</a>
+        <a href="#">#코딩러라면</a>
+        <a href="#">#에니악은</a>
+        <a href="#">#필수</a>
+      </div>
+      <div class="overlay-content__hashtag">
+        <a href="#">#아직도</a>
+        <a href="#">#가입_안했니?</a>
+        <a href="#">#괜찮아</a>
+        <a href="#">#안늦었어^^</a>
+      </div>
+    </div>
 
     <nav class="header-bar">
         <div class="header-bar__column header-bar__logo">
@@ -35,7 +73,7 @@
           </span>
             </a>
         </div>
-    </nav> 
+    </nav>
 
     <div class="study">
         <div class="study__inner">

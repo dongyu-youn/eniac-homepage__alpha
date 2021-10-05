@@ -170,12 +170,12 @@
 }
 
 /*중간에 디테일한 디자인 부분들*/
-.Design_Content_left {
+.intro_Design_Content_left {
   margin-top: -110px;
   margin-left: 150px;
 }
 
-.Design_Content_right {
+.intro_Design_Content_right {
   margin-left: 960px;
 }
 
@@ -197,10 +197,170 @@
   margin-left: 20px;
 }
 
-/*
+/*수상_SW영역*/
+.award_Design_Content_Set1 {
+  margin-top: 35px;
+  margin-left: 215px;
+}
 
+.award_SW_Set {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
 
-*/
+.award_SW_text {
+  margin-left: 160px;
+  margin-top: -50px;
+}
+
+.award_SW_text_title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.award_SW_text_content {
+  font-size: 20px;
+  margin-top: 50px;
+  color: gray;
+}
+
+.award_SW_img {
+  width: 850px;
+  height: 560px;
+  margin-left: 20px;
+  margin-top: -30px;
+}
+
+/*수상_포폴영역*/
+.award_portfolio {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.award_portfolio_img {
+  width: 850px;
+  height: 480px;
+  margin-left: 80px;
+  z-index: 1;
+}
+
+.award_portfolio_text {
+  margin-left: 100px;
+  z-index: 1;
+}
+
+.award_Design_Content_Set2 {
+  margin-left: 880px;
+  margin-top: -130px;
+  z-index: 100;
+}
+
+.award_portfolio_text_title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.award_portfolio_text_content {
+  font-size: 20px;
+  margin-top: 50px;
+  color: gray;
+}
+
+/*혜택 영역*/
+.gift_Design_Content_Set_first {
+  margin-top: 50px;
+}
+
+.gift_Design_Content_first_bottom {
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+  margin-left: 70px;
+}
+
+.gift_Design_Content_first_top {
+  margin-left: 260px;
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  margin-top: -30px;
+}
+
+/*동아리실*/
+.contents__bar__gift__one {
+  display: flex;
+  margin-top: -100px;
+  margin-left: 300px;
+}
+
+.gift_room_text_title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.gift_room_text_content {
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.gift_room_img {
+  width: 800px;
+  height: 500px;
+  margin-left: 40px;
+  margin-top: -80px;
+}
+
+.gift_Design_Content_Set_second {
+  display: flex;
+  margin-top: -50px;
+}
+
+.gift_Design_Content_second_anything {
+  width: 78%;
+}
+
+.contents__bar__gift__two {
+  display: flex;
+}
+
+.gift_study_img {
+  width: 800px;
+  height: 500px;
+  margin-left: 100px;
+}
+
+.gift_study_text {
+  margin-left: 200px;
+  margin-top: 200px;
+}
+
+.gift_study_text_title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.gift_study_text_content {
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.gift_study_text_content_data_Set {
+  margin-top: 20px;
+}
+
 .introduce {
   display: none;
 }
+
+.award {
+  display: none;
+}
+
+/* .gift {
+  display: none;
+} */
