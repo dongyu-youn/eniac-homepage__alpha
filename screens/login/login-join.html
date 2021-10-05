@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ENIAC-login__join</title>
+    <link rel="stylesheet" href="../../css/project/dropdown.css" />
     <link rel="stylesheet" href="../../css/login/component.css" />
     <link rel="stylesheet" href="../../css/login/login-join.css" />
   </head>
@@ -52,12 +53,42 @@
         </div>
       </div>
       <div class="wrap">
-        <input
-          class="join__write-long"
-          type="text"
-          placeholder="관심분야(ex.Web/App/AI/···)"
-          required
-        />
+        <div class="dropdown">
+          <button type="button" class="dropdown-toggle">관심분야</button>
+
+          <ul class="dropdown-menu">
+            <li class="dropdown-item">
+              <button type="button" value="1" class="dropdown-option">
+                웹
+              </button>
+            </li>
+            <li class="dropdown-item">
+              <button type="button" value="2" class="dropdown-option">
+                앱
+              </button>
+            </li>
+            <li class="dropdown-item">
+              <button type="button" value="3" class="dropdown-option">
+                AI
+              </button>
+            </li>
+            <li class="dropdown-item">
+              <button type="button" value="4" class="dropdown-option">
+                게임
+              </button>
+            </li>
+            <li class="dropdown-item">
+              <button type="button" value="5" class="dropdown-option">
+                보안
+              </button>
+            </li>
+            <li class="dropdown-item">
+              <button type="button" value="6" class="dropdown-option">
+                Etc
+              </button>
+            </li>
+          </ul>
+        </div>
         <input
           class="join__write-long"
           type="email"
@@ -78,11 +109,17 @@
           required
           minlength="8"
         />
-        <input class="join__btn" type="submit" value="Creat Account" required />
+        <input
+          class="join__btn"
+          type="submit"
+          value="Create Account"
+          required
+        />
       </div>
     </form>
     <script src="../../js/img-upload.js"></script>
     <script src="../../js/img-hidden.js"></script>
+    <script src="../../js/dropdown.js"></script>
     <script></script>
   </body>
 </html>
