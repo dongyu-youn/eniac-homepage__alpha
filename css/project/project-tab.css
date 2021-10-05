@@ -5,7 +5,7 @@ body {
 .project {
   /* position안하면 nav랑 겹침..(왤까) */
   position: relative;
-  padding: 200px 0px 125px 25%;
+  padding: 200px 0px 125px 23%;
 }
 
 .project__title {

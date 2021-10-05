@@ -33,3 +33,29 @@ prevBtn.addEventListener("click", function () {
     //첫번째 슬라이드에서 더 가면 마지막 슬라이드로 이동
   }
 });
+
+//자동슬라이드
+let timer = undefined;
+
+function autoSlide() {
+  if (timer == undefined) {
+    timer = setInterval(function () {
+      if (currentIdx < slideCount - 3) {
+        moveSlide(currentIdx + 1);
+      } else {
+        moveSlide(0);
+      }
+    }, 3000);
+  }
+}
+autoSlide();
+function stopSlide() {
+  clearInterval(timer);
+  timer = undefined;
+}
+slides.addEventListener("mouseenter", function () {
+  stopSlide();
+});
+slides.addEventListener("mouseleave", function () {
+  autoSlide();
+});
