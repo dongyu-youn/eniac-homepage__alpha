@@ -1,10 +1,9 @@
 * {
-  box-sizing: border-box;
 }
 main {
   position: relative;
-  padding: 250px 0px 125px 27.2%;
-  width: 72.7%;
+  padding: 250px 0px 125px 30%;
+  width: 40%;
 }
 
 h1 {
@@ -16,10 +15,43 @@ h1 {
 .project {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
+#preview > img {
+  border: 1.7px solid rgba(0, 0, 0, 0.2);
+}
+#input-file {
+  display: none;
+}
+
+.img-upload-box {
+  border: 1.7px solid rgba(0, 0, 0, 0.2);
+}
+.img-upload-box__text {
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.input-file-box {
+  margin-top: 10px;
+}
+.img-upload-box__text:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
 .wrap:first-child {
   display: flex;
+  width: 100%;
+}
+.wrap:first-child > .wrap__wrap:first-child {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .wrap:first-child > .wrap__wrap:last-child {
   display: flex;
@@ -27,12 +59,14 @@ h1 {
   margin-left: 40px;
   width: 100%;
 }
+
 .project__img {
-  width: 270px;
-  height: 270px;
+  width: 100%;
+  height: 100%;
   border: 1.7px solid rgba(0, 0, 0, 0.2);
 }
 .project__text {
+  width: 100%;
   height: 65px;
   margin-bottom: 20px;
   border: none;
@@ -52,7 +86,6 @@ textarea:focus {
   margin-top: 0px;
   width: 100%;
   height: 300px;
-  padding: 30px;
   border: none;
   background-color: rgba(0, 0, 0, 0.05);
   font-size: 14px;
@@ -61,10 +94,16 @@ textarea:focus {
   line-height: 23px;
 }
 
+textarea::placeholder {
+  opacity: 0.8;
+  font-weight: 600;
+  padding: 15px;
+}
 .creat-btn {
   display: flex;
   justify-content: right;
 }
+
 input[type="submit"] {
   height: 40px;
   width: 100px;
@@ -74,4 +113,45 @@ input[type="submit"] {
   border-radius: 5px;
   cursor: pointer;
   border: none;
+}
+
+@media screen and (min-width: 1200px) {
+  #preview > img,
+  .img-upload-box {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  main {
+    width: 50%;
+  }
+  #preview > img,
+  .img-upload-box {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  main {
+    width: 60%;
+    padding-left: 20%;
+  }
+  #preview > img,
+  .img-upload-box {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main {
+    width: 80%;
+    padding-left: 10%;
+  }
+  #preview > img,
+  .img-upload-box {
+    width: 150px;
+    height: 150px;
+  }
 }

@@ -9,7 +9,47 @@
     <link rel="stylesheet" href="../../styles.css" />
     <link rel="stylesheet" href="../../css/project/project-tab.css" />
     <link rel="stylesheet" href="../../css/project/project-slide.css" />
-</head>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+    <script src="../../js/index.js"></script>
+    <script src="../../js/img-slide.js"></script>
+    <script src="../../js/home-box__menu.js"></script>
+    <script src="../../js/home-box.js"></script>
+    <script src="../../js/solepage.js"></script>
+  </head>
+
+  <body>
+    <div id="myNav" class="overlay">
+      <!--메뉴-->
+      <a href="" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="../../1_소개페이지/4안/introduce.html">About</a>
+        <a href="../project/project.html">Projects</a>
+        <a href="../studies/study.html">Studies</a>
+        <a href="../community/community.html">Board</a>
+        <a href="../enjoy/enjoy.html">Enjoy Eniac</a>
+      </div>
+    </div>
+
+    <div id="meNav" class="overlay">
+      <!--검색창-->
+      <a href="" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content__search">
+        <input type="text" placeholder="SEARCH" />
+        <button></button>
+      </div>
+      <div class="overlay-content__hashtag">
+        <a href="#">#원광대</a>
+        <a href="#">#코딩러라면</a>
+        <a href="#">#에니악은</a>
+        <a href="#">#필수</a>
+      </div>
+      <div class="overlay-content__hashtag">
+        <a href="#">#아직도</a>
+        <a href="#">#가입_안했니?</a>
+        <a href="#">#괜찮아</a>
+        <a href="#">#안늦었어^^</a>
+      </div>
+    </div>
 
 <body>
     <nav class="header-bar">
@@ -54,32 +94,69 @@
         </ul>
         <div class="project__tab-content">
             <div id="tab1">
-                <div class="slide_wrapper">
-                    <ul class="slides">
-                        <li><img src="http://placehold.it/200x250" alt="" /></li>
-                        <li><img src="http://placehold.it/200x250" alt="" /></li>
-                        <li><img src="http://placehold.it/200x250" alt="" /></li>
-                        <li><img src="http://placehold.it/200x250" alt="" /></li>
-                        <li><img src="http://placehold.it/200x250" alt="" /></li>
-                        <li><img src="http://placehold.it/200x250" alt="" /></li>
-                        <li><img src="http://placehold.it/200x250" alt="" /></li>
-                        <li><img src="http://placehold.it/200x250" alt="" /></li>
-                    </ul>
-                    <div class="controls">
-                        <span class="prev"><i class="fas fa-angle-left"></i></span>
-                        <span class="next"><i class="fas fa-angle-right"></i></span>
-                    </div>
-                </div>
-                <form class="create-project" action="project-create.html">
-                    <input type="submit" value="Create Project" />
-                </form>
+                <div class="controls">
+                    <span class="prev"><i class="fas fa-angle-left button"></i></span>
 
+                    <div class="slide_wrapper">
+                    <ul class="slides">
+                        <li class="slide-box">
+                            <img class="slide-box__img" src="https://blog.kakaocdn.net/dn/emFK7P/btq2504hq8q/tkcmucjvMzhK8rM8kkC2VK/img.png"/>
+                                <div class="slide-box__contents">
+                                    <span class="slide-box__title">코코아클론</span>
+                                    <span class="slide-box__info">컴소공/32기/이상희</span>
+                                    <a 👉GITHUB class="slide-box__link" target="_blank" href="https://github.com/sanghee01/kokoa">👉GITHUB</a>
+                                </div>
+                                </li>
+                            <li class="slide-box">
+                                <img class="slide-box__img" src="https://blog.kakaocdn.net/dn/emFK7P/btq2504hq8q/tkcmucjvMzhK8rM8kkC2VK/img.png"/>
+                                <div class="slide-box__contents">
+                                    <span class="slide-box__title">코코아클론</span>
+                                    <span class="slide-box__info">컴소공/32기/이상희</span>
+                                    <a class="slide-box__link" target="_blank" href="https://github.com/sanghee01/kokoa">👉GITHUB</a>
+                                </div>
+                                </li>
+                            <li class="slide-box">
+                                <img class="slide-box__img" src="https://blog.kakaocdn.net/dn/emFK7P/btq2504hq8q/tkcmucjvMzhK8rM8kkC2VK/img.png"/>
+                                <div class="slide-box__contents">
+                                    <span class="slide-box__title">코코아클론</span>
+                                    <span class="slide-box__info">컴소공/32기/이상희</span>
+                                    <a class="slide-box__link" target="_blank" href="https://github.com/sanghee01/kokoa">👉GITHUB</a>
+                                </div>
+                                </li>
+                            <li class="slide-box">
+                                <img class="slide-box__img" src="https://blog.kakaocdn.net/dn/emFK7P/btq2504hq8q/tkcmucjvMzhK8rM8kkC2VK/img.png"/>
+                                <div class="slide-box__contents">
+                                    <span class="slide-box__title">코코아클론</span>
+                                    <span class="slide-box__info">컴소공/32기/이상희</span>
+                                    <a class="slide-box__link" target="_blank" href="https://github.com/sanghee01/kokoa">👉GITHUB</a>
+                                </div>
+                                </li>
+                            <li class="slide-box">
+                                <img class="slide-box__img" src="https://blog.kakaocdn.net/dn/emFK7P/btq2504hq8q/tkcmucjvMzhK8rM8kkC2VK/img.png"/>
+                                <div class="slide-box__contents">
+                                    <span class="slide-box__title">코코아클론</span>
+                                    <span class="slide-box__info">컴소공/32기/이상희</span>
+                                    <a class="slide-box__link" target="_blank" href="https://github.com/sanghee01/kokoa">👉GITHUB</a>
+                                </div>
+                                </li>
+                        
+                           
+                    </ul>
+                </div>
+                <span class="next"><i class="fas fa-angle-right button"></i></span>
+
+                </div>
+                
             </div>
             <div id="tab2">tab2에 들어갈 내용</div>
             <div id="tab3">tab3에 들어갈 내용</div>
             <div id="tab4">tab4에 들어갈 내용</div>
             <div id="tab5">tab5에 들어갈 내용</div>
             <div id="tab6">tab6에 들어갈 내용</div>
+            <form class="create-project" action="project-create.html">
+                <input type="submit" value="Create Project" />
+            </form>
+
         </div>
     </div>
     </div>
