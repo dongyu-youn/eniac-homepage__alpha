@@ -10,7 +10,6 @@ li {
   display: flex;
   align-items: center;
   width: 100%;
-  margin-left: 25px;
 }
 
 .slide_wrapper {
@@ -104,4 +103,15 @@ li {
   margin-right: 30%;
   cursor: pointer;
   font-size: 16px;
+}
+
+@media screen and (max-width: 1300px) and (min-width: 900px) {
+  .slide_wrapper {
+    width: 660px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .slide_wrapper {
+    width: 330px;
+  }
 }
