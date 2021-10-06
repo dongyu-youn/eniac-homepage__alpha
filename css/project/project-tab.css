@@ -134,10 +134,10 @@ body {
   }
 
   .project__tab {
-    margin-left: 0%;
+    margin-left: 50%;
   }
   .project__tab-content {
-    margin-left: 50%;
+    margin-left: 100%;
   }
 
   .project__tab-menu li {
@@ -154,13 +154,13 @@ body {
   }
 
   .project__tab {
-    margin-left: 20%;
+    margin-left: 70%;
   }
   .project__tab-content {
-    margin-left: 80%;
+    margin-left: 130%;
   }
 
   .project__tab-menu li {
-    width: 13%;
+    width: 100%;
   }
 }
