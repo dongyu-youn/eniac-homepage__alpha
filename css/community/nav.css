@@ -46,6 +46,42 @@
   font-size: 15px;
 }
 
+<<<<<<< HEAD
+@media screen and (max-width: 600px) {
+    .nav__main {
+        display: flex;
+        left: 0;
+        height: 100%;
+        justify-content: center;
+        padding: 10px 0px 10px;
+    }
+    .nav__main li {
+        display: inline;
+    }
+    .nav__list {
+        padding: 0px 0;
+    }
+    .nav__btn {
+        padding: 10px 28px;
+        width: 130px;
+        display: flex;
+        justify-content: center;
+    }
+    .nav__btn:not(:last-child) {
+        border-bottom: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .nav__ask {
+        display: none;
+        margin-top: 200px;
+        height: 100%;
+        margin-right: 10px;
+        justify-content: flex-end;
+    }
+}
+=======
 @media screen and (max-width: 800px) {
   .nav__main {
     display: flex;
@@ -70,3 +106,4 @@
     border-bottom: none;
   }
 }
+>>>>>>> 196050c3425e5074ac82733c6e1ff5b7ec9d52f3
