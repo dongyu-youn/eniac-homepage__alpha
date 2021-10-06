@@ -19,19 +19,19 @@
     <div class="middle_icon_bar">
 
             <!-- 소개 -->
-            <div class="middle_icon_introSet">
+            <div class="middle_icon_introSet" id="intro-toggle" onclick="openIntroToc()">
                 <div class="intro__icon"><i class="fas fa-seedling"></i></div>
                 <div class="intro__text">동아리 소개</div>
             </div>
 
             <!-- 수상 기록 -->
-            <div class="middle_icon_awardSet">
+            <div class="middle_icon_awardSet" id="award-toggle" onclick="openAwardToc()">
                 <div class="award__icon"><i class="fas fa-trophy"></i></div>
                 <div class="award__text">수상 실적</div>
             </div>
 
             <!-- 혜택 -->
-            <div class="middle_icon_giftSet">
+            <div class="middle_icon_giftSet" id="gift-toggle" onclick="openGiftToc()">
                 <div class="gift__icon"><i class="fas fa-hand-holding-heart"></i></div>
                 <div class="gift__text">가입 혜택</div>
             </div>
@@ -42,7 +42,7 @@
     <div class="contents_bar">
 
         <!--소개 부분-->
-        <div class="introduce">
+        <div class="introduce" id="introduce_toc_Content">
             <div class="contents__bar__intro">
                 <div class="intro_textSet">
                     <div class="intro_text_establish">
@@ -78,9 +78,8 @@
             </div>
         </div>
 
-
         <!-- 수상 기록 -->
-        <div class="award">
+        <div class="award" id="award_toc_Content">
             <div class="award_Design_Content_Set1">
                 <img class="award_Design_Content_Set1_top" src="오른쪽 상단 디자인초록.png"></img>
             </div>
@@ -136,7 +135,7 @@
         </div>
         
         <!-- 혜택 -->
-        <div class="gift">
+        <div class="gift" id="gift_toc_Content">
 
             <!--중간 디테일한 이미지-->
             <div class="gift_Design_Content_Set_first">
