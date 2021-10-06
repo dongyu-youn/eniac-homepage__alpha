@@ -12,6 +12,7 @@
     <script src="../../js/home-box.js"></script>
     <script src="../../js/solepage.js"></script>
     <link rel="stylesheet" href="../../css/study/study-modal.css">
+    <link rel="stylesheet" href="../../css/study/study-tab.css">
   </head>
 
   <body>
@@ -77,51 +78,39 @@
     </nav>
 
     <div class="study">
-        <div class="study__inner">
-            <h2 class="study__title">스터디</h2>
-        </div>
-        <div class="study-tab">
-            <div class="tabs">
-                <div class="tab" data-tab-target="#tab1">
-                    <p>웹</p>
-                </div>
-                <div class="tab" data-tab-target="#tab2">
-                    <p>앱</p>
-                </div>
-                <div class="tab" data-tab-target="#tab3">
-                    <p>인공지능</p>
-                </div>
-                <div class="tab" data-tab-target="#tab4">
-                    <p>게임</p>
-                </div>
-                <div class="tab" data-tab-target="#tab5">
-                    <p>보안</p>
-                </div>
-                <div class="tab" data-tab-target="#tab6">
-                    <p>etc</p>
-                </div>
-            </div>
+        <div class="project__tab">
+            <h2 class="project__title">STUDY</h2>
+            <ul class="project__tab-menu">
+                <li><a class = "tab active" href="#tab1" class="active">웹</a></li>
+                <li><a class = "tab" href="#tab2">앱</a></li>
+                <li><a class = "tab" href="#tab3">AI</a></li>
+                <li><a class = "tab" href="#tab4">게임</a></li>
+                <li><a class = "tab" href="#tab5">보안</a></li>
+                <li><a class = "tab" href="#tab6">Etc</a></li>
+    
+            </ul>
         </div>
 
-        <div class="content">
-            <div id="tab1" data-tab-content class="items active">
+        <div class="project__tab-content">
+            <div id="tab1" class="study-tab">
+                <div class="study-card__wrap">
                 <div class="study-card">
-                    <div class="">
-                        <div>
-                            <img style="width: 138px; height: 86px;" class="study-card__img" src="img/slide03.jpg">
+                    <div class="study-card__left">
+                        <div class="study-card__img">
+                            <img style="width: 150px; height: 130px;" class="study-card__img" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg">
                         </div>
                         <div class="study-card__join">
-                        <button class="study-card__joinBtn">자세히 >></button>
+                        <button class="study-card__joinBtn">자세히🔍</button>
                         <div class="modal hidden">
                           <div class="modal__overlay"></div>
                           <div class="modal__content">
                             <div class="modal__content__header">
-                                <h1 class="modal__content__header__studyTitle">스터디 이름</h1>
+                                <h1 class="modal__content__header__studyTitle">장고스터디</h1>
                                 <button class="modal__cancel">X</button>
                             </div>
                             <div class="modal__content__middleContents">
                                 <div class="modal__content__middleContents_LeftSet">
-                                    <img class="modal__content__middleContents_LeftSet_StudyImg" src="" alt="스터디 관련 사진을 넣는 곳"></img>
+                                    <img class="modal__content__middleContents_LeftSet_StudyImg" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg" alt="스터디 관련 사진을 넣는 곳"></img>
                                     <button class="modal__content__middleContents_LeftSet_Apply">스터디 신청</button>
                                 </div>
 
@@ -138,7 +127,9 @@
                                     </div>
                                     <div class="modal__content__middleContents_TextBox_Hope">
                                         <div class="modal__content__middleContents_TextBox_Hopecurri">커리큘럼</div>
-                                        <div class="modal__content__middleContents_TextBox_HopeContent">Html,css,javscript,react</div>
+                                        <div class="modal__content__middleContents_TextBox_HopeContent">1. 코코아톡 클론코딩
+2. django 에어비엔비 클론코딩
+3. 프로젝트</div>
                                     </div>
                                     <div class="modal__content__middleContents_TextBox_DateSet">
                                         <div class="modal__content__middleContents_TextBox_DateTitle">스터디 기간</div>
@@ -173,24 +164,24 @@
                     </div>
                 </div>
                 <div class="study-card">
-                    <div class="">
+                    <div class="study-card__left">
                         <div>
-                            <img style="width: 138px; height: 86px;" class="study-card__img" src="img/slide03.jpg">
+                            <img style="width: 150px; height: 130px;" class="study-card__img" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg">
                         </div>
 
 
                         <div class="study-card__join">
-                            <button class="study-card__joinBtn">자세히 >></button>
+                            <button class="study-card__joinBtn">자세히🔍</button>
                             <div class="modal hidden">
                               <div class="modal__overlay"></div>
                               <div class="modal__content">
                                 <div class="modal__content__header">
-                                    <h1 class="modal__content__header__studyTitle">스터디 이름</h1>
+                                    <h1 class="modal__content__header__studyTitle">장고스터디</h1>
                                     <button class="modal__cancel">X</button>
                                 </div>
                                 <div class="modal__content__middleContents">
                                     <div class="modal__content__middleContents_LeftSet">
-                                        <img class="modal__content__middleContents_LeftSet_StudyImg" src="" alt="스터디 관련 사진을 넣는 곳"></img>
+                                        <img class="modal__content__middleContents_LeftSet_StudyImg" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg" alt=""></img>
                                         <button class="modal__content__middleContents_LeftSet_Apply">스터디 신청</button>
                                     </div>
     
@@ -207,7 +198,81 @@
                                         </div>
                                         <div class="modal__content__middleContents_TextBox_Hope">
                                             <div class="modal__content__middleContents_TextBox_Hopecurri">커리큘럼</div>
-                                            <div class="modal__content__middleContents_TextBox_HopeContent">Html,css,javscript,react</div>
+                                            <div class="modal__content__middleContents_TextBox_HopeContent">1. 코코아톡 클론코딩
+2. django 에어비엔비 클론코딩
+3. 프로젝트</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_DateSet">
+                                            <div class="modal__content__middleContents_TextBox_DateTitle">스터디 기간</div>
+                                            <div class="modal__content__middleContents_TextBox_DateTime">2021.10.6 ~ 2021.10.6</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="study-card__info">
+                        <h2>장고스터디</h2>
+                        <p>
+                            열심히 할수 있는분만 뽑습니다 너 열심히 할거지,,?
+                        </p>
+
+                        <div class="study-card__curiculm">
+                            <div>커리큘럼</div>
+                            <ul>
+                                <li>
+                                    1. 코코아톡 클론코딩
+                                </li>
+                                <li>
+                                    2. django 에어비엔비 클론코딩
+                                </li>
+                                <li>
+                                    3. 프로젝트
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="study-card__wrap">
+
+                <div class="study-card">
+                    <div class="study-card__left">
+                        <div>
+                            <img style="width: 150px; height: 130px;" class="study-card__img" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg">
+                        </div>
+                        <div class="study-card__join">
+                            <button class="study-card__joinBtn">자세히🔍</button>
+                            <div class="modal hidden">
+                              <div class="modal__overlay"></div>
+                              <div class="modal__content">
+                                <div class="modal__content__header">
+                                    <h1 class="modal__content__header__studyTitle">장고스터디</h1>
+                                    <button class="modal__cancel">X</button>
+                                </div>
+                                <div class="modal__content__middleContents">
+                                    <div class="modal__content__middleContents_LeftSet">
+                                        <img class="modal__content__middleContents_LeftSet_StudyImg" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg" alt=""></img>
+                                        <button class="modal__content__middleContents_LeftSet_Apply">스터디 신청</button>
+                                    </div>
+    
+                                    <div class="modal__content__middleContents_TextBox">
+                                        <div class="modal__content__middleContents__TextBox_PeopleSet">
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetTitle">인원</div>
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetLeader">팀장:윤열정</div>
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetTeam">팀원:이열정,아이디어뱅크,차바보</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_RuleSet">
+                                            <div class="modal__content__middleContents_TextBox_RuleTitle">규칙</div>
+                                            <div class="modal__content__middleContents_TextBox_RuleContent">-1일 1커밋 원칙</div>
+                                            <div class="modal__content__middleContents_TextBox_RuleContent">-강의 들어오기</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_Hope">
+                                            <div class="modal__content__middleContents_TextBox_Hopecurri">커리큘럼</div>
+                                            <div class="modal__content__middleContents_TextBox_HopeContent">1. 코코아톡 클론코딩
+2. django 에어비엔비 클론코딩
+3. 프로젝트</div>
                                         </div>
                                         <div class="modal__content__middleContents_TextBox_DateSet">
                                             <div class="modal__content__middleContents_TextBox_DateTitle">스터디 기간</div>
@@ -242,22 +307,22 @@
                     </div>
                 </div>
                 <div class="study-card">
-                    <div class="">
+                    <div class="study-card__left">
                         <div>
-                            <img style="width: 138px; height: 86px;" class="study-card__img" src="img/slide03.jpg">
+                            <img style="width: 150px; height: 130px;" class="study-card__img" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg">
                         </div>
                         <div class="study-card__join">
-                            <button class="study-card__joinBtn">자세히 >></button>
+                            <button class="study-card__joinBtn">자세히🔍</button>
                             <div class="modal hidden">
                               <div class="modal__overlay"></div>
                               <div class="modal__content">
                                 <div class="modal__content__header">
-                                    <h1 class="modal__content__header__studyTitle">스터디 이름</h1>
+                                    <h1 class="modal__content__header__studyTitle">장고스터디</h1>
                                     <button class="modal__cancel">X</button>
                                 </div>
                                 <div class="modal__content__middleContents">
                                     <div class="modal__content__middleContents_LeftSet">
-                                        <img class="modal__content__middleContents_LeftSet_StudyImg" src="" alt="스터디 관련 사진을 넣는 곳"></img>
+                                        <img class="modal__content__middleContents_LeftSet_StudyImg" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg" alt=""></img>
                                         <button class="modal__content__middleContents_LeftSet_Apply">스터디 신청</button>
                                     </div>
     
@@ -274,7 +339,224 @@
                                         </div>
                                         <div class="modal__content__middleContents_TextBox_Hope">
                                             <div class="modal__content__middleContents_TextBox_Hopecurri">커리큘럼</div>
-                                            <div class="modal__content__middleContents_TextBox_HopeContent">Html,css,javscript,react</div>
+                                            <div class="modal__content__middleContents_TextBox_HopeContent">1. 코코아톡 클론코딩
+2. django 에어비엔비 클론코딩
+3. 프로젝트</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_DateSet">
+                                            <div class="modal__content__middleContents_TextBox_DateTitle">스터디 기간</div>
+                                            <div class="modal__content__middleContents_TextBox_DateTime">2021.10.6 ~ 2021.10.6</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="study-card__info">
+                        <h2>장고스터디</h2>
+                        <p>
+                            열심히 할수 있는분만 뽑습니다 너 열심히 할거지,,?
+                        </p>
+
+                        <div class="study-card__curiculm">
+                            <div>커리큘럼</div>
+                            <ul>
+                                <li>
+                                    1. 코코아톡 클론코딩
+                                </li>
+                                <li>
+                                    2. django 에어비엔비 클론코딩
+                                </li>
+                                <li>
+                                    3. 프로젝트
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab2" class="studt-tab"> <div class="study-card__wrap">
+                <div class="study-card">
+                    <div class="study-card__left">
+                        <div class="study-card__img">
+                            <img style="width: 150px; height: 130px;" class="study-card__img" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg">
+                        </div>
+                        <div class="study-card__join">
+                        <button class="study-card__joinBtn">자세히🔍</button>
+                        <div class="modal hidden">
+                          <div class="modal__overlay"></div>
+                          <div class="modal__content">
+                            <div class="modal__content__header">
+                                <h1 class="modal__content__header__studyTitle">장고스터디</h1>
+                                <button class="modal__cancel">X</button>
+                            </div>
+                            <div class="modal__content__middleContents">
+                                <div class="modal__content__middleContents_LeftSet">
+                                    <img class="modal__content__middleContents_LeftSet_StudyImg" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg" alt="스터디 관련 사진을 넣는 곳"></img>
+                                    <button class="modal__content__middleContents_LeftSet_Apply">스터디 신청</button>
+                                </div>
+
+                                <div class="modal__content__middleContents_TextBox">
+                                    <div class="modal__content__middleContents__TextBox_PeopleSet">
+                                        <div class="modal__content__middleContents_TextBox_PeopleSetTitle">인원</div>
+                                        <div class="modal__content__middleContents_TextBox_PeopleSetLeader">팀장:윤열정</div>
+                                        <div class="modal__content__middleContents_TextBox_PeopleSetTeam">팀원:이열정,아이디어뱅크,차바보</div>
+                                    </div>
+                                    <div class="modal__content__middleContents_TextBox_RuleSet">
+                                        <div class="modal__content__middleContents_TextBox_RuleTitle">규칙</div>
+                                        <div class="modal__content__middleContents_TextBox_RuleContent">-1일 1커밋 원칙</div>
+                                        <div class="modal__content__middleContents_TextBox_RuleContent">-강의 들어오기</div>
+                                    </div>
+                                    <div class="modal__content__middleContents_TextBox_Hope">
+                                        <div class="modal__content__middleContents_TextBox_Hopecurri">커리큘럼</div>
+                                        <div class="modal__content__middleContents_TextBox_HopeContent">1. 코코아톡 클론코딩
+2. django 에어비엔비 클론코딩
+3. 프로젝트</div>
+                                    </div>
+                                    <div class="modal__content__middleContents_TextBox_DateSet">
+                                        <div class="modal__content__middleContents_TextBox_DateTitle">스터디 기간</div>
+                                        <div class="modal__content__middleContents_TextBox_DateTime">2021.10.6 ~ 2021.10.6</div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="study-card__info">
+                        <h2>장고스터디</h2>
+                        <p>
+                            열심히 할수 있는분만 뽑습니다 너 열심히 할거지,,?
+                        </p>
+
+                        <div class="study-card__curiculm">
+                            <div>커리큘럼</div>
+                            <ul>
+                                <li>
+                                    1. 코코아톡 클론코딩
+                                </li>
+                                <li>
+                                    2. django 에어비엔비 클론코딩
+                                </li>
+                                <li>
+                                    3. 프로젝트
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="study-card">
+                    <div class="study-card__left">
+                        <div>
+                            <img style="width: 150px; height: 130px;" class="study-card__img" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg">
+                        </div>
+
+
+                        <div class="study-card__join">
+                            <button class="study-card__joinBtn">자세히🔍</button>
+                            <div class="modal hidden">
+                              <div class="modal__overlay"></div>
+                              <div class="modal__content">
+                                <div class="modal__content__header">
+                                    <h1 class="modal__content__header__studyTitle">장고스터디</h1>
+                                    <button class="modal__cancel">X</button>
+                                </div>
+                                <div class="modal__content__middleContents">
+                                    <div class="modal__content__middleContents_LeftSet">
+                                        <img class="modal__content__middleContents_LeftSet_StudyImg" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg" alt=""></img>
+                                        <button class="modal__content__middleContents_LeftSet_Apply">스터디 신청</button>
+                                    </div>
+    
+                                    <div class="modal__content__middleContents_TextBox">
+                                        <div class="modal__content__middleContents__TextBox_PeopleSet">
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetTitle">인원</div>
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetLeader">팀장:윤열정</div>
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetTeam">팀원:이열정,아이디어뱅크,차바보</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_RuleSet">
+                                            <div class="modal__content__middleContents_TextBox_RuleTitle">규칙</div>
+                                            <div class="modal__content__middleContents_TextBox_RuleContent">-1일 1커밋 원칙</div>
+                                            <div class="modal__content__middleContents_TextBox_RuleContent">-강의 들어오기</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_Hope">
+                                            <div class="modal__content__middleContents_TextBox_Hopecurri">커리큘럼</div>
+                                            <div class="modal__content__middleContents_TextBox_HopeContent">1. 코코아톡 클론코딩
+2. django 에어비엔비 클론코딩
+3. 프로젝트</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_DateSet">
+                                            <div class="modal__content__middleContents_TextBox_DateTitle">스터디 기간</div>
+                                            <div class="modal__content__middleContents_TextBox_DateTime">2021.10.6 ~ 2021.10.6</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="study-card__info">
+                        <h2>장고스터디</h2>
+                        <p>
+                            열심히 할수 있는분만 뽑습니다 너 열심히 할거지,,?
+                        </p>
+
+                        <div class="study-card__curiculm">
+                            <div>커리큘럼</div>
+                            <ul>
+                                <li>
+                                    1. 코코아톡 클론코딩
+                                </li>
+                                <li>
+                                    2. django 에어비엔비 클론코딩
+                                </li>
+                                <li>
+                                    3. 프로젝트
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="study-card__wrap">
+
+                <div class="study-card">
+                    <div class="study-card__left">
+                        <div>
+                            <img style="width: 150px; height: 130px;" class="study-card__img" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg">
+                        </div>
+                        <div class="study-card__join">
+                            <button class="study-card__joinBtn">자세히🔍</button>
+                            <div class="modal hidden">
+                              <div class="modal__overlay"></div>
+                              <div class="modal__content">
+                                <div class="modal__content__header">
+                                    <h1 class="modal__content__header__studyTitle">장고스터디</h1>
+                                    <button class="modal__cancel">X</button>
+                                </div>
+                                <div class="modal__content__middleContents">
+                                    <div class="modal__content__middleContents_LeftSet">
+                                        <img class="modal__content__middleContents_LeftSet_StudyImg" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg" alt=""></img>
+                                        <button class="modal__content__middleContents_LeftSet_Apply">스터디 신청</button>
+                                    </div>
+    
+                                    <div class="modal__content__middleContents_TextBox">
+                                        <div class="modal__content__middleContents__TextBox_PeopleSet">
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetTitle">인원</div>
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetLeader">팀장:윤열정</div>
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetTeam">팀원:이열정,아이디어뱅크,차바보</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_RuleSet">
+                                            <div class="modal__content__middleContents_TextBox_RuleTitle">규칙</div>
+                                            <div class="modal__content__middleContents_TextBox_RuleContent">-1일 1커밋 원칙</div>
+                                            <div class="modal__content__middleContents_TextBox_RuleContent">-강의 들어오기</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_Hope">
+                                            <div class="modal__content__middleContents_TextBox_Hopecurri">커리큘럼</div>
+                                            <div class="modal__content__middleContents_TextBox_HopeContent">1. 코코아톡 클론코딩
+2. django 에어비엔비 클론코딩
+3. 프로젝트</div>
                                         </div>
                                         <div class="modal__content__middleContents_TextBox_DateSet">
                                             <div class="modal__content__middleContents_TextBox_DateTitle">스터디 기간</div>
@@ -309,22 +591,22 @@
                     </div>
                 </div>
                 <div class="study-card">
-                    <div class="">
+                    <div class="study-card__left">
                         <div>
-                            <img style="width: 138px; height: 86px;" class="study-card__img" src="img/slide03.jpg">
+                            <img style="width: 150px; height: 130px;" class="study-card__img" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg">
                         </div>
                         <div class="study-card__join">
-                            <button class="study-card__joinBtn">자세히 >></button>
+                            <button class="study-card__joinBtn">자세히🔍</button>
                             <div class="modal hidden">
                               <div class="modal__overlay"></div>
                               <div class="modal__content">
                                 <div class="modal__content__header">
-                                    <h1 class="modal__content__header__studyTitle">스터디 이름</h1>
+                                    <h1 class="modal__content__header__studyTitle">장고스터디</h1>
                                     <button class="modal__cancel">X</button>
                                 </div>
                                 <div class="modal__content__middleContents">
                                     <div class="modal__content__middleContents_LeftSet">
-                                        <img class="modal__content__middleContents_LeftSet_StudyImg" src="" alt="스터디 관련 사진을 넣는 곳"></img>
+                                        <img class="modal__content__middleContents_LeftSet_StudyImg" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg" alt=""></img>
                                         <button class="modal__content__middleContents_LeftSet_Apply">스터디 신청</button>
                                     </div>
     
@@ -341,7 +623,151 @@
                                         </div>
                                         <div class="modal__content__middleContents_TextBox_Hope">
                                             <div class="modal__content__middleContents_TextBox_Hopecurri">커리큘럼</div>
-                                            <div class="modal__content__middleContents_TextBox_HopeContent">Html,css,javscript,react</div>
+                                            <div class="modal__content__middleContents_TextBox_HopeContent">1. 코코아톡 클론코딩
+2. django 에어비엔비 클론코딩
+3. 프로젝트</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_DateSet">
+                                            <div class="modal__content__middleContents_TextBox_DateTitle">스터디 기간</div>
+                                            <div class="modal__content__middleContents_TextBox_DateTime">2021.10.6 ~ 2021.10.6</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="study-card__info">
+                        <h2>장고스터디</h2>
+                        <p>
+                            열심히 할수 있는분만 뽑습니다 너 열심히 할거지,,?
+                        </p>
+
+                        <div class="study-card__curiculm">
+                            <div>커리큘럼</div>
+                            <ul>
+                                <li>
+                                    1. 코코아톡 클론코딩
+                                </li>
+                                <li>
+                                    2. django 에어비엔비 클론코딩
+                                </li>
+                                <li>
+                                    3. 프로젝트
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div></div>
+            <div id="tab3" class="studt-tab"> <div class="study-card__wrap">
+                <div class="study-card">
+                    <div class="study-card__left">
+                        <div class="study-card__img">
+                            <img style="width: 150px; height: 130px;" class="study-card__img" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg">
+                        </div>
+                        <div class="study-card__join">
+                        <button class="study-card__joinBtn">자세히🔍</button>
+                        <div class="modal hidden">
+                          <div class="modal__overlay"></div>
+                          <div class="modal__content">
+                            <div class="modal__content__header">
+                                <h1 class="modal__content__header__studyTitle">장고스터디</h1>
+                                <button class="modal__cancel">X</button>
+                            </div>
+                            <div class="modal__content__middleContents">
+                                <div class="modal__content__middleContents_LeftSet">
+                                    <img class="modal__content__middleContents_LeftSet_StudyImg" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg" alt="스터디 관련 사진을 넣는 곳"></img>
+                                    <button class="modal__content__middleContents_LeftSet_Apply">스터디 신청</button>
+                                </div>
+
+                                <div class="modal__content__middleContents_TextBox">
+                                    <div class="modal__content__middleContents__TextBox_PeopleSet">
+                                        <div class="modal__content__middleContents_TextBox_PeopleSetTitle">인원</div>
+                                        <div class="modal__content__middleContents_TextBox_PeopleSetLeader">팀장:윤열정</div>
+                                        <div class="modal__content__middleContents_TextBox_PeopleSetTeam">팀원:이열정,아이디어뱅크,차바보</div>
+                                    </div>
+                                    <div class="modal__content__middleContents_TextBox_RuleSet">
+                                        <div class="modal__content__middleContents_TextBox_RuleTitle">규칙</div>
+                                        <div class="modal__content__middleContents_TextBox_RuleContent">-1일 1커밋 원칙</div>
+                                        <div class="modal__content__middleContents_TextBox_RuleContent">-강의 들어오기</div>
+                                    </div>
+                                    <div class="modal__content__middleContents_TextBox_Hope">
+                                        <div class="modal__content__middleContents_TextBox_Hopecurri">커리큘럼</div>
+                                        <div class="modal__content__middleContents_TextBox_HopeContent">1. 코코아톡 클론코딩
+2. django 에어비엔비 클론코딩
+3. 프로젝트</div>
+                                    </div>
+                                    <div class="modal__content__middleContents_TextBox_DateSet">
+                                        <div class="modal__content__middleContents_TextBox_DateTitle">스터디 기간</div>
+                                        <div class="modal__content__middleContents_TextBox_DateTime">2021.10.6 ~ 2021.10.6</div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="study-card__info">
+                        <h2>장고스터디</h2>
+                        <p>
+                            열심히 할수 있는분만 뽑습니다 너 열심히 할거지,,?
+                        </p>
+
+                        <div class="study-card__curiculm">
+                            <div>커리큘럼</div>
+                            <ul>
+                                <li>
+                                    1. 코코아톡 클론코딩
+                                </li>
+                                <li>
+                                    2. django 에어비엔비 클론코딩
+                                </li>
+                                <li>
+                                    3. 프로젝트
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="study-card">
+                    <div class="study-card__left">
+                        <div>
+                            <img style="width: 150px; height: 130px;" class="study-card__img" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg">
+                        </div>
+
+
+                        <div class="study-card__join">
+                            <button class="study-card__joinBtn">자세히🔍</button>
+                            <div class="modal hidden">
+                              <div class="modal__overlay"></div>
+                              <div class="modal__content">
+                                <div class="modal__content__header">
+                                    <h1 class="modal__content__header__studyTitle">장고스터디</h1>
+                                    <button class="modal__cancel">X</button>
+                                </div>
+                                <div class="modal__content__middleContents">
+                                    <div class="modal__content__middleContents_LeftSet">
+                                        <img class="modal__content__middleContents_LeftSet_StudyImg" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg" alt=""></img>
+                                        <button class="modal__content__middleContents_LeftSet_Apply">스터디 신청</button>
+                                    </div>
+    
+                                    <div class="modal__content__middleContents_TextBox">
+                                        <div class="modal__content__middleContents__TextBox_PeopleSet">
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetTitle">인원</div>
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetLeader">팀장:윤열정</div>
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetTeam">팀원:이열정,아이디어뱅크,차바보</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_RuleSet">
+                                            <div class="modal__content__middleContents_TextBox_RuleTitle">규칙</div>
+                                            <div class="modal__content__middleContents_TextBox_RuleContent">-1일 1커밋 원칙</div>
+                                            <div class="modal__content__middleContents_TextBox_RuleContent">-강의 들어오기</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_Hope">
+                                            <div class="modal__content__middleContents_TextBox_Hopecurri">커리큘럼</div>
+                                            <div class="modal__content__middleContents_TextBox_HopeContent">1. 코코아톡 클론코딩
+2. django 에어비엔비 클론코딩
+3. 프로젝트</div>
                                         </div>
                                         <div class="modal__content__middleContents_TextBox_DateSet">
                                             <div class="modal__content__middleContents_TextBox_DateTitle">스터디 기간</div>
@@ -375,28 +801,26 @@
                         </div>
                     </div>
                 </div>
-            </div>
+                </div>
+                <div class="study-card__wrap">
 
-            <div id="tab2" data-tab-content class="items">
                 <div class="study-card">
-                    <div class="">
+                    <div class="study-card__left">
                         <div>
-                            <img style="width: 138px; height: 86px;" class="study-card__img" src="img/slide03.jpg">
+                            <img style="width: 150px; height: 130px;" class="study-card__img" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg">
                         </div>
-
-
                         <div class="study-card__join">
-                            <button class="study-card__joinBtn">자세히 >></button>
+                            <button class="study-card__joinBtn">자세히🔍</button>
                             <div class="modal hidden">
                               <div class="modal__overlay"></div>
                               <div class="modal__content">
                                 <div class="modal__content__header">
-                                    <h1 class="modal__content__header__studyTitle">스터디 이름</h1>
+                                    <h1 class="modal__content__header__studyTitle">장고스터디</h1>
                                     <button class="modal__cancel">X</button>
                                 </div>
                                 <div class="modal__content__middleContents">
                                     <div class="modal__content__middleContents_LeftSet">
-                                        <img class="modal__content__middleContents_LeftSet_StudyImg" src="" alt="스터디 관련 사진을 넣는 곳"></img>
+                                        <img class="modal__content__middleContents_LeftSet_StudyImg" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg" alt=""></img>
                                         <button class="modal__content__middleContents_LeftSet_Apply">스터디 신청</button>
                                     </div>
     
@@ -413,7 +837,9 @@
                                         </div>
                                         <div class="modal__content__middleContents_TextBox_Hope">
                                             <div class="modal__content__middleContents_TextBox_Hopecurri">커리큘럼</div>
-                                            <div class="modal__content__middleContents_TextBox_HopeContent">Html,css,javscript,react</div>
+                                            <div class="modal__content__middleContents_TextBox_HopeContent">1. 코코아톡 클론코딩
+2. django 에어비엔비 클론코딩
+3. 프로젝트</div>
                                         </div>
                                         <div class="modal__content__middleContents_TextBox_DateSet">
                                             <div class="modal__content__middleContents_TextBox_DateTitle">스터디 기간</div>
@@ -427,9 +853,9 @@
                     </div>
                     <div class="study-card__info">
                         <h2>장고스터디</h2>
-                        <div>
+                        <p>
                             열심히 할수 있는분만 뽑습니다 너 열심히 할거지,,?
-                        </div>
+                        </p>
 
                         <div class="study-card__curiculm">
                             <div>커리큘럼</div>
@@ -448,24 +874,22 @@
                     </div>
                 </div>
                 <div class="study-card">
-                    <div class="">
+                    <div class="study-card__left">
                         <div>
-                            <img style="width: 138px; height: 86px;" class="study-card__img" src="img/slide03.jpg">
+                            <img style="width: 150px; height: 130px;" class="study-card__img" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg">
                         </div>
-
-
                         <div class="study-card__join">
-                            <button class="study-card__joinBtn">자세히 >></button>
+                            <button class="study-card__joinBtn">자세히🔍</button>
                             <div class="modal hidden">
                               <div class="modal__overlay"></div>
                               <div class="modal__content">
                                 <div class="modal__content__header">
-                                    <h1 class="modal__content__header__studyTitle">스터디 이름</h1>
+                                    <h1 class="modal__content__header__studyTitle">장고스터디</h1>
                                     <button class="modal__cancel">X</button>
                                 </div>
                                 <div class="modal__content__middleContents">
                                     <div class="modal__content__middleContents_LeftSet">
-                                        <img class="modal__content__middleContents_LeftSet_StudyImg" src="" alt="스터디 관련 사진을 넣는 곳"></img>
+                                        <img class="modal__content__middleContents_LeftSet_StudyImg" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg" alt=""></img>
                                         <button class="modal__content__middleContents_LeftSet_Apply">스터디 신청</button>
                                     </div>
     
@@ -482,7 +906,9 @@
                                         </div>
                                         <div class="modal__content__middleContents_TextBox_Hope">
                                             <div class="modal__content__middleContents_TextBox_Hopecurri">커리큘럼</div>
-                                            <div class="modal__content__middleContents_TextBox_HopeContent">Html,css,javscript,react</div>
+                                            <div class="modal__content__middleContents_TextBox_HopeContent">1. 코코아톡 클론코딩
+2. django 에어비엔비 클론코딩
+3. 프로젝트</div>
                                         </div>
                                         <div class="modal__content__middleContents_TextBox_DateSet">
                                             <div class="modal__content__middleContents_TextBox_DateTitle">스터디 기간</div>
@@ -496,9 +922,80 @@
                     </div>
                     <div class="study-card__info">
                         <h2>장고스터디</h2>
-                        <div>
+                        <p>
                             열심히 할수 있는분만 뽑습니다 너 열심히 할거지,,?
+                        </p>
+
+                        <div class="study-card__curiculm">
+                            <div>커리큘럼</div>
+                            <ul>
+                                <li>
+                                    1. 코코아톡 클론코딩
+                                </li>
+                                <li>
+                                    2. django 에어비엔비 클론코딩
+                                </li>
+                                <li>
+                                    3. 프로젝트
+                                </li>
+                            </ul>
                         </div>
+                    </div>
+                    </div>
+                </div></div>
+            <div id="tab4" class="studt-tab"> <div class="study-card__wrap">
+                <div class="study-card">
+                    <div class="study-card__left">
+                        <div class="study-card__img">
+                            <img style="width: 150px; height: 130px;" class="study-card__img" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg">
+                        </div>
+                        <div class="study-card__join">
+                        <button class="study-card__joinBtn">자세히🔍</button>
+                        <div class="modal hidden">
+                          <div class="modal__overlay"></div>
+                          <div class="modal__content">
+                            <div class="modal__content__header">
+                                <h1 class="modal__content__header__studyTitle">장고스터디</h1>
+                                <button class="modal__cancel">X</button>
+                            </div>
+                            <div class="modal__content__middleContents">
+                                <div class="modal__content__middleContents_LeftSet">
+                                    <img class="modal__content__middleContents_LeftSet_StudyImg" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg" alt="스터디 관련 사진을 넣는 곳"></img>
+                                    <button class="modal__content__middleContents_LeftSet_Apply">스터디 신청</button>
+                                </div>
+
+                                <div class="modal__content__middleContents_TextBox">
+                                    <div class="modal__content__middleContents__TextBox_PeopleSet">
+                                        <div class="modal__content__middleContents_TextBox_PeopleSetTitle">인원</div>
+                                        <div class="modal__content__middleContents_TextBox_PeopleSetLeader">팀장:윤열정</div>
+                                        <div class="modal__content__middleContents_TextBox_PeopleSetTeam">팀원:이열정,아이디어뱅크,차바보</div>
+                                    </div>
+                                    <div class="modal__content__middleContents_TextBox_RuleSet">
+                                        <div class="modal__content__middleContents_TextBox_RuleTitle">규칙</div>
+                                        <div class="modal__content__middleContents_TextBox_RuleContent">-1일 1커밋 원칙</div>
+                                        <div class="modal__content__middleContents_TextBox_RuleContent">-강의 들어오기</div>
+                                    </div>
+                                    <div class="modal__content__middleContents_TextBox_Hope">
+                                        <div class="modal__content__middleContents_TextBox_Hopecurri">커리큘럼</div>
+                                        <div class="modal__content__middleContents_TextBox_HopeContent">1. 코코아톡 클론코딩
+2. django 에어비엔비 클론코딩
+3. 프로젝트</div>
+                                    </div>
+                                    <div class="modal__content__middleContents_TextBox_DateSet">
+                                        <div class="modal__content__middleContents_TextBox_DateTitle">스터디 기간</div>
+                                        <div class="modal__content__middleContents_TextBox_DateTime">2021.10.6 ~ 2021.10.6</div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="study-card__info">
+                        <h2>장고스터디</h2>
+                        <p>
+                            열심히 할수 있는분만 뽑습니다 너 열심히 할거지,,?
+                        </p>
 
                         <div class="study-card__curiculm">
                             <div>커리큘럼</div>
@@ -517,24 +1014,24 @@
                     </div>
                 </div>
                 <div class="study-card">
-                    <div class="">
+                    <div class="study-card__left">
                         <div>
-                            <img style="width: 138px; height: 86px;" class="study-card__img" src="img/slide03.jpg">
+                            <img style="width: 150px; height: 130px;" class="study-card__img" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg">
                         </div>
 
 
                         <div class="study-card__join">
-                            <button class="study-card__joinBtn">자세히 >></button>
+                            <button class="study-card__joinBtn">자세히🔍</button>
                             <div class="modal hidden">
                               <div class="modal__overlay"></div>
                               <div class="modal__content">
                                 <div class="modal__content__header">
-                                    <h1 class="modal__content__header__studyTitle">스터디 이름</h1>
+                                    <h1 class="modal__content__header__studyTitle">장고스터디</h1>
                                     <button class="modal__cancel">X</button>
                                 </div>
                                 <div class="modal__content__middleContents">
                                     <div class="modal__content__middleContents_LeftSet">
-                                        <img class="modal__content__middleContents_LeftSet_StudyImg" src="" alt="스터디 관련 사진을 넣는 곳"></img>
+                                        <img class="modal__content__middleContents_LeftSet_StudyImg" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg" alt=""></img>
                                         <button class="modal__content__middleContents_LeftSet_Apply">스터디 신청</button>
                                     </div>
     
@@ -551,7 +1048,9 @@
                                         </div>
                                         <div class="modal__content__middleContents_TextBox_Hope">
                                             <div class="modal__content__middleContents_TextBox_Hopecurri">커리큘럼</div>
-                                            <div class="modal__content__middleContents_TextBox_HopeContent">Html,css,javscript,react</div>
+                                            <div class="modal__content__middleContents_TextBox_HopeContent">1. 코코아톡 클론코딩
+2. django 에어비엔비 클론코딩
+3. 프로젝트</div>
                                         </div>
                                         <div class="modal__content__middleContents_TextBox_DateSet">
                                             <div class="modal__content__middleContents_TextBox_DateTitle">스터디 기간</div>
@@ -565,9 +1064,81 @@
                     </div>
                     <div class="study-card__info">
                         <h2>장고스터디</h2>
-                        <div>
+                        <p>
                             열심히 할수 있는분만 뽑습니다 너 열심히 할거지,,?
+                        </p>
+
+                        <div class="study-card__curiculm">
+                            <div>커리큘럼</div>
+                            <ul>
+                                <li>
+                                    1. 코코아톡 클론코딩
+                                </li>
+                                <li>
+                                    2. django 에어비엔비 클론코딩
+                                </li>
+                                <li>
+                                    3. 프로젝트
+                                </li>
+                            </ul>
                         </div>
+                    </div>
+                </div>
+                </div>
+                <div class="study-card__wrap">
+
+                <div class="study-card">
+                    <div class="study-card__left">
+                        <div>
+                            <img style="width: 150px; height: 130px;" class="study-card__img" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg">
+                        </div>
+                        <div class="study-card__join">
+                            <button class="study-card__joinBtn">자세히🔍</button>
+                            <div class="modal hidden">
+                              <div class="modal__overlay"></div>
+                              <div class="modal__content">
+                                <div class="modal__content__header">
+                                    <h1 class="modal__content__header__studyTitle">장고스터디</h1>
+                                    <button class="modal__cancel">X</button>
+                                </div>
+                                <div class="modal__content__middleContents">
+                                    <div class="modal__content__middleContents_LeftSet">
+                                        <img class="modal__content__middleContents_LeftSet_StudyImg" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg" alt=""></img>
+                                        <button class="modal__content__middleContents_LeftSet_Apply">스터디 신청</button>
+                                    </div>
+    
+                                    <div class="modal__content__middleContents_TextBox">
+                                        <div class="modal__content__middleContents__TextBox_PeopleSet">
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetTitle">인원</div>
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetLeader">팀장:윤열정</div>
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetTeam">팀원:이열정,아이디어뱅크,차바보</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_RuleSet">
+                                            <div class="modal__content__middleContents_TextBox_RuleTitle">규칙</div>
+                                            <div class="modal__content__middleContents_TextBox_RuleContent">-1일 1커밋 원칙</div>
+                                            <div class="modal__content__middleContents_TextBox_RuleContent">-강의 들어오기</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_Hope">
+                                            <div class="modal__content__middleContents_TextBox_Hopecurri">커리큘럼</div>
+                                            <div class="modal__content__middleContents_TextBox_HopeContent">1. 코코아톡 클론코딩
+2. django 에어비엔비 클론코딩
+3. 프로젝트</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_DateSet">
+                                            <div class="modal__content__middleContents_TextBox_DateTitle">스터디 기간</div>
+                                            <div class="modal__content__middleContents_TextBox_DateTime">2021.10.6 ~ 2021.10.6</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="study-card__info">
+                        <h2>장고스터디</h2>
+                        <p>
+                            열심히 할수 있는분만 뽑습니다 너 열심히 할거지,,?
+                        </p>
 
                         <div class="study-card__curiculm">
                             <div>커리큘럼</div>
@@ -586,24 +1157,22 @@
                     </div>
                 </div>
                 <div class="study-card">
-                    <div class="">
+                    <div class="study-card__left">
                         <div>
-                            <img style="width: 138px; height: 86px;" class="study-card__img" src="img/slide03.jpg">
+                            <img style="width: 150px; height: 130px;" class="study-card__img" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg">
                         </div>
-
-
                         <div class="study-card__join">
-                            <button class="study-card__joinBtn">자세히 >></button>
+                            <button class="study-card__joinBtn">자세히🔍</button>
                             <div class="modal hidden">
                               <div class="modal__overlay"></div>
                               <div class="modal__content">
                                 <div class="modal__content__header">
-                                    <h1 class="modal__content__header__studyTitle">스터디 이름</h1>
+                                    <h1 class="modal__content__header__studyTitle">장고스터디</h1>
                                     <button class="modal__cancel">X</button>
                                 </div>
                                 <div class="modal__content__middleContents">
                                     <div class="modal__content__middleContents_LeftSet">
-                                        <img class="modal__content__middleContents_LeftSet_StudyImg" src="" alt="스터디 관련 사진을 넣는 곳"></img>
+                                        <img class="modal__content__middleContents_LeftSet_StudyImg" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg" alt=""></img>
                                         <button class="modal__content__middleContents_LeftSet_Apply">스터디 신청</button>
                                     </div>
     
@@ -620,7 +1189,9 @@
                                         </div>
                                         <div class="modal__content__middleContents_TextBox_Hope">
                                             <div class="modal__content__middleContents_TextBox_Hopecurri">커리큘럼</div>
-                                            <div class="modal__content__middleContents_TextBox_HopeContent">Html,css,javscript,react</div>
+                                            <div class="modal__content__middleContents_TextBox_HopeContent">1. 코코아톡 클론코딩
+2. django 에어비엔비 클론코딩
+3. 프로젝트</div>
                                         </div>
                                         <div class="modal__content__middleContents_TextBox_DateSet">
                                             <div class="modal__content__middleContents_TextBox_DateTitle">스터디 기간</div>
@@ -634,9 +1205,80 @@
                     </div>
                     <div class="study-card__info">
                         <h2>장고스터디</h2>
-                        <div>
+                        <p>
                             열심히 할수 있는분만 뽑습니다 너 열심히 할거지,,?
+                        </p>
+
+                        <div class="study-card__curiculm">
+                            <div>커리큘럼</div>
+                            <ul>
+                                <li>
+                                    1. 코코아톡 클론코딩
+                                </li>
+                                <li>
+                                    2. django 에어비엔비 클론코딩
+                                </li>
+                                <li>
+                                    3. 프로젝트
+                                </li>
+                            </ul>
                         </div>
+                    </div>
+                    </div>
+                </div></div>
+            <div id="tab5" class="studt-tab"> <div class="study-card__wrap">
+                <div class="study-card">
+                    <div class="study-card__left">
+                        <div class="study-card__img">
+                            <img style="width: 150px; height: 130px;" class="study-card__img" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg">
+                        </div>
+                        <div class="study-card__join">
+                        <button class="study-card__joinBtn">자세히🔍</button>
+                        <div class="modal hidden">
+                          <div class="modal__overlay"></div>
+                          <div class="modal__content">
+                            <div class="modal__content__header">
+                                <h1 class="modal__content__header__studyTitle">장고스터디</h1>
+                                <button class="modal__cancel">X</button>
+                            </div>
+                            <div class="modal__content__middleContents">
+                                <div class="modal__content__middleContents_LeftSet">
+                                    <img class="modal__content__middleContents_LeftSet_StudyImg" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg" alt="스터디 관련 사진을 넣는 곳"></img>
+                                    <button class="modal__content__middleContents_LeftSet_Apply">스터디 신청</button>
+                                </div>
+
+                                <div class="modal__content__middleContents_TextBox">
+                                    <div class="modal__content__middleContents__TextBox_PeopleSet">
+                                        <div class="modal__content__middleContents_TextBox_PeopleSetTitle">인원</div>
+                                        <div class="modal__content__middleContents_TextBox_PeopleSetLeader">팀장:윤열정</div>
+                                        <div class="modal__content__middleContents_TextBox_PeopleSetTeam">팀원:이열정,아이디어뱅크,차바보</div>
+                                    </div>
+                                    <div class="modal__content__middleContents_TextBox_RuleSet">
+                                        <div class="modal__content__middleContents_TextBox_RuleTitle">규칙</div>
+                                        <div class="modal__content__middleContents_TextBox_RuleContent">-1일 1커밋 원칙</div>
+                                        <div class="modal__content__middleContents_TextBox_RuleContent">-강의 들어오기</div>
+                                    </div>
+                                    <div class="modal__content__middleContents_TextBox_Hope">
+                                        <div class="modal__content__middleContents_TextBox_Hopecurri">커리큘럼</div>
+                                        <div class="modal__content__middleContents_TextBox_HopeContent">1. 코코아톡 클론코딩
+2. django 에어비엔비 클론코딩
+3. 프로젝트</div>
+                                    </div>
+                                    <div class="modal__content__middleContents_TextBox_DateSet">
+                                        <div class="modal__content__middleContents_TextBox_DateTitle">스터디 기간</div>
+                                        <div class="modal__content__middleContents_TextBox_DateTime">2021.10.6 ~ 2021.10.6</div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="study-card__info">
+                        <h2>장고스터디</h2>
+                        <p>
+                            열심히 할수 있는분만 뽑습니다 너 열심히 할거지,,?
+                        </p>
 
                         <div class="study-card__curiculm">
                             <div>커리큘럼</div>
@@ -654,58 +1296,511 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="tab3" data-tab-content class="items">
-                <h2>Tab3</h2>
-                <p>탭 3
-                    <div class="study__card">
-                        <div class="study__card-img">
-                            <img style="width: 50px; height: 50px;" class="study__card-img" src="img/slide03.jpg">
+                <div class="study-card">
+                    <div class="study-card__left">
+                        <div>
+                            <img style="width: 150px; height: 130px;" class="study-card__img" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg">
                         </div>
-                        <div class="study__card-info"></div>
+
+
+                        <div class="study-card__join">
+                            <button class="study-card__joinBtn">자세히🔍</button>
+                            <div class="modal hidden">
+                              <div class="modal__overlay"></div>
+                              <div class="modal__content">
+                                <div class="modal__content__header">
+                                    <h1 class="modal__content__header__studyTitle">장고스터디</h1>
+                                    <button class="modal__cancel">X</button>
+                                </div>
+                                <div class="modal__content__middleContents">
+                                    <div class="modal__content__middleContents_LeftSet">
+                                        <img class="modal__content__middleContents_LeftSet_StudyImg" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg" alt=""></img>
+                                        <button class="modal__content__middleContents_LeftSet_Apply">스터디 신청</button>
+                                    </div>
+    
+                                    <div class="modal__content__middleContents_TextBox">
+                                        <div class="modal__content__middleContents__TextBox_PeopleSet">
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetTitle">인원</div>
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetLeader">팀장:윤열정</div>
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetTeam">팀원:이열정,아이디어뱅크,차바보</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_RuleSet">
+                                            <div class="modal__content__middleContents_TextBox_RuleTitle">규칙</div>
+                                            <div class="modal__content__middleContents_TextBox_RuleContent">-1일 1커밋 원칙</div>
+                                            <div class="modal__content__middleContents_TextBox_RuleContent">-강의 들어오기</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_Hope">
+                                            <div class="modal__content__middleContents_TextBox_Hopecurri">커리큘럼</div>
+                                            <div class="modal__content__middleContents_TextBox_HopeContent">1. 코코아톡 클론코딩
+2. django 에어비엔비 클론코딩
+3. 프로젝트</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_DateSet">
+                                            <div class="modal__content__middleContents_TextBox_DateTitle">스터디 기간</div>
+                                            <div class="modal__content__middleContents_TextBox_DateTime">2021.10.6 ~ 2021.10.6</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
                     </div>
-                </p>
-            </div>
-            <div id="tab4" data-tab-content class="items">
-                <h2>Tab4</h2>
-                <p>탭 4
-                    <div class="study__card">
-                        <div class="study__card-img">
-                            <img style="width: 50px; height: 50px;" class="study__card-img" src="img/slide03.jpg">
+                    <div class="study-card__info">
+                        <h2>장고스터디</h2>
+                        <p>
+                            열심히 할수 있는분만 뽑습니다 너 열심히 할거지,,?
+                        </p>
+
+                        <div class="study-card__curiculm">
+                            <div>커리큘럼</div>
+                            <ul>
+                                <li>
+                                    1. 코코아톡 클론코딩
+                                </li>
+                                <li>
+                                    2. django 에어비엔비 클론코딩
+                                </li>
+                                <li>
+                                    3. 프로젝트
+                                </li>
+                            </ul>
                         </div>
-                        <div class="study__card-info"></div>
                     </div>
-                </p>
-            </div>
-            <div id="tab5" data-tab-content class="items">
-                <h2>Tab5</h2>
-                <p>탭 5
-                    <div class="study__card">
-                        <div class="study__card-img">
-                            <img style="width: 50px; height: 50px;" class="study__card-img" src="img/slide03.jpg">
+                </div>
+                </div>
+                <div class="study-card__wrap">
+
+                <div class="study-card">
+                    <div class="study-card__left">
+                        <div>
+                            <img style="width: 150px; height: 130px;" class="study-card__img" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg">
                         </div>
-                        <div class="study__card-info"></div>
+                        <div class="study-card__join">
+                            <button class="study-card__joinBtn">자세히🔍</button>
+                            <div class="modal hidden">
+                              <div class="modal__overlay"></div>
+                              <div class="modal__content">
+                                <div class="modal__content__header">
+                                    <h1 class="modal__content__header__studyTitle">장고스터디</h1>
+                                    <button class="modal__cancel">X</button>
+                                </div>
+                                <div class="modal__content__middleContents">
+                                    <div class="modal__content__middleContents_LeftSet">
+                                        <img class="modal__content__middleContents_LeftSet_StudyImg" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg" alt=""></img>
+                                        <button class="modal__content__middleContents_LeftSet_Apply">스터디 신청</button>
+                                    </div>
+    
+                                    <div class="modal__content__middleContents_TextBox">
+                                        <div class="modal__content__middleContents__TextBox_PeopleSet">
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetTitle">인원</div>
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetLeader">팀장:윤열정</div>
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetTeam">팀원:이열정,아이디어뱅크,차바보</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_RuleSet">
+                                            <div class="modal__content__middleContents_TextBox_RuleTitle">규칙</div>
+                                            <div class="modal__content__middleContents_TextBox_RuleContent">-1일 1커밋 원칙</div>
+                                            <div class="modal__content__middleContents_TextBox_RuleContent">-강의 들어오기</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_Hope">
+                                            <div class="modal__content__middleContents_TextBox_Hopecurri">커리큘럼</div>
+                                            <div class="modal__content__middleContents_TextBox_HopeContent">1. 코코아톡 클론코딩
+2. django 에어비엔비 클론코딩
+3. 프로젝트</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_DateSet">
+                                            <div class="modal__content__middleContents_TextBox_DateTitle">스터디 기간</div>
+                                            <div class="modal__content__middleContents_TextBox_DateTime">2021.10.6 ~ 2021.10.6</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
                     </div>
-                </p>
-            </div>
-            <div id="tab6" data-tab-content class="items">
-                <h2>Tab6</h2>
-                <p>탭 6
-                    <div class="study__card">
-                        <div class="study__card-img">
-                            <img style="width: 50px; height: 50px;" class="study__card-img" src="img/slide03.jpg">
+                    <div class="study-card__info">
+                        <h2>장고스터디</h2>
+                        <p>
+                            열심히 할수 있는분만 뽑습니다 너 열심히 할거지,,?
+                        </p>
+
+                        <div class="study-card__curiculm">
+                            <div>커리큘럼</div>
+                            <ul>
+                                <li>
+                                    1. 코코아톡 클론코딩
+                                </li>
+                                <li>
+                                    2. django 에어비엔비 클론코딩
+                                </li>
+                                <li>
+                                    3. 프로젝트
+                                </li>
+                            </ul>
                         </div>
-                        <div class="study__card-info"></div>
                     </div>
-                </p>
-            </div>
+                </div>
+                <div class="study-card">
+                    <div class="study-card__left">
+                        <div>
+                            <img style="width: 150px; height: 130px;" class="study-card__img" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg">
+                        </div>
+                        <div class="study-card__join">
+                            <button class="study-card__joinBtn">자세히🔍</button>
+                            <div class="modal hidden">
+                              <div class="modal__overlay"></div>
+                              <div class="modal__content">
+                                <div class="modal__content__header">
+                                    <h1 class="modal__content__header__studyTitle">장고스터디</h1>
+                                    <button class="modal__cancel">X</button>
+                                </div>
+                                <div class="modal__content__middleContents">
+                                    <div class="modal__content__middleContents_LeftSet">
+                                        <img class="modal__content__middleContents_LeftSet_StudyImg" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg" alt=""></img>
+                                        <button class="modal__content__middleContents_LeftSet_Apply">스터디 신청</button>
+                                    </div>
+    
+                                    <div class="modal__content__middleContents_TextBox">
+                                        <div class="modal__content__middleContents__TextBox_PeopleSet">
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetTitle">인원</div>
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetLeader">팀장:윤열정</div>
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetTeam">팀원:이열정,아이디어뱅크,차바보</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_RuleSet">
+                                            <div class="modal__content__middleContents_TextBox_RuleTitle">규칙</div>
+                                            <div class="modal__content__middleContents_TextBox_RuleContent">-1일 1커밋 원칙</div>
+                                            <div class="modal__content__middleContents_TextBox_RuleContent">-강의 들어오기</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_Hope">
+                                            <div class="modal__content__middleContents_TextBox_Hopecurri">커리큘럼</div>
+                                            <div class="modal__content__middleContents_TextBox_HopeContent">1. 코코아톡 클론코딩
+2. django 에어비엔비 클론코딩
+3. 프로젝트</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_DateSet">
+                                            <div class="modal__content__middleContents_TextBox_DateTitle">스터디 기간</div>
+                                            <div class="modal__content__middleContents_TextBox_DateTime">2021.10.6 ~ 2021.10.6</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="study-card__info">
+                        <h2>장고스터디</h2>
+                        <p>
+                            열심히 할수 있는분만 뽑습니다 너 열심히 할거지,,?
+                        </p>
+
+                        <div class="study-card__curiculm">
+                            <div>커리큘럼</div>
+                            <ul>
+                                <li>
+                                    1. 코코아톡 클론코딩
+                                </li>
+                                <li>
+                                    2. django 에어비엔비 클론코딩
+                                </li>
+                                <li>
+                                    3. 프로젝트
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div></div>
+            <div id="tab6" class="studt-tab"> <div class="study-card__wrap">
+                <div class="study-card">
+                    <div class="study-card__left">
+                        <div class="study-card__img">
+                            <img style="width: 150px; height: 130px;" class="study-card__img" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg">
+                        </div>
+                        <div class="study-card__join">
+                        <button class="study-card__joinBtn">자세히🔍</button>
+                        <div class="modal hidden">
+                          <div class="modal__overlay"></div>
+                          <div class="modal__content">
+                            <div class="modal__content__header">
+                                <h1 class="modal__content__header__studyTitle">장고스터디</h1>
+                                <button class="modal__cancel">X</button>
+                            </div>
+                            <div class="modal__content__middleContents">
+                                <div class="modal__content__middleContents_LeftSet">
+                                    <img class="modal__content__middleContents_LeftSet_StudyImg" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg" alt="스터디 관련 사진을 넣는 곳"></img>
+                                    <button class="modal__content__middleContents_LeftSet_Apply">스터디 신청</button>
+                                </div>
+
+                                <div class="modal__content__middleContents_TextBox">
+                                    <div class="modal__content__middleContents__TextBox_PeopleSet">
+                                        <div class="modal__content__middleContents_TextBox_PeopleSetTitle">인원</div>
+                                        <div class="modal__content__middleContents_TextBox_PeopleSetLeader">팀장:윤열정</div>
+                                        <div class="modal__content__middleContents_TextBox_PeopleSetTeam">팀원:이열정,아이디어뱅크,차바보</div>
+                                    </div>
+                                    <div class="modal__content__middleContents_TextBox_RuleSet">
+                                        <div class="modal__content__middleContents_TextBox_RuleTitle">규칙</div>
+                                        <div class="modal__content__middleContents_TextBox_RuleContent">-1일 1커밋 원칙</div>
+                                        <div class="modal__content__middleContents_TextBox_RuleContent">-강의 들어오기</div>
+                                    </div>
+                                    <div class="modal__content__middleContents_TextBox_Hope">
+                                        <div class="modal__content__middleContents_TextBox_Hopecurri">커리큘럼</div>
+                                        <div class="modal__content__middleContents_TextBox_HopeContent">1. 코코아톡 클론코딩
+2. django 에어비엔비 클론코딩
+3. 프로젝트</div>
+                                    </div>
+                                    <div class="modal__content__middleContents_TextBox_DateSet">
+                                        <div class="modal__content__middleContents_TextBox_DateTitle">스터디 기간</div>
+                                        <div class="modal__content__middleContents_TextBox_DateTime">2021.10.6 ~ 2021.10.6</div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="study-card__info">
+                        <h2>장고스터디</h2>
+                        <p>
+                            열심히 할수 있는분만 뽑습니다 너 열심히 할거지,,?
+                        </p>
+
+                        <div class="study-card__curiculm">
+                            <div>커리큘럼</div>
+                            <ul>
+                                <li>
+                                    1. 코코아톡 클론코딩
+                                </li>
+                                <li>
+                                    2. django 에어비엔비 클론코딩
+                                </li>
+                                <li>
+                                    3. 프로젝트
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="study-card">
+                    <div class="study-card__left">
+                        <div>
+                            <img style="width: 150px; height: 130px;" class="study-card__img" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg">
+                        </div>
+
+
+                        <div class="study-card__join">
+                            <button class="study-card__joinBtn">자세히🔍</button>
+                            <div class="modal hidden">
+                              <div class="modal__overlay"></div>
+                              <div class="modal__content">
+                                <div class="modal__content__header">
+                                    <h1 class="modal__content__header__studyTitle">장고스터디</h1>
+                                    <button class="modal__cancel">X</button>
+                                </div>
+                                <div class="modal__content__middleContents">
+                                    <div class="modal__content__middleContents_LeftSet">
+                                        <img class="modal__content__middleContents_LeftSet_StudyImg" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg" alt=""></img>
+                                        <button class="modal__content__middleContents_LeftSet_Apply">스터디 신청</button>
+                                    </div>
+    
+                                    <div class="modal__content__middleContents_TextBox">
+                                        <div class="modal__content__middleContents__TextBox_PeopleSet">
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetTitle">인원</div>
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetLeader">팀장:윤열정</div>
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetTeam">팀원:이열정,아이디어뱅크,차바보</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_RuleSet">
+                                            <div class="modal__content__middleContents_TextBox_RuleTitle">규칙</div>
+                                            <div class="modal__content__middleContents_TextBox_RuleContent">-1일 1커밋 원칙</div>
+                                            <div class="modal__content__middleContents_TextBox_RuleContent">-강의 들어오기</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_Hope">
+                                            <div class="modal__content__middleContents_TextBox_Hopecurri">커리큘럼</div>
+                                            <div class="modal__content__middleContents_TextBox_HopeContent">1. 코코아톡 클론코딩
+2. django 에어비엔비 클론코딩
+3. 프로젝트</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_DateSet">
+                                            <div class="modal__content__middleContents_TextBox_DateTitle">스터디 기간</div>
+                                            <div class="modal__content__middleContents_TextBox_DateTime">2021.10.6 ~ 2021.10.6</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="study-card__info">
+                        <h2>장고스터디</h2>
+                        <p>
+                            열심히 할수 있는분만 뽑습니다 너 열심히 할거지,,?
+                        </p>
+
+                        <div class="study-card__curiculm">
+                            <div>커리큘럼</div>
+                            <ul>
+                                <li>
+                                    1. 코코아톡 클론코딩
+                                </li>
+                                <li>
+                                    2. django 에어비엔비 클론코딩
+                                </li>
+                                <li>
+                                    3. 프로젝트
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="study-card__wrap">
+
+                <div class="study-card">
+                    <div class="study-card__left">
+                        <div>
+                            <img style="width: 150px; height: 130px;" class="study-card__img" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg">
+                        </div>
+                        <div class="study-card__join">
+                            <button class="study-card__joinBtn">자세히🔍</button>
+                            <div class="modal hidden">
+                              <div class="modal__overlay"></div>
+                              <div class="modal__content">
+                                <div class="modal__content__header">
+                                    <h1 class="modal__content__header__studyTitle">장고스터디</h1>
+                                    <button class="modal__cancel">X</button>
+                                </div>
+                                <div class="modal__content__middleContents">
+                                    <div class="modal__content__middleContents_LeftSet">
+                                        <img class="modal__content__middleContents_LeftSet_StudyImg" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg" alt=""></img>
+                                        <button class="modal__content__middleContents_LeftSet_Apply">스터디 신청</button>
+                                    </div>
+    
+                                    <div class="modal__content__middleContents_TextBox">
+                                        <div class="modal__content__middleContents__TextBox_PeopleSet">
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetTitle">인원</div>
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetLeader">팀장:윤열정</div>
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetTeam">팀원:이열정,아이디어뱅크,차바보</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_RuleSet">
+                                            <div class="modal__content__middleContents_TextBox_RuleTitle">규칙</div>
+                                            <div class="modal__content__middleContents_TextBox_RuleContent">-1일 1커밋 원칙</div>
+                                            <div class="modal__content__middleContents_TextBox_RuleContent">-강의 들어오기</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_Hope">
+                                            <div class="modal__content__middleContents_TextBox_Hopecurri">커리큘럼</div>
+                                            <div class="modal__content__middleContents_TextBox_HopeContent">1. 코코아톡 클론코딩
+2. django 에어비엔비 클론코딩
+3. 프로젝트</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_DateSet">
+                                            <div class="modal__content__middleContents_TextBox_DateTitle">스터디 기간</div>
+                                            <div class="modal__content__middleContents_TextBox_DateTime">2021.10.6 ~ 2021.10.6</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="study-card__info">
+                        <h2>장고스터디</h2>
+                        <p>
+                            열심히 할수 있는분만 뽑습니다 너 열심히 할거지,,?
+                        </p>
+
+                        <div class="study-card__curiculm">
+                            <div>커리큘럼</div>
+                            <ul>
+                                <li>
+                                    1. 코코아톡 클론코딩
+                                </li>
+                                <li>
+                                    2. django 에어비엔비 클론코딩
+                                </li>
+                                <li>
+                                    3. 프로젝트
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="study-card">
+                    <div class="study-card__left">
+                        <div>
+                            <img style="width: 150px; height: 130px;" class="study-card__img" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg">
+                        </div>
+                        <div class="study-card__join">
+                            <button class="study-card__joinBtn">자세히🔍</button>
+                            <div class="modal hidden">
+                              <div class="modal__overlay"></div>
+                              <div class="modal__content">
+                                <div class="modal__content__header">
+                                    <h1 class="modal__content__header__studyTitle">장고스터디</h1>
+                                    <button class="modal__cancel">X</button>
+                                </div>
+                                <div class="modal__content__middleContents">
+                                    <div class="modal__content__middleContents_LeftSet">
+                                        <img class="modal__content__middleContents_LeftSet_StudyImg" src="https://ichi.pro/assets/images/max/724/0*Nhf1m02PjhIkrd2J.jpg" alt=""></img>
+                                        <button class="modal__content__middleContents_LeftSet_Apply">스터디 신청</button>
+                                    </div>
+    
+                                    <div class="modal__content__middleContents_TextBox">
+                                        <div class="modal__content__middleContents__TextBox_PeopleSet">
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetTitle">인원</div>
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetLeader">팀장:윤열정</div>
+                                            <div class="modal__content__middleContents_TextBox_PeopleSetTeam">팀원:이열정,아이디어뱅크,차바보</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_RuleSet">
+                                            <div class="modal__content__middleContents_TextBox_RuleTitle">규칙</div>
+                                            <div class="modal__content__middleContents_TextBox_RuleContent">-1일 1커밋 원칙</div>
+                                            <div class="modal__content__middleContents_TextBox_RuleContent">-강의 들어오기</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_Hope">
+                                            <div class="modal__content__middleContents_TextBox_Hopecurri">커리큘럼</div>
+                                            <div class="modal__content__middleContents_TextBox_HopeContent">1. 코코아톡 클론코딩
+2. django 에어비엔비 클론코딩
+3. 프로젝트</div>
+                                        </div>
+                                        <div class="modal__content__middleContents_TextBox_DateSet">
+                                            <div class="modal__content__middleContents_TextBox_DateTitle">스터디 기간</div>
+                                            <div class="modal__content__middleContents_TextBox_DateTime">2021.10.6 ~ 2021.10.6</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="study-card__info">
+                        <h2>장고스터디</h2>
+                        <p>
+                            열심히 할수 있는분만 뽑습니다 너 열심히 할거지,,?
+                        </p>
+
+                        <div class="study-card__curiculm">
+                            <div>커리큘럼</div>
+                            <ul>
+                                <li>
+                                    1. 코코아톡 클론코딩
+                                </li>
+                                <li>
+                                    2. django 에어비엔비 클론코딩
+                                </li>
+                                <li>
+                                    3. 프로젝트
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div></div>
+
+           
         </div>
     </div>
 
     </div>
     </div>
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
-    <script src="../../js/study-tab.js"></script>
+    <script src="../../js/project-tab.js"></script>
     <script src="../../js/study-modal.js"></script>
 
 </body>

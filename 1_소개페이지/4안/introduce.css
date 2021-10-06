@@ -353,14 +353,10 @@
   margin-top: 20px;
 }
 
-#introduce_toc_Content {
-  display: block;
+.hidden {
+  visibility: hidden;
 }
 
-#award_toc_Content {
-  display: none;
-}
-
-#gift_toc_Content {
-  display: none;
+.visible {
+  visibility: visible;
 }
