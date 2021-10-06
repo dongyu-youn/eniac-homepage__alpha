@@ -81,9 +81,12 @@ input[type="email"] {
     width: 150px;
     height: 150px;
   }
+<<<<<<< HEAD
   .join__write-short {
     width: 100%;
   }
+=======
+>>>>>>> 375fc169e999f200c62983a1986c8921b3c7e7b8
 }
 
 @media screen and (max-width: 450px) {

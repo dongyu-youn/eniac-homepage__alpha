@@ -353,14 +353,14 @@
   margin-top: 20px;
 }
 
-.introduce {
+#introduce_toc_Content {
+  display: block;
+}
+
+#award_toc_Content {
   display: none;
 }
 
-.award {
+#gift_toc_Content {
   display: none;
 }
-
-/* .gift {
-  display: none;
-} */
