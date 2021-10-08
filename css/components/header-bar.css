@@ -295,6 +295,7 @@
         width: 300px;
         height: 400px;
         padding: 100px 0px 0px 0px;
+        z-index: 10;
     }
     .header-bar__logo {}
     #menuicon {
@@ -331,6 +332,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        margin: 100px 0;
+        margin-top: 80px;
+        height: 50%;
     }
 }
