@@ -353,14 +353,10 @@
   margin-top: 20px;
 }
 
-.introduce {
-  display: none;
+.hidden {
+  visibility: hidden;
 }
 
-.award {
-  display: none;
+.visible {
+  visibility: visible;
 }
-
-/* .gift {
-  display: none;
-} */

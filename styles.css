@@ -15,6 +15,10 @@
 @import "css/components/header-bar.css";
 @import "css/components/menu.css";
 @import "css/question.css";
+* {
+    text-decoration: none;
+}
+
 body {
     background-color: #f1efe9;
     font-family: "Philosopher", sans-serif;
@@ -129,4 +133,5 @@ video {
 .home-wotd {
     padding-top: 60px;
     margin-bottom: 60px;
+    z-index: 10;
 }

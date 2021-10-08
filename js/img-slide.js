@@ -1,3 +1,5 @@
+//헤더 가운데 이미지 변화하는 거//
+
 var index = 0; //이미지에 접근하는 인덱스
 window.onload = function () {
   slideShow();
