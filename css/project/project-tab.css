@@ -1,54 +1,165 @@
 body {
-  height: 150vh;
+    height: 150vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .project {
-  /* position안하면 nav랑 겹침..(왤까) */
-  position: relative;
-  padding: 200px 0px 125px 25%;
+    /* position안하면 nav랑 겹침..(왤까) */
+    position: relative;
+    /* padding-top: 200px; */
+    margin-left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project__tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .project__title {
-  font-size: 34px;
-  opacity: 0.6;
+    font-size: 38px;
+    opacity: 0.6;
+    margin-bottom: 70px;
+    margin-right: 50%;
 }
 
 .project__tab-menu {
-  display: flex;
-  margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
-.project__tab-menu > li {
-  display: block;
-  width: 8%;
-  padding-bottom: 13px;
-  text-align: center;
-  font-weight: bold;
+.project__tab-menu>li {
+    display: block;
+    width: 8%;
+    padding-bottom: 13px;
+    text-align: center;
+    font-weight: bold;
 }
-.project__tab-menu > li:last-child {
-  /* 걍 탭 크기 예쁘게 맞추려고 했는데 방안이 이것밖에 생각 안남.. */
-  width: 22%;
-  margin-top: 22px;
-}
+
 .project__tab-menu li:last-child a {
-  cursor: default;
+    cursor: default;
 }
 
 .project__tab-menu a {
-  display: block;
-  padding-bottom: 13px;
-  width: 100%;
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.7);
-  border-bottom: 3px solid rgba(0, 0, 0, 0.6);
+    display: block;
+    padding-bottom: 13px;
+    width: 100%;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.6);
+}
+
+.tab:hover {
+    color: white;
+    border-bottom: 3px solid white;
 }
 
 .project__tab-menu li a.active {
-  /* 선택된 탭 */
-  border-bottom: 3px solid white;
+    /* 선택된 탭 */
+    border-bottom: 3px solid white;
 }
 
-.project__tab-content > div {
-  /* 처음에 내용들 안보이게 */
-  display: none;
+.project__tab-content {
+    margin-left: -1.2%;
+}
+
+.project__tab-content>div {
+    /* 처음에 내용들 안보이게 */
+    display: none;
+}
+
+@media screen and (max-width: 1300px) and (min-width: 900px) {
+    .project__tab {
+        margin-left: 0;
+    }
+    .project__tab-content {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    .project {
+        margin-left: 15%;
+        padding-top: 120px;
+    }
+    .project__title {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .project__tab {
+        margin-left: -40%;
+    }
+    .project__tab-content {
+        margin-left: -40%;
+    }
+    .project__tab-menu li {
+        width: 13%;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 480px) {
+    .project__tab-content {
+        margin-left: -18%;
+    }
+    .project {
+        padding-top: 120px;
+    }
+    .project__title {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .project__tab {
+        margin-left: 0%;
+    }
+    .project__tab-content {
+        margin-left: 2%;
+    }
+    .project__tab-menu li {
+        width: 13%;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 330px) {
+    .project {
+        padding-top: 120px;
+    }
+    .project__title {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .project__tab {
+        margin-left: 50%;
+    }
+    .project__tab-content {
+        margin-left: 100%;
+    }
+    .project__tab-menu li {
+        width: 13%;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .project {
+        padding-top: 120px;
+    }
+    .project__title {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .project__tab {
+        margin-left: 70%;
+    }
+    .project__tab-content {
+        margin-left: 130%;
+    }
+    .project__tab-menu li {
+        width: 100%;
+    }
 }

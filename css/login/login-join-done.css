@@ -47,11 +47,30 @@
     width: 450px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) and (min-width: 470px) {
   .text {
     padding: 6% 12%;
   }
   .continue-btn__btn {
     width: 87%;
+  }
+}
+@media screen and (max-width: 470px) {
+  .text {
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .continue-btn__btn {
+    width: 87%;
+  }
+  .text__title {
+    font-size: 20px;
+  }
+  .text__content {
+    font-size: 14px;
+  }
+  .continue-btn {
+    margin-top: 220px;
+    width: 100%;
   }
 }

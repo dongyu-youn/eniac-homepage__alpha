@@ -27,12 +27,12 @@
 .header-bar__column:last-child {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .header-bar__a img {
-    width: 400px;
-    height: 400px;
-    padding: 20px 0px 0px 0px;
+    padding: 20px 0px 0px 30px;
+    margin: 0px 0px 30px 20px;
 }
 
 .header-bar__logo {
@@ -40,8 +40,6 @@
 }
 
 .header-bar__logo img {
-    width: 250px;
-    height: 230px;
     padding: 20px 0px 0px 0px;
 }
 
@@ -277,20 +275,15 @@
         align-items: center;
         position: fixed;
         width: 100%;
-        z-index: 10;
         background: #f1efe9;
-        box-shadow: 0 0 15px 20px #f1efe9;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        height: 30px;
-        padding: 5px 20px 10px 0;
+        /* box-shadow: 0 0 15px 20px #f1efe9;
+        backface-visibility: hidden; */
+        height: none;
+        /* padding: 40px 20px 10px 0; */
         margin-top: 10px;
     }
     .header-bar__logo {
         margin-top: 40px;
-    }
-    .header-bar__column:nth-child(2) {
-        display: none;
     }
     .header-bar__center {
         display: none;
@@ -299,18 +292,47 @@
         display: none;
     } */
     .header-bar__logo img {
-        width: 200px;
-        height: 200px;
-        padding: 50px 0px 0px 0px;
+        width: 300px;
+        height: 400px;
+        padding: 100px 0px 0px 0px;
+        z-index: 10;
     }
     .header-bar__logo {}
     #menuicon {
         display: block;
     }
-    .header-bar__login a {
+    /* .header-bar__login a {
+        display: none;
+    } */
+    /* .header-bar__login i {
+        display: none;
+    } */
+    .fa-user-circle:before {
+        content: "\f2bd";
         display: none;
     }
-    .header-bar__login i {
+    .header-bar__login-b {
         display: none;
+        align-items: center;
+        text-decoration: none;
+        font-weight: 800;
+        font-size: 15px;
+        letter-spacing: 0.4em;
+        color: #282828;
+        z-index: 0;
+        position: relative;
+    }
+    .fa-bars:before {
+        content: "\f0c9";
+        align-items: center;
+        width: 100px;
+        height: 100px;
+    }
+    .header-bar__column:last-child {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 80px;
+        height: 50%;
     }
 }
