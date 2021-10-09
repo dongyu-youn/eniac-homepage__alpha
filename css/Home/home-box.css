@@ -184,9 +184,12 @@
   .home-box {
     position: relative;
     width: 100%;
-    padding: 0 0px;
+    padding: 0 20px;
     margin: 0 auto;
     display: flex;
+  }
+  .home-box__wrapper {
+    padding: auto;
   }
   .home-box__thumbnail {
     display: block;
@@ -196,21 +199,14 @@
     z-index: 1;
     text-align: center;
   }
-  .home-box__wrapper {
-    padding-left: 0;
-    padding-right: 0;
-  }
+
   .home-box__img {
-    width: 1000px;
-    height: 600px;
     opacity: 0.8;
     margin-left: 0px;
-    /*justify-content: center;
-      margin: 0px auto;*/
   }
   .home-box__middle {
     display: flex;
-    padding-top: 200px;
+    padding-top: 100px;
     flex-flow: row wrap;
     justify-content: center;
   }
@@ -223,9 +219,9 @@
   }
   .home-box__thumbnail img {
     display: inline-block;
+    position: relative;
     box-shadow: 10px 15px 35px -5px rgb(0 0 0 / 60%);
     transition: box-shadow 0.2s ease-in-out;
-    margin: 50px;
   }
   @keyframes goleft {
     0% {
@@ -237,7 +233,7 @@
   }
   .home-box__bottom__top {
     width: calc(100% + 20px);
-    height: 550px;
+    height: auto;
     margin-top: 250px;
     background-color: #e1ded0;
     display: flex;
@@ -247,21 +243,20 @@
   .home-box__introduction {
     justify-content: center;
     height: 20%;
-    padding: 50px 20px 50px 90px;
+    padding: 50px 20px 50px 70px;
   }
   .home-box__list {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 0px 0px 10px 0px;
-    margin-right: 80px;
-    margin-top: 100px;
+    margin-right: 20px;
   }
   .home-box__circle {
     display: flex;
     vertical-align: none;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     position: relative;
     margin-left: 52px;
     background-color: #f1efe9;
@@ -270,12 +265,7 @@
     align-items: center;
     border: 0.06em solid #282828;
   }
-  .home-box__bottom__bottom {
-    margin-top: 100px;
-  }
-  .home-box__judges img {
-    width: 150px;
-  }
+
   .home-box__judges {
     padding: 20px 0px 0px 0px;
     display: flex;
@@ -288,5 +278,12 @@
   }
   .header-bar__login a:nth-child(2) {
     display: none;
+  }
+}
+
+@media (max-width: 770px) {
+  .home-box__span {
+    letter-spacing: 0.05em;
+    font-size: 23px;
   }
 }
