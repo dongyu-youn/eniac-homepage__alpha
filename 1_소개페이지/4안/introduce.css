@@ -1,0 +1,362 @@
+.body {
+  background-color: white;
+}
+
+/*중간 타이틀 영역*/
+.midde__bar {
+  width: 100%;
+  height: 20px;
+}
+
+.middle__bar__title {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*아이콘 전부 영역*/
+.middle_icon_bar {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+/*소개 영역*/
+.middle_icon_introSet {
+  text-align: center;
+  cursor: pointer;
+}
+
+.intro__icon {
+  font-size: 60px;
+}
+
+.intro__text {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.middle_icon_introSet {
+  position: relative;
+}
+
+.middle_icon_introSet::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0px;
+  height: 3px;
+  margin: 5px 0 0;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.3s;
+  opacity: 0;
+  background-color: gray;
+}
+
+.middle_icon_introSet:hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
+/*수상실적 영역*/
+.middle_icon_awardSet {
+  text-align: center;
+  cursor: pointer;
+}
+
+.award__icon {
+  font-size: 60px;
+}
+
+.award__text {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.middle_icon_awardSet {
+  position: relative;
+}
+
+.middle_icon_awardSet::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0px;
+  height: 3px;
+  margin: 5px 0 0;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.3s;
+  opacity: 0;
+  background-color: gray;
+}
+
+.middle_icon_awardSet:hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
+/*혜택 영역*/
+.middle_icon_giftSet {
+  text-align: center;
+  cursor: pointer;
+}
+
+.gift__icon {
+  font-size: 60px;
+}
+
+.gift__text {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.middle_icon_giftSet {
+  position: relative;
+}
+
+.middle_icon_giftSet::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0px;
+  height: 3px;
+  margin: 5px 0 0;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.3s;
+  opacity: 0;
+  background-color: gray;
+}
+
+.middle_icon_giftSet:hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
+/* 소개 부분 */
+.contents__bar__intro {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.intro_text_establish_title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.intro_text_establish_day {
+  font-size: 20px;
+}
+
+.intro_text_people_title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.intro_text_people_number {
+  font-size: 20px;
+}
+
+.intro_people_img {
+  width: 850px;
+  height: 560px;
+}
+
+/*중간에 디테일한 디자인 부분들*/
+.intro_Design_Content_left {
+  margin-top: -110px;
+  margin-left: 150px;
+}
+
+.intro_Design_Content_right {
+  margin-left: 960px;
+}
+
+/*비디오 영역*/
+.contents_bar_video {
+  display: flex;
+  align-items: center;
+}
+
+.video_player {
+  margin-top: -100px;
+  margin-left: 280px;
+}
+
+.video_text {
+  margin-top: -100px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+/*수상_SW영역*/
+.award_Design_Content_Set1 {
+  margin-top: 35px;
+  margin-left: 215px;
+}
+
+.award_SW_Set {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.award_SW_text {
+  margin-left: 160px;
+  margin-top: -50px;
+}
+
+.award_SW_text_title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.award_SW_text_content {
+  font-size: 20px;
+  margin-top: 50px;
+  color: gray;
+}
+
+.award_SW_img {
+  width: 850px;
+  height: 560px;
+  margin-left: 20px;
+  margin-top: -30px;
+}
+
+/*수상_포폴영역*/
+.award_portfolio {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.award_portfolio_img {
+  width: 850px;
+  height: 480px;
+  margin-left: 80px;
+  z-index: 1;
+}
+
+.award_portfolio_text {
+  margin-left: 100px;
+  z-index: 1;
+}
+
+.award_Design_Content_Set2 {
+  margin-left: 880px;
+  margin-top: -130px;
+  z-index: 100;
+}
+
+.award_portfolio_text_title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.award_portfolio_text_content {
+  font-size: 20px;
+  margin-top: 50px;
+  color: gray;
+}
+
+/*혜택 영역*/
+.gift_Design_Content_Set_first {
+  margin-top: 50px;
+}
+
+.gift_Design_Content_first_bottom {
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+  margin-left: 70px;
+}
+
+.gift_Design_Content_first_top {
+  margin-left: 260px;
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  margin-top: -30px;
+}
+
+/*동아리실*/
+.contents__bar__gift__one {
+  display: flex;
+  margin-top: -100px;
+  margin-left: 300px;
+}
+
+.gift_room_text_title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.gift_room_text_content {
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.gift_room_img {
+  width: 800px;
+  height: 500px;
+  margin-left: 40px;
+  margin-top: -80px;
+}
+
+.gift_Design_Content_Set_second {
+  display: flex;
+  margin-top: -50px;
+}
+
+.gift_Design_Content_second_anything {
+  width: 78%;
+}
+
+.contents__bar__gift__two {
+  display: flex;
+}
+
+.gift_study_img {
+  width: 800px;
+  height: 500px;
+  margin-left: 100px;
+}
+
+.gift_study_text {
+  margin-left: 200px;
+  margin-top: 200px;
+}
+
+.gift_study_text_title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.gift_study_text_content {
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.gift_study_text_content_data_Set {
+  margin-top: 20px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}

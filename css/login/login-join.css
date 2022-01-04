@@ -1,0 +1,123 @@
+form {
+  position: absolute;
+  top: 280px;
+}
+
+#preview > img {
+  border: 1.7px solid rgba(0, 0, 0, 0.2);
+}
+#input-file {
+  display: none;
+}
+
+.img-upload-box {
+  border: 1.7px solid rgba(0, 0, 0, 0.2);
+}
+.img-upload-box__text {
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.input-file-box {
+  margin-top: 10px;
+}
+.img-upload-box__text:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.wrap:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrap:last-child {
+  display: flex;
+  flex-direction: column;
+}
+.wrap__wrap:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+.wrap__wrap:last-child {
+  display: flex;
+  flex-direction: column;
+}
+input[type="email"] {
+  margin-top: 20px;
+}
+.dropdown-menu {
+  top: calc(100% - 10px);
+}
+@media screen and (min-width: 600px) {
+  .join {
+    width: 460px;
+  }
+
+  #preview > img,
+  .img-upload-box {
+    width: 180px;
+    height: 180px;
+  }
+
+  .join__write-short {
+    width: 220px;
+  }
+}
+@media screen and (max-width: 600px) and (min-width: 450px) {
+  .join {
+    width: 80%;
+  }
+  #preview > img,
+  .img-upload-box {
+    width: 150px;
+    height: 150px;
+  }
+<<<<<<< HEAD
+  .join__write-short {
+    width: 100%;
+  }
+=======
+>>>>>>> 375fc169e999f200c62983a1986c8921b3c7e7b8
+}
+
+@media screen and (max-width: 450px) {
+  .wrap:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrap__wrap:first-child {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    width: 100%;
+  }
+  .wrap__wrap:last-child {
+    width: 100%;
+  }
+  .join {
+    width: 80%;
+  }
+  #preview > img,
+  .img-upload-box {
+    width: 200px;
+    height: 200px;
+  }
+  .join__write-short {
+    width: 100%;
+  }
+  input[type="email"] {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+
+#toc-content {
+  display: none;
+  background-color: #f1efe9;
+  height: 90%;
+  width: 400px;
+  margin: -10px;
+  border: 2px solid gray;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  float: right;
+  bottom: 0;
+}
+
+#toc-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: black;
+}
+
+.profile__img {
+  width: 150px;
+  height: 150px;
+  border: 2px solid rgb(99, 99, 99);
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+  top: 0;
+}
+
+.profile__textSet {
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.profile__department {
+    margin: 0 auto;
+    color: none;
+    font-size: 20px;
+    font-family: "Black Han Sans", sans-serif;
+}
+
+.profile__myname {
+  margin: 0 auto;
+  color: none;
+  color: black;
+  font-size: 20px;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.my__activity {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.my_writtenPage__title {
+    color: none;
+    font-size: 20px;
+    font-family: "Black Han Sans", sans-serif;
+}
+
+.my_application__title {
+    color: none;
+  color: none;
+  color: black;
+  font-size: 20px;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.writtenPage_Plus {
+  cursor: pointer;
+}
+
+.application_Plus {
+  cursor: pointer;
+}
+
+.my_writtenPage__Set {
+  display: flex;
+  justify-content: space-between;
+}
+
+.my_writtenPage__Content {
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgb(99, 99, 99);
+}
+
+.writtenPage_Plus {
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgb(99, 99, 99);
+  text-align: center;
+  line-height: 80px;
+}
+
+.my_application__Set {
+  display: flex;
+  justify-content: space-between;
+}
+
+.my_application__Content {
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgb(99, 99, 99);
+}
+
+.application_Plus {
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgb(99, 99, 99);
+  text-align: center;
+  line-height: 80px;
+}
+
+@media screen and (max-width: 700px) {
+    #menuicon+label {
+        display: block;
+        margin: 30px;
+        width: 60px;
+        height: 50px;
+        position: fixed;
+        cursor: pointer;
+        right: 0;
+    }
+}

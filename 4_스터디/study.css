@@ -1,0 +1,128 @@
+.studyBox {
+    width: 1200px;
+    height: 700px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.studyTitle {
+    font-size: 50px;
+}
+
+.field {
+    display: flex;
+}
+
+.fieldWeb {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 25px;
+    width: 100px;
+    text-align: center;
+}
+
+.fieldApp {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 25px;
+    width: 100px;
+    text-align: center;
+}
+
+.fieldAI {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 25px;
+    width: 100px;
+    text-align: center;
+}
+
+.fieldGame {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 25px;
+    width: 100px;
+    text-align: center;
+}
+
+.security {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 25px;
+    width: 100px;
+    text-align: center;
+}
+
+.algorithm {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 25px;
+    width: 100px;
+    text-align: center;
+}
+
+.studyField1stset {
+    display: flex;
+    width: 1000px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.studyField1st {
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    margin-top: 50px;
+    margin-left: 100px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.study__field__left {
+    display: block;
+}
+
+.study__img {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.study_1st_apply {
+    width: 80px;
+    height: 40px;
+    font-family: "Noto Sans KR", sans-serif;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.study_field__right {
+    margin: 30px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.study_1st_title {
+    font-size: 25px;
+}
+
+.studyField2ndset {
+    margin-top: 50px;
+    display: flex;
+    width: 1000px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.studyField2nd {
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    margin-top: 50px;
+    margin-left: 100px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.study_1st_dateSet {
+    margin-top: -20px;
+}

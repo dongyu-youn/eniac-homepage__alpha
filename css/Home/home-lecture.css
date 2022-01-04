@@ -1,0 +1,142 @@
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+
+/*전체 선택자 , 앞 뒤 자식 요소*/
+
+.home-lecture {
+    display: block;
+}
+
+.home-lecture__in {
+    /*padding-left: 120px;*/
+    padding: 0 30px;
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.home-lecture__title {
+    font-family: "IBM Plex Sans KR", sans-serif;
+    display: flex;
+    position: relative;
+    letter-spacing: 0.3em;
+    margin-bottom: 30px;
+    color: black;
+    padding: 5px 24px 5px 12px;
+}
+
+.home-lecture__list {
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.single-project {
+    display: block;
+    width: calc(36% - 60px);
+    margin-bottom: 102px;
+}
+
+.single-project>div {
+    display: block;
+    margin: 0 auto;
+    width: 360px;
+    max-width: 100%;
+}
+
+.home-lecture__thumnail {
+    /*display: flex;*/
+    display: block;
+    margin-bottom: 27px;
+    position: relative;
+}
+
+.home-lecture__thumnail img {
+    max-width: 100%;
+}
+
+.home-lecture h2 {
+    margin-bottom: 2 0.6em;
+}
+
+.home-lecture__about {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.075em;
+}
+
+p.typing-txt {
+    display: none;
+}
+
+.typing {
+    display: flex;
+    animation-name: cursor;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-right: 1px solid #ccc;
+}
+
+@keyframes cursor {
+    0% {
+        border-right: 1px solid #fff;
+    }
+    50% {
+        border-right: 1px solid #000;
+    }
+    100% {
+        border-right: 1px solid #fff;
+    }
+}
+
+@media (max-width: 1370px) {
+    .home-lecture__list {
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .home-lecture .home-lecture__in {
+        width: none;
+    }
+    .home-lecture__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 0;
+    }
+    .single-project {
+        display: block;
+        width: 50%;
+        margin-bottom: 102px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 770px) {
+    .home-lecture .home-lecture__in {
+        width: none;
+    }
+    .home-lecture__list {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column wrap;
+        margin-left: 0;
+        padding: 0;
+    }
+    .single-project {
+        display: block;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+}

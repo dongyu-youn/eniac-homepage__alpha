@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <title>ENIAC-Community</title>
+    <link rel="stylesheet" href="../../css/community/community.css" />
+    <link rel="stylesheet" href="../../css/components/header-bar.css" />
+    <style>
+      ul {
+        list-style: none;
+      }
+
+      a {
+        text-decoration-line: none;
+      }
+    </style>
+  </head>
+  <!-- 1200아래로 갈때 반응형설정 -->
+  <!--   -->
+  <!-- <nav class="header-bar">
+    <div class="header-bar__column header-bar__logo">
+      <a href="index.html" class="header-bar__a">
+        <img
+          class="header-bar__image"
+          style="width: 250px; height: 230px; padding: 20px 0px 0px 0px"
+          src="../../img/logo-db.png"
+        />
+      </a>
+    </div>
+    <div class="header-bar__center">
+      <div class="header-bar__fade-slider">
+        <div class="header-bar__fade-slider__slide">
+          <img
+            class="slide1"
+            style="width: 70px; height: 70px"
+            src="../../img/coding.png"
+          />
+          <img
+            class="slide1"
+            style="width: 70px; height: 70px"
+            src="../../img/team.png"
+          />
+          <img
+            class="slide1"
+            style="width: 70px; height: 70px"
+            src="../../img/cap.png"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="header-bar__column header-bar__login">
+      <a style="cursor: pointer" onclick="openNav()"
+        ><i class="fas fa-bars fa-lg"></i
+      ></a>
+      <a style="cursor: pointer" onclick="opentwoNav()"
+        ><i
+          style="color: black"
+          class="header-bar__text fas fa-search fa-lg"
+        ></i
+      ></a>
+      <a style="cursor: pointer" onclick="openProfile()"
+        ><i
+          style="color: black"
+          class="header-bar__profile fas far fa-user-circle"
+        ></i
+      ></a>
+      <a href="./screens/login/login.html" class="header-bar__p">
+        <span class="header-bar__text header-bar__login-b">
+          <div class="header-box__textbox"></div>
+          Login
+        </span>
+      </a>
+    </div>
+  </nav> -->
+  <header>
+    <nav class="header-bar">
+      <div class="header-bar__column header-bar__logo">
+        <a href="../../home.html" class="header-bar__a">
+          <img class="header-bar__image" style="" src="../../img/logo-db.png" />
+        </a>
+      </div>
+      <div class="header-bar__center">
+        <div class="header-bar__fade-slider">
+          <div class="header-bar__fade-slider__slide">
+            <img
+              class="slide1"
+              style="width: 70px; height: 70px"
+              src="../../img/coding.png"
+            />
+            <img
+              class="slide1"
+              style="width: 70px; height: 70px"
+              src="../../img/team.png"
+            />
+            <img
+              class="slide1"
+              style="width: 70px; height: 70px"
+              src="../../img/cap.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header-bar__column header-bar__login">
+        <a style="cursor: pointer" onclick="openNav()"
+          ><i class="fas fa-bars fa-lg"></i
+        ></a>
+        <!-- <a style="cursor: pointer" onclick="opentwoNav()"></a><i style="color: black" class="header-bar__text fas fa-search fa-lg"></i
+      ></a> -->
+        <a style="cursor: pointer"
+          ><i
+            style="color: black"
+            class="header-bar__text far fa-user-circle fa-lg"
+          ></i
+        ></a>
+
+        <a class="header-bar__p">
+          <span class="header-bar__text header-bar__login-b">
+            <!-- <div class="header-box__textbox"></div> -->
+            Login
+          </span>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <div class="main__community">
+    <div class="nav__main">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="">코드</a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="">동아리활동</a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="">대회/봉사/특강</a>
+        </li>
+
+        <li class="nav__btn">
+          <a class="nav__link" href="">자유 게시판</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main-bar">
+      <div class="main-bar__ques">
+        <span>QUESTIONS</span>
+      </div>
+      <div class="main-bar__rank">
+        <div></div>
+        <div class="main-bar__order">
+          <a class="main-bar__order-i" href="">인기순</a>
+          <hr class="two" />
+          <a class="main-bar__order-i" href="">최신순</a>
+        </div>
+      </div>
+      <div class="bl_crossTable">
+        <table cellspacing="0" summary="게시판의 글제목 리스트">
+          <colgroup>
+            <col />
+            <col width="110" />
+            <col width="100" />
+            <col width="80" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th class="bl_crossTable_mdSticky" scope="col">제목</th>
+              <th scope="col">글쓴이</th>
+              <th scope="col">날짜</th>
+              <th scope="col">번호</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="title">
+                <a href="./comm-detail.html">게시판 제목이 들어갑니다</a>
+                <img
+                  width="13"
+                  height="12"
+                  class="pic"
+                  alt="첨부이미지"
+                  src="첨부파일 ic_pic.gif"
+                />
+                <a class="comment" href="#">[5]</a>
+                <img
+                  width="10"
+                  height="9"
+                  class="new"
+                  alt="새글"
+                  src="첨부파일/ic_new.gif"
+                />
+              </td>
+              <td class="name">글쓴이이름</td>
+              <td class="date">2021/02/14</td>
+              <td class="hit">4</td>
+            </tr>
+            <tr>
+              <td class="title">
+                <a href="#">게시판 제목이 들어갑니다</a>
+                <img
+                  width="13"
+                  height="12"
+                  class="pic"
+                  alt="첨부이미지"
+                  src="첨부파일 ic_pic.gif"
+                />
+                <a class="comment" href="#">[5]</a>
+                <img
+                  width="10"
+                  height="9"
+                  class="new"
+                  alt="새글"
+                  src="첨부파일/ic_new.gif"
+                />
+              </td>
+              <td class="name">글쓴이이름</td>
+              <td class="date">2021/02/14</td>
+              <td class="hit">4</td>
+            </tr>
+            <tr class="reply">
+              <td class="title">
+                <a href="#">블로그 개편 답글</a>
+              </td>
+              <td class="name">벤쿠버지사</td>
+              <td class="date">2021/02/14</td>
+              <td class="hit">3</td>
+            </tr>
+            <tr class="reply">
+              <td class="title">
+                <a href="#">블로그 개편 답글</a>
+              </td>
+              <td class="name">벤쿠버지사</td>
+              <td class="date">2021/02/14</td>
+              <td class="hit">2</td>
+            </tr>
+            <tr class="reply">
+              <td class="title">
+                <a href="#">블로그 개편 답글</a>
+              </td>
+              <td class="name">벤쿠버지사</td>
+              <td class="date">2021/02/14</td>
+              <td class="hit">1</td>
+            </tr>
+
+            <!-- tr이 제목 1줄입니다 보일 list 갯수만큼 li반복합니다.-->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="write">
+        <div class="write__search">
+          <i class="fas fa-search fa-lg"></i>
+          <input type="text" placeholder="   검색해주세요" />
+        </div>
+        <a href="./comm-create.html" class="write__create">
+          <button>글쓰기</button>
+        </a>
+        <!-- <div class="write__"></div> -->
+      </div>
+    </div>
+
+    <script src="../../js/img-slide.js"></script>
+    <script src="../../js/home-box__menu.js"></script>
+<<<<<<< HEAD
+    <script src="../../js/hamburgur.js"></script>
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+=======
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+>>>>>>> 196050c3425e5074ac82733c6e1ff5b7ec9d52f3
+    <!-- <h5 class="core-df">이 코드 잘 모르겠어요,,,ㅇ</h5>
+    <h5 class="core-df">이 코드 잘 모르겠어요,,,ㅇ</h5> -->
+  </div>
+</html>

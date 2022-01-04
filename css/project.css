@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f1efe9;
+}
+img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: -50px;
+}
+.pp {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+}
+.gg {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.pro a {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.slide_wrapper {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+  height: 600px;
+  overflow: hidden;
+  left: 30px;
+}
+.slides {
+  position: absolute;
+}
+.slides.animated {
+  transition: 0.5s ease-out;
+}
+.slides li {
+  box-sizing: border-box;
+  padding: 100px 48px;
+  border: 1px solid white;
+  margin-top: 120px;
+  border-radius: 10%;
+  float: left; /*가로배열*/
+  background-color: white;
+}
+.slides li:not(:last-child) {
+  margin-right: 63px;
+}
+.slides li:hover {
+  box-shadow: 5px 5px 10px;
+  padding: 105px 50px;
+  margin-top: 90px;
+}
+
+.prev,
+.next {
+  position: absolute;
+  font-size: 70px;
+  top: 40%;
+  left: 50%;
+}
+.prev,
+.next:hover {
+  cursor: pointer;
+}
+.prev {
+  margin-left: -500px;
+}
+.next {
+  margin-left: 470px;
+}
+
+/*@media (max-width: 1200px) {
+  .slides li {
+    width: ;
+  }
+  .slide_wrapper {
+    width: x;
+  }
+}

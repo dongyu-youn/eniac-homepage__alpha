@@ -1,0 +1,42 @@
+@import url("./main-bar.css");
+@import url("./nav.css");
+@import url("./sub_news.css");
+@import url("./write.css");
+@import url("./community-mobile.css");
+* {
+    text-decoration: none;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background-color: #f1efe9;
+    margin: 0;
+}
+
+.own__ques {
+    position: relative;
+    width: 100%;
+    margin-left: 10px;
+    align-items: center;
+    /* o 세로 중간배열 */
+}
+
+
+/* 저거  */
+
+
+/*.core {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 110px 30px;
+}
+.core-df {
+  width: 600px;
+  height: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  margin-bottom: 0px;
+}*/
